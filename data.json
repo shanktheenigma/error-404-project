@@ -1,0 +1,405 @@
+{
+  "2026-04-18": {
+    "activities": [
+      {
+        "name": "Create Telegram Group to communicate and keep in touch",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          { "name": "Telegram Group", "src": "IMG/Telegram_Group.png" }
+        ]
+      },
+      {
+        "name": "Create Discord Group to create meeting casually",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          { "name": "Discord Group", "src": "IMG/Discord_Group.png" }
+        ]
+      }
+    ]
+  },
+  "2026-04-19": {
+    "activities": [
+      {
+        "name": "Researched store, product and store information for IoT and decoration, discussed, and listed down by using Canva",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          { "name": "Discussion on Discord", "src": "IMG/Discussion 1.png" },
+          {
+            "name": "Sample product list",
+            "src": "IMG/Product List Sample.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-06": {
+    "activities": [
+      {
+        "name": "Discussed route to IoT component stores and purchased necessities",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Route of Trip to IoT Store",
+            "src": "IMG/Trip to IoT Store Route.JPG"
+          },
+          {
+            "name": "Trip to IoT Store",
+            "src": "IMG/Trip to IoT Store 1.JPG"
+          },
+          {
+            "name": "Trip to IoT Store",
+            "src": "IMG/Trip to IoT Store 2.JPG"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-09": {
+    "activities": [
+      {
+        "name": "San Wint went to the CE store again to purchase the product that we forgot to buy",
+        "completed": true,
+        "challenges": "Item ran out and visited another store",
+        "evidence": [
+          {
+            "name": "Recipt",
+            "src": "IMG/Recipt 1.JPG"
+          },
+          {
+            "name": "Trip to IoT Store",
+            "src": "IMG/San Wint Hte testing LED.mp4"
+          }
+        ]
+      },
+      {
+        "name": "List and prepare equipment to initiate the project by 404's Chozin",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Chozin went to the store",
+            "src": "IMG/Chozin went to the store.mp4"
+          },
+          {
+            "name": "Chozins' Discussion 2",
+            "src": "IMG/Chozins' Discussion 2.png"
+          },
+          {
+            "name": "Chozin choosing for foundation",
+            "src": "IMG/Chozin choosing for foundation.MOV"
+          },
+          {
+            "name": "Chozins' Note",
+            "src": "IMG/Chozins' Note.jpg"
+          },
+          {
+            "name": "Chozin's Discussion",
+            "src": "IMG/Chozin's Discussion.PNG"
+          }
+        ]
+      },
+      {
+        "name": "Discussed for decorations store",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Discussion for decorations store",
+            "src": "IMG/Discussion about Model Mart.PNG"
+          },
+          {
+            "name": "Route to Decoration Store",
+            "src": "IMG/Trip to Decoration Store 1.JPG"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-10": {
+    "activities": [
+      {
+        "name": "Discuss route and visit the decoration store to check and purchase items, plus recorded by Wati",
+        "completed": true,
+        "challenges": "Took off at the wrong bus stop",
+        "evidence": [
+          {
+            "name": "Trip to Decoration Store",
+            "src": "IMG/Trip to Decoration Store 1.jpg"
+          },
+          {
+            "name": "Trip to Decoration Store",
+            "src": "IMG/Trip to Decoration Store 2.jpg"
+          },
+          {
+            "name": "Trip to Decoration Store",
+            "src": "IMG/Trip to Decoration Store 3.jpg"
+          },
+          {
+            "name": "Trip to Decoration Store Rout",
+            "src": "IMG/Trip to Decoration Store Route 2.jpg"
+          },
+          {
+            "name": "Taking off at the wrong bus stop",
+            "src": "IMG/Wrong bus stop.MOV"
+          }
+        ]
+      },
+      {
+        "name": "Initiate the project 404 at San Wint's home",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Had Lunch",
+            "src": "IMG/Having Lunch 1.jpg"
+          },
+          {
+            "name": "Had Lunch",
+            "src": "IMG/Having Lunch 2.jpg"
+          },
+          {
+            "name": "Illustration of project decoration design",
+            "src": "IMG/Illustration 1.jpg"
+          },
+          {
+            "name": "Illustration of project decoration design",
+            "src": "IMG/Illustration 2.jpg"
+          },
+          {
+            "name": "Illustration of project decoration design",
+            "src": "IMG/Illustration 3.jpg"
+          },
+          {
+            "name": "Illustration of project decoration design",
+            "src": "IMG/Illustration 4.jpg"
+          },
+          {
+            "name": "Min Thant participated the implementation via Discord",
+            "src": "IMG/Discussion 5.png"
+          }
+        ]
+      },
+      {
+        "name": "Set up the foundation and started testing LED",
+        "completed": true,
+        "challenges": "Budget ran out",
+        "evidence": [
+          {
+            "name": "Cutting layer",
+            "src": "IMG/Cutting layer.MOV"
+          },
+          {
+            "name": "First light successed",
+            "src": "IMG/Light 1.JPG"
+          },
+          {
+            "name": "Cutted layer",
+            "src": "IMG/Foundation 1.jpg"
+          },
+          {
+            "name": "Budget ran out",
+            "src": "IMG/Budget Ran out.png"
+          },
+          {
+            "name": "Budget ran out",
+            "src": "IMG/Budget Ran out.MOV"
+          }
+        ]
+      },
+      {
+        "name": "Testing LDR Sensor Module",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Testing LDR Sensor Module",
+            "src": "IMG/LDR Testing 1.jpg"
+          },
+          {
+            "name": "Testing LDR Sensor Module",
+            "src": "IMG/LDR Testing 2.jpg"
+          },
+          {
+            "name": "Testing LDR Sensor Module",
+            "src": "IMG/LDR Testing 3.jpg"
+          },
+          {
+            "name": "Testing LDR Sensor Module",
+            "src": "IMG/San Wint Hte Tested LDR Sensor Module.MOV"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-12": {
+    "activities": [
+      {
+        "name": "Discussed for decorations",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Discussion about Grass",
+            "src": "IMG/Grass Discussion 1.png"
+          },
+          {
+            "name": "Discussion about Grass",
+            "src": "IMG/Grass Discussion 2.png"
+          },
+          {
+            "name": "Discussion about Grass",
+            "src": "IMG/Grass Discussion 3.png"
+          }
+        ]
+      },
+      {
+        "name": "San Wint tested Sensors",
+        "completed": false,
+        "challenges": "Network Error to use Arduino IDE",
+        "evidence": [
+          {
+            "name": "Testing IR sensor",
+            "src": "IMG/IR Completed.png"
+          },
+          {
+            "name": "Testing Relay Module",
+            "src": "IMG/Relay Testing.png"
+          },
+          {
+            "name": "Network Error",
+            "src": "IMG/Network Problem for Arduino IDE 1.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-15": {
+    "activities": [
+      {
+        "name": "Started the report",
+        "completed": false,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Start discussing and writing the report",
+            "src": "IMG/Start writing report 1.png"
+          },{
+            "name": "Start discussing and writing the report",
+            "src": "IMG/Start writing report 2.png"
+          },{
+            "name": "Start discussing and writing the report",
+            "src": "IMG/Start writing report 3.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-17": {
+    "activities": [
+      {
+        "name": "Met at San Wint's House and continued the progress",
+        "completed": true,
+        "challenges": "",
+        "evidence": [{
+            "name": "LDR Sensor Testing and Recored by Min Thant",
+            "src": "IMG/LDR Sensor Testing and Recored by Min Thant.MP4"
+          },{
+            "name": "Having lunch at San Wint's home",
+            "src": "IMG/Having Lunch 3.jpg"
+          },{
+            "name": "Having lunch at San Wint's home",
+            "src": "IMG/Having Lunch 4.jpg"
+          }]
+      },
+      {
+        "name": "Testing LDR Sensor Module",
+        "completed": true,
+        "challenges": "Getting injured by soldering",
+        "evidence": [{
+            "name": "Soldering LDR sensor",
+            "src": "IMG/Soldering 1.jpg"
+          },{
+            "name": "Soldering LDR sensor",
+            "src": "IMG/Soldering 2.jpg"
+          },{
+            "name": "Soldering LDR sensor",
+            "src": "IMG/Soldering 3.jpg"
+          },{
+            "name": "Soldering LDR sensor",
+            "src": "IMG/Testing LDR Sensor Module.MOV"
+          },{
+            "name": "Getting injured by Soldering",
+            "src": "IMG/Soldering Injure.jpg"
+          }]
+      },
+      {
+        "name": "Testing Solar Tree",
+        "completed": true,
+        "challenges": "",
+        "evidence": [{
+            "name": "Reupload",
+            "src": "IMG/.jpg"
+          }]
+      },
+      {
+        "name": "Soldering notes by Cho Zin",
+        "completed": true,
+        "challenges": "",
+        "evidence": [{
+            "name": "Soldering notes by Cho Zin",
+            "src": "IMG/Chozin's note.PNG"
+          }]
+      },
+      {
+        "name": "Start drawing the system design",
+        "completed": true,
+        "challenges": "",
+        "evidence": [{
+            "name": "Start drawing System Design by Min Thant",
+            "src": "IMG/System Design 1.PNG"
+          }]
+      },
+      {
+        "name": "Soldering and testing Piezo",
+        "completed": true,
+        "challenges": "Being injured from soldering",
+        "evidence": [{
+            "name": "Testing Pizeo",
+            "src": "IMG/Testing Piezo.MOV"
+          },{
+            "name": "Soldering Pizeo",
+            "src": "IMG/Piezo Soldering.JPG"
+          }]
+      }
+    ]
+  },
+  "2026-05-18": {
+    "activities": [
+      {
+        "name": "Requested a room at GUSTO and continue the testing",
+        "completed": true,
+        "challenges": "",
+        "evidence": [{
+            "name": "Requesting a room at GUSTO",
+            "src": "IMG/Requesting room at GUSTO.PNG"
+          }]
+      },
+      {
+        "name": "LDR and IR sensors completed",
+        "completed": true,
+        "challenges": "",
+        "evidence": []
+      },
+      {
+        "name": "Auto Street Light System",
+        "completed": true,
+        "challenges": "",
+        "evidence": []
+      }
+    ]
+  }
+}
