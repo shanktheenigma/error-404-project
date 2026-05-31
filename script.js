@@ -17,8 +17,10 @@ async function loadDays() {
 
 // ── Calendar state ────────────────────────────────────────────────────────────
 const todayDate = new Date();
-let calYear = todayDate.getFullYear();
-let calMonth = todayDate.getMonth() + 1;
+
+// Start calendar at April 2026 (project start month)
+let calYear = 2026;
+let calMonth = 4;
 
 const MONTHS = [
   "January",
@@ -39,6 +41,7 @@ const pad = (n) => String(n).padStart(2, "0");
 const makeKey = (y, m, d) => `${y}-${pad(m)}-${pad(d)}`;
 
 let currentDate = null;
+let currentPage = "calendar";
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 (async () => {
@@ -50,6 +53,10 @@ let currentDate = null;
 
   if (savedPage === "view" && savedDate) {
     currentDate = savedDate;
+    // Set calYear/calMonth to match the saved date so the calendar is correct on back
+    const [sy, sm] = savedDate.split("-").map(Number);
+    calYear = sy;
+    calMonth = sm;
     goPage("view");
   } else {
     goPage("calendar");
@@ -61,8 +68,19 @@ function goPage(page, dateKey) {
   document
     .querySelectorAll(".page")
     .forEach((el) => el.classList.add("hidden"));
+  document
+    .querySelectorAll(".nav-tab")
+    .forEach((el) => el.classList.remove("active"));
+
+  currentPage = page;
   if (dateKey) currentDate = dateKey;
+
   document.getElementById("page-" + page).classList.remove("hidden");
+
+  const navTarget = document.getElementById(
+    page === "project" ? "nav-project" : "nav-calendar",
+  );
+  if (navTarget) navTarget.classList.add("active");
 
   // Persist current page & date so refresh/reload returns here
   sessionStorage.setItem("lastPage", page);
@@ -70,6 +88,7 @@ function goPage(page, dateKey) {
 
   if (page === "calendar") renderCalendar();
   if (page === "view") renderView();
+  if (page === "edit") renderEdit();
 }
 
 function shiftMonth(d) {
@@ -154,10 +173,9 @@ function escHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-// Check by explicit type field first, then fall back to file extension
-function isVideo(src, type) {
-  if (type && type.startsWith("video")) return true;
-  return /\.(mp4|mov|webm|ogg|m4v|avi|mkv)$/i.test(src);
+// Only PNG, JPG, and MP4 are used
+function isVideo(src) {
+  return /\.mp4$/i.test(src);
 }
 
 // ── Media grid builder ────────────────────────────────────────────────────────
@@ -166,37 +184,16 @@ function buildMediaGrid(evidenceArr) {
   let html = `<div class="media-collage">`;
 
   evidenceArr.forEach((ph) => {
-    if (isVideo(ph.src, ph.type)) {
-      const isMov = /\.mov$/i.test(ph.src);
-
-      if (isMov) {
-        // MOV files are not natively supported in Chrome/Edge — show fallback UI
-        html += `<div class="collage-item collage-video-fallback">
-          <div class="video-fallback-box">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="5 3 19 12 5 21 5 3"/>
-            </svg>
-            <span class="video-fallback-label">${escHtml(ph.name)}</span>
-            <span class="video-fallback-note">.MOV — not playable in browser</span>
-            <a class="video-fallback-btn" href="${ph.src}" download="${escHtml(ph.name)}">⬇ Download to watch</a>
-            <a class="video-fallback-btn video-fallback-open" href="${ph.src}" target="_blank">↗ Open in new tab</a>
-          </div>
-        </div>`;
-      } else {
-        // MP4 / WebM / other browser-supported formats
-        const mime = ph.type || "video/mp4";
-        html += `<div class="collage-item">
-          <video controls preload="metadata" playsinline>
-            <source src="${ph.src}" type="${mime}">
-            <source src="${ph.src}" type="video/mp4">
-            <source src="${ph.src}" type="video/quicktime">
-          </video>
-          <div class="collage-video-badge">▶ VIDEO</div>
-          <div class="collage-name">${escHtml(ph.name)}</div>
-        </div>`;
-      }
+    if (isVideo(ph.src)) {
+      html += `<div class="collage-item">
+        <video controls preload="metadata" playsinline>
+          <source src="${ph.src}" type="video/mp4">
+        </video>
+        <div class="collage-video-badge">▶ VIDEO</div>
+        <div class="collage-name">${escHtml(ph.name)}</div>
+      </div>`;
     } else {
-      // Image
+      // PNG / JPG images
       html += `<div class="collage-item" onclick="openLightbox('${ph.src}','${escHtml(ph.name)}')">
         <img src="${ph.src}" alt="${escHtml(ph.name)}" loading="lazy" />
         <div class="collage-name">${escHtml(ph.name)}</div>
@@ -278,7 +275,6 @@ function renderView() {
 
         return `
         <div class="card act-block ${done ? "act-done" : "act-pending"}">
-          <!-- Activity header -->
           <div class="act-block-header">
             <div class="act-block-num">${actNum}</div>
             <div class="act-block-meta">
@@ -296,58 +292,31 @@ function renderView() {
 
           ${
             hasChal
-              ? `
-          <div class="act-challenge">
-            <div class="act-challenge-label">
-              <strong>Challenges</strong>
-            </div>
+              ? `<div class="act-challenge">
+            <div class="act-challenge-label"><strong>Challenges</strong></div>
             <span>${escHtml(act.challenges)}</span>
           </div>`
               : ""
           }
 
-          ${
-            hasEvidence
-              ? `
           <div class="act-evidence-section">
             <div class="act-evidence-label">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
               Evidence
             </div>
-            ${buildMediaGrid(act.evidence)}
-          </div>`
-              : `
-          <div class="act-evidence-section">
-            <div class="act-evidence-label">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-              Evidence
-            </div>
-            <div class="photo-empty"><span class="muted">No media for this activity.</span></div>
-          </div>`
-          }
+            ${
+              hasEvidence
+                ? buildMediaGrid(act.evidence)
+                : `<div class="photo-empty"><span class="muted">No media for this activity.</span></div>`
+            }
+          </div>
         </div>`;
       })
       .join("");
   }
 }
-function goPage(page, dateKey) {
-  document
-    .querySelectorAll(".page")
-    .forEach((el) => el.classList.add("hidden"));
-  document
-    .querySelectorAll(".nav-tab")
-    .forEach((el) => el.classList.remove("active"));
-  currentPage = page;
-  if (dateKey) currentDate = dateKey;
-  document.getElementById(`page-${page}`).classList.remove("hidden");
-  document
-    .getElementById(page === "project" ? "nav-project" : "nav-calendar")
-    .classList.add("active");
-  if (page === "calendar") renderCalendar();
-  if (page === "view") renderView();
-  if (page === "edit") renderEdit();
-}
 
+// ── Lightbox ──────────────────────────────────────────────────────────────────
 function openLightbox(src, alt) {
   document.getElementById("lightbox-img").src = src;
   document.getElementById("lightbox-img").alt = alt;
