@@ -15,7 +15,18 @@
     <div id="app">
       <nav>
         <div class="nav-logo" onclick="goPage('calendar')">Error 404</div>
-        <div class="nav-right"></div>
+        <div class="nav-tabs">
+          <button
+            class="nav-tab active"
+            id="nav-calendar"
+            onclick="goPage('calendar')"
+          >
+            Progress
+          </button>
+          <button class="nav-tab" id="nav-project" onclick="goPage('project')">
+            Project
+          </button>
+        </div>
       </nav>
 
       <!-- ═══════════════════════════ Calendar Page ═══════════════════════════ -->
@@ -161,7 +172,7 @@
               </div>
               <div class="chips" style="margin-top: 10px">
                 <span class="chip green">In Progress</span>
-                <span class="chip">Started: 3 May 2026</span>
+                <span class="chip">Started: 18 April 2026</span>
               </div>
               <button
                 class="btn-ghost sidebar-proj-btn"
@@ -215,8 +226,8 @@
             </p>
             <div class="chips">
               <span class="chip green">In Progress</span>
-              <span class="chip">Started: 3 May 2026</span>
-              <span class="chip">Target: 6 June 2026</span>
+              <span class="chip">Started: 18 April 2026</span>
+              <span class="chip">Target: 15 June 2026</span>
             </div>
           </div>
 
@@ -237,11 +248,11 @@
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>ESP8266</span>
+                  <span>ESP32</span>
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>ESP32</span>
+                  <span>Breadboard</span>
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
@@ -253,7 +264,59 @@
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>LDR (Light Dependent Resistor)</span>
+                  <span>IR Sensor</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>LDR Sensor Module (Light Dependent Resistor)</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Relay Module</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Water Level Module</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Soil Moisture Sensor</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Rain Sensor</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>RFID Module</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>LED</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>LCD</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Servo</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Mini Water Pump</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Jumper Wire</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Resister</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Rechargeable Battery</span>
                 </div>
               </div>
             </div>
@@ -262,7 +325,7 @@
               <div class="dot-list">
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Arduino IDE 2.x</span>
+                  <span>Arduino IDE</span>
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
@@ -270,17 +333,37 @@
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Wokwi</span>
+                  <span>Visual Studio Code</span>
                 </div>
                 <div class="dot-row">
                   <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Telegram Bot API</span>
+                  <span>Telegram Bot</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Figma</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Canva</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Telegram</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Discord</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Draw.io</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card list-card">
+          <div class="card list-card objectives">
             <div class="label-sm">Project Objectives</div>
             <div class="obj-grid">
               <div class="obj-item">
@@ -305,6 +388,11 @@
                 >
               </div>
             </div>
+          </div>
+
+          <div class="card list-card">
+            <div class="label-sm">System Overview</div>
+            <div class="obj-grid"></div>
           </div>
         </div>
       </div>

@@ -330,8 +330,24 @@ function renderView() {
       .join("");
   }
 }
+function goPage(page, dateKey) {
+  document
+    .querySelectorAll(".page")
+    .forEach((el) => el.classList.add("hidden"));
+  document
+    .querySelectorAll(".nav-tab")
+    .forEach((el) => el.classList.remove("active"));
+  currentPage = page;
+  if (dateKey) currentDate = dateKey;
+  document.getElementById(`page-${page}`).classList.remove("hidden");
+  document
+    .getElementById(page === "project" ? "nav-project" : "nav-calendar")
+    .classList.add("active");
+  if (page === "calendar") renderCalendar();
+  if (page === "view") renderView();
+  if (page === "edit") renderEdit();
+}
 
-// ── Lightbox ──────────────────────────────────────────────────────────────────
 function openLightbox(src, alt) {
   document.getElementById("lightbox-img").src = src;
   document.getElementById("lightbox-img").alt = alt;

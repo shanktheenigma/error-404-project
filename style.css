@@ -204,7 +204,7 @@ nav {
   max-width: 800px;
 }
 .page-inner.mid {
-  max-width: 860px;
+  max-width: 900px;
 }
 
 /* ── Calendar ── */
@@ -621,6 +621,10 @@ nav {
 }
 .list-card {
   padding: 18px 22px;
+}
+
+.objectives {
+  margin-bottom: 14px;
 }
 
 .dot-list {
