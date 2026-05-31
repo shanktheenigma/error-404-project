@@ -44,15 +44,15 @@
         "evidence": [
           {
             "name": "Route of Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store Route.JPG"
+            "src": "IMG/Trip to IoT Store Route.jpg"
           },
           {
             "name": "Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store 1.JPG"
+            "src": "IMG/Trip to IoT Store 1.jpg"
           },
           {
             "name": "Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store 2.JPG"
+            "src": "IMG/Trip to IoT Store 2.jpg"
           }
         ]
       }
@@ -67,7 +67,7 @@
         "evidence": [
           {
             "name": "Recipt",
-            "src": "IMG/Recipt 1.JPG"
+            "src": "IMG/Recipt 1.jpg"
           },
           {
             "name": "Trip to IoT Store",
@@ -113,7 +113,7 @@
           },
           {
             "name": "Route to Decoration Store",
-            "src": "IMG/Trip to Decoration Store 1.JPG"
+            "src": "IMG/Trip to Decoration Store 1.jpg"
           }
         ]
       }
@@ -194,7 +194,7 @@
           },
           {
             "name": "First light successed",
-            "src": "IMG/Light 1.JPG"
+            "src": "IMG/Light 1.jpg"
           },
           {
             "name": "Cutted layer",
@@ -287,10 +287,12 @@
           {
             "name": "Start discussing and writing the report",
             "src": "IMG/Start writing report 1.png"
-          },{
+          },
+          {
             "name": "Start discussing and writing the report",
             "src": "IMG/Start writing report 2.png"
-          },{
+          },
+          {
             "name": "Start discussing and writing the report",
             "src": "IMG/Start writing report 3.png"
           }
@@ -304,76 +306,95 @@
         "name": "Met at San Wint's House and continued the progress",
         "completed": true,
         "challenges": "",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "LDR Sensor Testing and Recored by Min Thant",
             "src": "IMG/LDR Sensor Testing and Recored by Min Thant.MP4"
-          },{
+          },
+          {
             "name": "Having lunch at San Wint's home",
             "src": "IMG/Having Lunch 3.jpg"
-          },{
+          },
+          {
             "name": "Having lunch at San Wint's home",
             "src": "IMG/Having Lunch 4.jpg"
-          }]
+          }
+        ]
       },
       {
         "name": "Testing LDR Sensor Module",
         "completed": true,
         "challenges": "Getting injured by soldering",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Soldering LDR sensor",
             "src": "IMG/Soldering 1.jpg"
-          },{
+          },
+          {
             "name": "Soldering LDR sensor",
             "src": "IMG/Soldering 2.jpg"
-          },{
+          },
+          {
             "name": "Soldering LDR sensor",
             "src": "IMG/Soldering 3.jpg"
-          },{
+          },
+          {
             "name": "Soldering LDR sensor",
             "src": "IMG/Testing LDR Sensor Module.MOV"
-          },{
+          },
+          {
             "name": "Getting injured by Soldering",
             "src": "IMG/Soldering Injure.jpg"
-          }]
+          }
+        ]
       },
       {
         "name": "Testing Solar Tree",
         "completed": true,
         "challenges": "",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Reupload",
             "src": "IMG/.jpg"
-          }]
+          }
+        ]
       },
       {
         "name": "Soldering notes by Cho Zin",
         "completed": true,
         "challenges": "",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Soldering notes by Cho Zin",
             "src": "IMG/Chozin's note.PNG"
-          }]
+          }
+        ]
       },
       {
         "name": "Start drawing the system design",
         "completed": true,
         "challenges": "",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Start drawing System Design by Min Thant",
             "src": "IMG/System Design 1.PNG"
-          }]
+          }
+        ]
       },
       {
         "name": "Soldering and testing Piezo",
         "completed": true,
         "challenges": "Being injured from soldering",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Testing Pizeo",
             "src": "IMG/Testing Piezo.MOV"
-          },{
+          },
+          {
             "name": "Soldering Pizeo",
-            "src": "IMG/Piezo Soldering.JPG"
-          }]
+            "src": "IMG/Piezo Soldering.jpg"
+          }
+        ]
       }
     ]
   },
@@ -383,10 +404,12 @@
         "name": "Requested a room at GUSTO and continue the testing",
         "completed": true,
         "challenges": "",
-        "evidence": [{
+        "evidence": [
+          {
             "name": "Requesting a room at GUSTO",
             "src": "IMG/Requesting room at GUSTO.PNG"
-          }]
+          }
+        ]
       },
       {
         "name": "LDR and IR sensors completed",

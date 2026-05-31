@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Error 404 — IoT Project Tracker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,9 +23,14 @@
         <div class="page-inner">
           <div class="cal-header">
             <div>
-              <span class="chip accent">IoT-Based Smart City with Multi-Source Energy Harvesting Systems</span>
+              <span class="chip accent"
+                >IoT-Based Smart City with Multi-Source Energy Harvesting
+                Systems</span
+              >
               <h1>Track every<br />task done.</h1>
-              <p>Log daily activities, challenges, and photo evidence for 404</p>
+              <p>
+                Log daily activities, challenges, and photo evidence for 404
+              </p>
             </div>
             <div class="stat-cards">
               <div class="card stat-card">
@@ -48,26 +56,56 @@
             </div>
             <div class="cal-legend">
               <div class="legend-item">
-                <div class="legend-swatch" style="background: var(--text)"></div>
+                <div
+                  class="legend-swatch"
+                  style="background: var(--text)"
+                ></div>
                 <span>Entry logged</span>
               </div>
               <div class="legend-item">
-                <div class="legend-swatch" style="background: var(--accent-soft); border: 1.5px solid var(--accent);"></div>
+                <div
+                  class="legend-swatch"
+                  style="
+                    background: var(--accent-soft);
+                    border: 1.5px solid var(--accent);
+                  "
+                ></div>
                 <span>Today</span>
               </div>
               <div class="legend-item">
-                <div class="legend-swatch" style="background: transparent; border: 1px solid var(--border-mid);"></div>
+                <div
+                  class="legend-swatch"
+                  style="
+                    background: transparent;
+                    border: 1px solid var(--border-mid);
+                  "
+                ></div>
                 <span>No entry</span>
               </div>
             </div>
           </div>
 
-          <div class="card hoverable project-banner" onclick="goPage('project')">
+          <div
+            class="card hoverable project-banner"
+            onclick="goPage('project')"
+          >
             <div>
-              <div class="name">IoT-Based Smart City with Multi-Source Energy Harvesting Systems</div>
-              <div class="desc">View full project summary, objectives &amp; team info</div>
+              <div class="name">
+                IoT-Based Smart City with Multi-Source Energy Harvesting Systems
+              </div>
+              <div class="desc">
+                View full project summary, objectives &amp; team info
+              </div>
             </div>
-            <button class="btn-primary" onclick="event.stopPropagation(); goPage('project');">View Project →</button>
+            <button
+              class="btn-primary"
+              onclick="
+                event.stopPropagation();
+                goPage('project');
+              "
+            >
+              View Project →
+            </button>
           </div>
         </div>
       </div>
@@ -75,14 +113,33 @@
       <!-- ═══════════════════════════ View Page ═══════════════════════════ -->
       <div id="page-view" class="page hidden">
         <div class="page-inner view-layout">
-
           <!-- Left: main content -->
           <div class="view-main">
-            <button class="back-btn" onclick="goPage('calendar')">← Back to Calendar</button>
+            <button class="back-btn" onclick="goPage('calendar')">
+              ← Back to Calendar
+            </button>
 
             <div class="view-header">
               <span class="chip accent">Daily Log</span>
-              <h1 id="view-date-label"></h1>
+              <div class="view-date-nav">
+                <button
+                  class="day-nav-btn"
+                  id="btn-prev-day"
+                  onclick="shiftDay(-1)"
+                  title="Previous day"
+                >
+                  ‹
+                </button>
+                <h1 id="view-date-label"></h1>
+                <button
+                  class="day-nav-btn"
+                  id="btn-next-day"
+                  onclick="shiftDay(1)"
+                  title="Next day"
+                >
+                  ›
+                </button>
+              </div>
             </div>
 
             <!-- Empty state -->
@@ -99,38 +156,63 @@
           <aside class="view-sidebar">
             <div class="sidebar-section card sidebar-card">
               <div class="label-sm">Project</div>
-              <div class="sidebar-project-name">IoT-Based Smart City with Multi-Source Energy Harvesting Systems</div>
-              <div class="chips" style="margin-top:10px;">
+              <div class="sidebar-project-name">
+                IoT-Based Smart City with Multi-Source Energy Harvesting Systems
+              </div>
+              <div class="chips" style="margin-top: 10px">
                 <span class="chip green">In Progress</span>
                 <span class="chip">Started: 3 May 2026</span>
               </div>
-              <button class="btn-ghost sidebar-proj-btn" onclick="goPage('project')">View Summary →</button>
+              <button
+                class="btn-ghost sidebar-proj-btn"
+                onclick="goPage('project')"
+              >
+                View Summary →
+              </button>
             </div>
 
-            <div class="sidebar-section card sidebar-card" id="sidebar-progress">
+            <div
+              class="sidebar-section card sidebar-card"
+              id="sidebar-progress"
+            >
               <div class="label-sm">Progress</div>
               <div class="sidebar-progress-wrap">
                 <div class="sidebar-progress-track">
-                  <div class="sidebar-progress-fill" id="sidebar-progress-bar"></div>
+                  <div
+                    class="sidebar-progress-fill"
+                    id="sidebar-progress-bar"
+                  ></div>
                 </div>
-                <span class="sidebar-progress-label" id="sidebar-progress-label">0 / 0 completed</span>
+                <span class="sidebar-progress-label" id="sidebar-progress-label"
+                  >0 / 0 completed</span
+                >
               </div>
               <div id="sidebar-act-summary" class="sidebar-act-summary"></div>
             </div>
           </aside>
-
         </div>
       </div>
 
       <!-- ═══════════════════════════ Project Page ═══════════════════════════ -->
       <div id="page-project" class="page hidden">
         <div class="page-inner mid">
-          <button class="back-btn" onclick="goPage('calendar')">← Back to Calendar</button>
+          <button class="back-btn" onclick="goPage('calendar')">
+            ← Back to Calendar
+          </button>
 
           <div class="card project-hero">
             <span class="chip accent">IoT Project Summary</span>
-            <h1>IoT-Based Smart City with Multi-Source Energy Harvesting Systems</h1>
-            <p>The IoT-Based Smart City with Multi-Source Energy Harvesting Systems project integrates renewable energy, IoT, and automation to create sustainable smart city solutions. It includes solar street lights, piezo energy harvesting, wireless car charging, automatic rain detection, solar tree lighting, and automatic garden watering systems.</p>
+            <h1>
+              IoT-Based Smart City with Multi-Source Energy Harvesting Systems
+            </h1>
+            <p>
+              The IoT-Based Smart City with Multi-Source Energy Harvesting
+              Systems project integrates renewable energy, IoT, and automation
+              to create sustainable smart city solutions. It includes solar
+              street lights, piezo energy harvesting, wireless car charging,
+              automatic rain detection, solar tree lighting, and automatic
+              garden watering systems.
+            </p>
             <div class="chips">
               <span class="chip green">In Progress</span>
               <span class="chip">Started: 3 May 2026</span>
@@ -140,28 +222,60 @@
 
           <div class="card team-card">
             <div class="label-sm">Team</div>
-            <div class="team-val">Error 404 — Cho Zin Thin, Min Thant Ko Ko, San Wint Hte, Wati Phyo</div>
+            <div class="team-val">
+              Error 404 — Cho Zin Thin, Min Thant Ko Ko, San Wint Hte, Wati Phyo
+            </div>
           </div>
 
           <div class="two-col">
             <div class="card list-card">
               <div class="label-sm">Hardware</div>
               <div class="dot-list">
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Arduino Uno</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>ESP8266</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>ESP32</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Mini Solar Panel (6V)</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Piezoelectric Disc (27mm PZT)</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>LDR (Light Dependent Resistor)</span></div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Arduino Uno</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>ESP8266</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>ESP32</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Mini Solar Panel (6V)</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Piezoelectric Disc (27mm PZT)</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>LDR (Light Dependent Resistor)</span>
+                </div>
               </div>
             </div>
             <div class="card list-card">
               <div class="label-sm">Software</div>
               <div class="dot-list">
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Arduino IDE 2.x</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Circuit Designer</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Wokwi</span></div>
-                <div class="dot-row"><div class="dot-mark" style="background:var(--text)"></div><span>Telegram Bot API</span></div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Arduino IDE 2.x</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Circuit Designer</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Wokwi</span>
+                </div>
+                <div class="dot-row">
+                  <div class="dot-mark" style="background: var(--text)"></div>
+                  <span>Telegram Bot API</span>
+                </div>
               </div>
             </div>
           </div>
@@ -171,15 +285,24 @@
             <div class="obj-grid">
               <div class="obj-item">
                 <div class="obj-num">1</div>
-                <span>To integrate solar, piezoelectric, and wireless energy sources into a unified harvesting framework.</span>
+                <span
+                  >To integrate solar, piezoelectric, and wireless energy
+                  sources into a unified harvesting framework.</span
+                >
               </div>
               <div class="obj-item">
                 <div class="obj-num">2</div>
-                <span>To automate urban systems using IoT sensors for lighting and rain detection.</span>
+                <span
+                  >To automate urban systems using IoT sensors for lighting and
+                  rain detection.</span
+                >
               </div>
               <div class="obj-item">
                 <div class="obj-num">3</div>
-                <span>To evaluate system performance to validate energy savings and reliability as a replicable city model.</span>
+                <span
+                  >To evaluate system performance to validate energy savings and
+                  reliability as a replicable city model.</span
+                >
               </div>
             </div>
           </div>
@@ -187,9 +310,55 @@
       </div>
 
       <!-- Lightbox -->
-      <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.88);align-items:center;justify-content:center;cursor:zoom-out;">
-        <button id="lightbox-close" onclick="closeLightbox()" style="position:absolute;top:18px;right:22px;background:rgba(255,255,255,0.15);border:none;border-radius:50%;width:36px;height:36px;color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;">×</button>
-        <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.5);object-fit:contain;" />
+      <div
+        id="lightbox"
+        onclick="closeLightbox()"
+        style="
+          display: none;
+          position: fixed;
+          inset: 0;
+          z-index: 999;
+          background: rgba(0, 0, 0, 0.88);
+          align-items: center;
+          justify-content: center;
+          cursor: zoom-out;
+        "
+      >
+        <button
+          id="lightbox-close"
+          onclick="closeLightbox()"
+          style="
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          ×
+        </button>
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          onclick="event.stopPropagation()"
+          style="
+            max-width: 92vw;
+            max-height: 90vh;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
+          "
+        />
       </div>
     </div>
 

@@ -1086,6 +1086,45 @@ nav {
   background: #222;
 }
 
+/* ── Day nav buttons (prev / next day on view page) ─────────────────────────── */
+/* Paste this block into your style.css */
+
+.view-date-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.day-nav-btn {
+  background: var(--card);
+  border: 1.5px solid var(--border-mid);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    opacity 0.15s;
+}
+
+.day-nav-btn:hover:not(:disabled) {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.day-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 /* ── Responsive: collapse sidebar on small screens ─────────────────────────── */
 @media (max-width: 780px) {
   .view-layout {

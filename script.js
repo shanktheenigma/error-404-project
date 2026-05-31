@@ -85,6 +85,25 @@ function shiftMonth(d) {
   renderCalendar();
 }
 
+// ── Day navigation ────────────────────────────────────────────────────────────
+function shiftDay(delta) {
+  const [y, m, d] = currentDate.split("-").map(Number);
+  const date = new Date(y, m - 1, d);
+  date.setDate(date.getDate() + delta);
+
+  // Don't go past today
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (date > today) return;
+
+  // Keep calYear/calMonth in sync so the calendar stays on the right month
+  calYear = date.getFullYear();
+  calMonth = date.getMonth() + 1;
+
+  currentDate = makeKey(calYear, calMonth, date.getDate());
+  goPage("view");
+}
+
 // ── Render: Calendar ──────────────────────────────────────────────────────────
 function renderCalendar() {
   const today = new Date();
@@ -195,6 +214,14 @@ function renderView() {
   const [y, m, d] = dk.split("-");
   const label = parseInt(d) + " " + MONTHS[parseInt(m) - 1] + " " + y;
   document.getElementById("view-date-label").textContent = label;
+
+  // Disable next button if we're already on today
+  const todayKey = makeKey(
+    todayDate.getFullYear(),
+    todayDate.getMonth() + 1,
+    todayDate.getDate(),
+  );
+  document.getElementById("btn-next-day").disabled = dk >= todayKey;
 
   const entry = days[dk];
   if (!entry) {
@@ -317,4 +344,8 @@ function closeLightbox() {
 }
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
+  // Keyboard shortcuts: left/right arrow keys to navigate days on view page
+  if (document.getElementById("page-view").classList.contains("hidden")) return;
+  if (e.key === "ArrowLeft") shiftDay(-1);
+  if (e.key === "ArrowRight") shiftDay(1);
 });
