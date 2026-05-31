@@ -6,7 +6,10 @@
         "completed": true,
         "challenges": "",
         "evidence": [
-          { "name": "Telegram Group", "src": "IMG/Telegram_Group.png" }
+          {
+            "name": "Telegram Group",
+            "src": "IMG/18 April Telegram_Group.png"
+          }
         ]
       },
       {
@@ -14,7 +17,10 @@
         "completed": true,
         "challenges": "",
         "evidence": [
-          { "name": "Discord Group", "src": "IMG/Discord_Group.png" }
+          {
+            "name": "Discord Group",
+            "src": "IMG/18 April Discord_Group.png"
+          }
         ]
       }
     ]
@@ -26,10 +32,17 @@
         "completed": true,
         "challenges": "",
         "evidence": [
-          { "name": "Discussion on Discord", "src": "IMG/Discussion 1.png" },
+          {
+            "name": "Discussion about product on Discord",
+            "src": "IMG/19 April Discussion 1.png"
+          },
+          {
+            "name": "Discussion about product on Discord",
+            "src": "IMG/19 April Discussion 2.png"
+          },
           {
             "name": "Sample product list",
-            "src": "IMG/Product List Sample.png"
+            "src": "IMG/19 April Product List Sample.png"
           }
         ]
       }
@@ -44,15 +57,15 @@
         "evidence": [
           {
             "name": "Route of Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store Route.jpg"
+            "src": "IMG/6 May Trip to IoT Store Route.jpg"
           },
           {
             "name": "Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store 1.jpg"
+            "src": "IMG/6 May Trip to IoT Store 1.jpg"
           },
           {
             "name": "Trip to IoT Store",
-            "src": "IMG/Trip to IoT Store 2.jpg"
+            "src": "IMG/6 May Trip to IoT Store 2.jpg"
           }
         ]
       }
@@ -66,12 +79,12 @@
         "challenges": "Item ran out and visited another store",
         "evidence": [
           {
-            "name": "Recipt",
-            "src": "IMG/Recipt 1.jpg"
+            "name": "Receipt",
+            "src": "IMG/9 May Recipt 1.jpg"
           },
           {
-            "name": "Trip to IoT Store",
-            "src": "IMG/San Wint Hte testing LED.mp4"
+            "name": "San Wint Hte testing LED",
+            "src": "IMG/9 May San Wint Hte testing LED.mp4"
           }
         ]
       },
@@ -81,24 +94,32 @@
         "challenges": "",
         "evidence": [
           {
-            "name": "Chozin went to the store",
-            "src": "IMG/Chozin went to the store.mp4"
+            "name": "Chozin went to the store and bought miscellaneous things",
+            "src": "IMG/9 May Chozin went to the store.mp4"
           },
           {
-            "name": "Chozins' Discussion 2",
-            "src": "IMG/Chozins' Discussion 2.png"
+            "name": "Decoration discussion",
+            "src": "IMG/9 May Chozins' Discussion 2.png"
           },
           {
             "name": "Chozin choosing for foundation",
-            "src": "IMG/Chozin choosing for foundation.mp4"
+            "src": "IMG/9 May Chozin choosing for foundation.mp4"
           },
           {
-            "name": "Chozins' Note",
-            "src": "IMG/Chozins' Note.jpg"
+            "name": "Chozin's Note",
+            "src": "IMG/9 May Chozins' Note.jpg"
           },
           {
-            "name": "Chozin's Discussion",
-            "src": "IMG/Chozin's Discussion.png"
+            "name": "Decoration discussion",
+            "src": "IMG/9 May Chozin's Discussion.png"
+          },
+          {
+            "name": "Chozin's Trip",
+            "src": "IMG/9 May Chozins' Trip.jpg"
+          },
+          {
+            "name": "Looking for stones",
+            "src": "IMG/9 May Looking for stones.jpg"
           }
         ]
       },
@@ -108,12 +129,8 @@
         "challenges": "",
         "evidence": [
           {
-            "name": "Discussion for decorations store",
-            "src": "IMG/Discussion about Model Mart.png"
-          },
-          {
-            "name": "Route to Decoration Store",
-            "src": "IMG/Trip to Decoration Store 1.jpg"
+            "name": "Discussion about Model Mart",
+            "src": "IMG/9 May Discussion about Model Mart.png"
           }
         ]
       }
@@ -128,23 +145,23 @@
         "evidence": [
           {
             "name": "Trip to Decoration Store",
-            "src": "IMG/Trip to Decoration Store 1.jpg"
+            "src": "IMG/10 May Trip to Decoration Store 1.jpg"
           },
           {
             "name": "Trip to Decoration Store",
-            "src": "IMG/Trip to Decoration Store 2.jpg"
+            "src": "IMG/10 May Trip to Decoration Store 2.jpg"
           },
           {
             "name": "Trip to Decoration Store",
-            "src": "IMG/Trip to Decoration Store 3.jpg"
+            "src": "IMG/10 May Trip to Decoration Store 3.jpg"
           },
           {
-            "name": "Trip to Decoration Store Rout",
-            "src": "IMG/Trip to Decoration Store Route 2.jpg"
+            "name": "Route of trip to Decoration Store ",
+            "src": "IMG/10 May Trip to Decoration Store Route 2.jpg"
           },
           {
             "name": "Taking off at the wrong bus stop",
-            "src": "IMG/Wrong bus stop.mp4"
+            "src": "IMG/10 May Wrong bus stop.mp4"
           }
         ]
       },
@@ -155,31 +172,31 @@
         "evidence": [
           {
             "name": "Had Lunch",
-            "src": "IMG/Having Lunch 1.jpg"
+            "src": "IMG/10 May Having lunch 1.jpg"
           },
           {
             "name": "Had Lunch",
-            "src": "IMG/Having Lunch 2.jpg"
+            "src": "IMG/10 May Having lunch 2.jpg"
           },
           {
             "name": "Illustration of project decoration design",
-            "src": "IMG/Illustration 1.jpg"
+            "src": "IMG/10 May Illustration 1.jpg"
           },
           {
             "name": "Illustration of project decoration design",
-            "src": "IMG/Illustration 2.jpg"
+            "src": "IMG/10 May Illustration 2.jpg"
           },
           {
             "name": "Illustration of project decoration design",
-            "src": "IMG/Illustration 3.jpg"
+            "src": "IMG/10 May Illustration 3.jpg"
           },
           {
             "name": "Illustration of project decoration design",
-            "src": "IMG/Illustration 4.jpg"
+            "src": "IMG/10 May Illustration 4.jpg"
           },
           {
-            "name": "Min Thant participated the implementation via Discord",
-            "src": "IMG/Discussion 5.png"
+            "name": "Min Thant participated via Discord",
+            "src": "IMG/10 May Discussion 5.png"
           }
         ]
       },
@@ -190,23 +207,27 @@
         "evidence": [
           {
             "name": "Cutting layer",
-            "src": "IMG/Cutting layer.mp4"
+            "src": "IMG/10 May Cutting layer.mp4"
           },
           {
-            "name": "First light successed",
-            "src": "IMG/Light 1.jpg"
+            "name": "First light succeeded",
+            "src": "IMG/10 May Light 1.jpg"
           },
           {
-            "name": "Cutted layer",
-            "src": "IMG/Foundation 1.jpg"
-          },
-          {
-            "name": "Budget ran out",
-            "src": "IMG/Budget Ran out.png"
+            "name": "Foundation cut",
+            "src": "IMG/10 May Foundation 1.jpg"
           },
           {
             "name": "Budget ran out",
-            "src": "IMG/Budget Ran out.mp4"
+            "src": "IMG/10 May Budget Ran out.png"
+          },
+          {
+            "name": "Budget ran out video",
+            "src": "IMG/10 May Budget ran out.mp4"
+          },
+          {
+            "name": "Testing LED",
+            "src": "IMG/10 May Testing LED.mp4"
           }
         ]
       },
@@ -217,19 +238,84 @@
         "evidence": [
           {
             "name": "Testing LDR Sensor Module",
-            "src": "IMG/LDR Testing 1.jpg"
+            "src": "IMG/10 May LDR Testing 1.jpg"
           },
           {
             "name": "Testing LDR Sensor Module",
-            "src": "IMG/LDR Testing 2.jpg"
+            "src": "IMG/10 May LDR Testing 2.jpg"
           },
           {
             "name": "Testing LDR Sensor Module",
-            "src": "IMG/LDR Testing 3.jpg"
+            "src": "IMG/10 May LDR Testing 3.jpg"
           },
           {
-            "name": "Testing LDR Sensor Module",
-            "src": "IMG/San Wint Hte Tested LDR Sensor Module.mp4"
+            "name": "San Wint Hte Tested LDR Sensor Module",
+            "src": "IMG/10 May San Wint Hte Tested LDR Sensor Module.mp4"
+          }
+        ]
+      },
+      {
+        "name": "Checking IoT Components",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "IoT components",
+            "src": "IMG/10 May IoT components 1.jpg"
+          },
+          {
+            "name": "IoT components",
+            "src": "IMG/10 May IoT components 2.jpg"
+          },
+          {
+            "name": "IoT components",
+            "src": "IMG/10 May IoT components 3.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Testing Relay Module",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Testing relay module",
+            "src": "IMG/10 May Testing Relay Module.mp4"
+          },
+          {
+            "name": "Testing relay module 2",
+            "src": "IMG/10 May Testing relay module 2.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-11": {
+    "activities": [
+      {
+        "name": "Continued testing relay module and LED components",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Testing Relay Module",
+            "src": "IMG/11 May Testing Relay Module 2.mp4"
+          },
+          {
+            "name": "Testing Relay Module",
+            "src": "IMG/11 May Testing Relay Module 3.mp4"
+          },
+          {
+            "name": "LED Completed",
+            "src": "IMG/11 May LED Completed 1.jpg"
+          },
+          {
+            "name": "IoT components",
+            "src": "IMG/11 May IoT components 4.jpg"
+          },
+          {
+            "name": "Trip to Decoration Store Route",
+            "src": "IMG/11 May Trip to Decoration Store Route.jpg"
           }
         ]
       }
@@ -239,39 +325,47 @@
     "activities": [
       {
         "name": "Discussed for decorations",
-        "completed": true,
+        "completed": false,
         "challenges": "",
         "evidence": [
           {
             "name": "Discussion about Grass",
-            "src": "IMG/Grass Discussion 1.png"
+            "src": "IMG/12 May Grass Discussion 1.png"
           },
           {
             "name": "Discussion about Grass",
-            "src": "IMG/Grass Discussion 2.png"
+            "src": "IMG/12 May Grass Discussion 2.png"
           },
           {
             "name": "Discussion about Grass",
-            "src": "IMG/Grass Discussion 3.png"
+            "src": "IMG/12 May Grass Discussion 3.png"
+          },
+          {
+            "name": "Discussion about Grass",
+            "src": "IMG/12 May Chozin's Discussion 3.png"
           }
         ]
       },
       {
         "name": "San Wint tested Sensors",
-        "completed": false,
+        "completed": true,
         "challenges": "Network Error to use Arduino IDE",
         "evidence": [
           {
-            "name": "Testing IR sensor",
-            "src": "IMG/IR completed.png"
+            "name": "IR completed",
+            "src": "IMG/12 May IR completed.png"
           },
           {
-            "name": "Testing Relay Module",
-            "src": "IMG/Relay testing.png"
+            "name": "Relay testing",
+            "src": "IMG/12 May Relay testing.png"
           },
           {
-            "name": "Network Error",
-            "src": "IMG/Network Problem for Arduino IDE 1.jpg"
+            "name": "Network Problem for Arduino IDE",
+            "src": "IMG/12 May Network Problem for Arduino IDE 1.jpg"
+          },
+          {
+            "name": "San Wint Hte Tested IR Sensor",
+            "src": "IMG/12 May San Wint Hte Tested IR Sensor.mp4"
           }
         ]
       }
@@ -286,15 +380,15 @@
         "evidence": [
           {
             "name": "Start discussing and writing the report",
-            "src": "IMG/Start Writing report 1.png"
+            "src": "IMG/15 May Start Writing report 1.png"
           },
           {
             "name": "Start discussing and writing the report",
-            "src": "IMG/Start Writing report 2.png"
+            "src": "IMG/15 May Start Writing report 2.png"
           },
           {
             "name": "Start discussing and writing the report",
-            "src": "IMG/Start Writing report 3.png"
+            "src": "IMG/15 May Start Writing report 3.png"
           }
         ]
       }
@@ -308,54 +402,74 @@
         "challenges": "",
         "evidence": [
           {
-            "name": "LDR Sensor Testing and Recored by Min Thant",
-            "src": "IMG/LDR Sensor Testing and Recored by Min Thant.mp4"
+            "name": "Integrate LDR Sensor with Street Light",
+            "src": "IMG/17 May LDR Sensor Testing and Recored by Min Thant.mp4"
           },
           {
             "name": "Having lunch at San Wint's home",
-            "src": "IMG/Having lunch 3.jpg"
+            "src": "IMG/17 May Having lunch 3.jpg"
           },
           {
             "name": "Having lunch at San Wint's home",
-            "src": "IMG/Having lunch 4.jpg"
+            "src": "IMG/17 May Having lunch 4.jpg"
+          },
+          {
+            "name": "Min Thant participated via Discord",
+            "src": "IMG/17 May Discord Discussion.png"
+          },
+          {
+            "name": "Assists from Chozin's Dad",
+            "src": "IMG/17 May Helps from Chozin's Dad.MP4"
+          },
+          {
+            "name": "Assists from Chozin's Dad",
+            "src": "IMG/17 May Helps from Chozin's Dad 2.MP4"
           }
         ]
       },
       {
-        "name": "Testing LDR Sensor Module",
+        "name": "Soldering and testing LDR Sensor Module",
         "completed": true,
         "challenges": "Getting injured by soldering",
         "evidence": [
           {
             "name": "Soldering LDR sensor",
-            "src": "IMG/Soldering 1.jpg"
+            "src": "IMG/17 May Soldering 1.jpg"
           },
           {
             "name": "Soldering LDR sensor",
-            "src": "IMG/Soldering 2.jpg"
+            "src": "IMG/17 May Soldering 2.jpg"
           },
           {
             "name": "Soldering LDR sensor",
-            "src": "IMG/Soldering 3.jpg"
+            "src": "IMG/17 May Soldering 3.jpg"
           },
           {
-            "name": "Soldering LDR sensor",
-            "src": "IMG/Testing LDR Sensor Module.mp4"
+            "name": "Soldering LDR sensor video",
+            "src": "IMG/17 May Soldering 4.mp4"
+          },
+          {
+            "name": "Testing LDR Sensor Module",
+            "src": "IMG/17 May Testing LDR Sensor Module.mp4"
           },
           {
             "name": "Getting injured by Soldering",
-            "src": "IMG/Soldering Injure.jpg"
+            "src": "IMG/17 May Soldering Injure.jpg"
+          },
+          {
+            "name": "Injure solution",
+            "src": "IMG/17 May Injure solution.MP4"
           }
         ]
       },
       {
-        "name": "Testing Solar Tree",
-        "completed": true,
+        "name": "Testing L298N Motor Driver",
+        "completed": false,
         "challenges": "",
         "evidence": [
           {
-            "name": "Reupload",
-            "src": "IMG/.jpg"
+            "name": "Testing L298N",
+            "src": "IMG/17 May Testing L298N.mp4"
           }
         ]
       },
@@ -366,33 +480,22 @@
         "evidence": [
           {
             "name": "Soldering notes by Cho Zin",
-            "src": "IMG/Chozin's note.png"
-          }
-        ]
-      },
-      {
-        "name": "Start drawing the system design",
-        "completed": true,
-        "challenges": "",
-        "evidence": [
-          {
-            "name": "Start drawing System Design by Min Thant",
-            "src": "IMG/System design 1.png"
+            "src": "IMG/17 May Chozin's note.png"
           }
         ]
       },
       {
         "name": "Soldering and testing Piezo",
-        "completed": true,
+        "completed": false,
         "challenges": "Being injured from soldering",
         "evidence": [
           {
-            "name": "Testing Pizeo",
-            "src": "IMG/Testing Piezo.mp4"
+            "name": "Soldering Piezo",
+            "src": "IMG/17 May Testing Piezo.mp4"
           },
           {
-            "name": "Soldering Pizeo",
-            "src": "IMG/Piezo Soldering.jpg"
+            "name": "Soldering Piezo",
+            "src": "IMG/17 May Piezo Soldering.jpg"
           }
         ]
       }
@@ -407,21 +510,283 @@
         "evidence": [
           {
             "name": "Requesting a room at GUSTO",
-            "src": "IMG/Requesting room at GUSTO.png"
+            "src": "IMG/18 May Requesting room at GUSTO.png"
           }
         ]
       },
       {
-        "name": "LDR and IR sensors completed",
+        "name": "Rain Detection Sensor testing",
         "completed": true,
         "challenges": "",
-        "evidence": []
+        "evidence": [
+          {
+            "name": "Testing Rain Detection",
+            "src": "IMG/18 May Rain Detection.jpg"
+          },
+          {
+            "name": "Testing Rain Detection",
+            "src": "IMG/18 May Rain Detection Sensor 2.mp4"
+          },
+          {
+            "name": "Testing Rain Detection",
+            "src": "IMG/18 May Rain Detection Sensor 3.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-22": {
+    "activities": [
+      {
+        "name": "Drawing the system design",
+        "completed": false,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "System design 1",
+            "src": "IMG/22 May System design 1.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-23": {
+    "activities": [
+      {
+        "name": "Purchased IoT products and decorations",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Purchasing IoT product",
+            "src": "IMG/23 May Purchasing IoT product.jpg"
+          },
+          {
+            "name": "Purchasing Decoration",
+            "src": "IMG/23 May Purchasing Decoration.jpg"
+          },
+          {
+            "name": "Purchasing Decoration",
+            "src": "IMG/23 May Purchasing Decoration 2.jpg"
+          },
+          {
+            "name": "Purchasing Decoration",
+            "src": "IMG/23 May Purchasing Decoration 3.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-24": {
+    "activities": [
+      {
+        "name": "Met at San Wint's home and continued project progress",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Progress",
+            "src": "IMG/24 May Progress.jpg"
+          },
+          {
+            "name": "Progress",
+            "src": "IMG/24 May Progress 2.jpg"
+          },
+          {
+            "name": "Having lunch",
+            "src": "IMG/24 May Having lunch.jpg"
+          },
+          {
+            "name": "Had fun",
+            "src": "IMG/24 May Had fun.jpg"
+          },
+          {
+            "name": "Took a break",
+            "src": "IMG/24 May Had fun 2.jpg"
+          },
+          {
+            "name": "Min Thant participating via Discord",
+            "src": "IMG/24 May Min Thant paticipating via Discord.jpg"
+          }
+        ]
       },
       {
-        "name": "Auto Street Light System",
+        "name": "Completing Auto Street Light",
+        "completed": true,
+        "challenges": "Network Problem for Arduino IDE",
+        "evidence": [
+          {
+            "name": "Completing Auto Street Light",
+            "src": "IMG/24 May Completing Auto Street Light.mp4"
+          },
+          {
+            "name": "Auto street light completed",
+            "src": "IMG/24 May Auto street light completed 2.mp4"
+          },
+          {
+            "name": "Checking IR sensor",
+            "src": "IMG/24 May Testing IR sensor 1.jpg"
+          },
+          {
+            "name": "Network Problem for Arduino IDE",
+            "src": "IMG/24 May Network Problem for Arduino IDE 2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Soldering",
         "completed": true,
         "challenges": "",
-        "evidence": []
+        "evidence": [
+          {
+            "name": "Soldering by Chozin",
+            "src": "IMG/24 May Soldering.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-26": {
+    "activities": [
+      {
+        "name": "Updating project report",
+        "completed": false,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Updating report",
+            "src": "IMG/26 May Updating report.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-27": {
+    "activities": [
+      {
+        "name": "Wati and Min Thant met on Discord and updated the report",
+        "completed": false,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Updating report",
+            "src": "IMG/27 May Updating report.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-30": {
+    "activities": [
+      {
+        "name": "Met at San Wint's home",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Having lunch",
+            "src": "IMG/30 May Having lunch.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Planning and printing decorations",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Decoration planning",
+            "src": "IMG/30 May Decoration planning.jpg"
+          },
+          {
+            "name": "Road plan to print",
+            "src": "IMG/30 May Road to print plan.png"
+          },
+          {
+            "name": "Printing for decoration",
+            "src": "IMG/30 May Printing for decoration 1.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Testing water level sensor with LCD",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Testing water level sensor with LCD",
+            "src": "IMG/30 May Testing water level sensor with LCD 2.jpg"
+          },
+          {
+            "name": "Testing water level sensor with LCD",
+            "src": "IMG/30 May Testing water level sensor with LCD.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-31": {
+    "activities": [
+      {
+        "name": "Met at San Wint's home for decoration",
+        "completed": false,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Met at San Wint's home",
+            "src": "IMG/31 May Met at San Wint's home.jpg"
+          },
+          {
+            "name": "Had lunch at San Wint's home",
+            "src": "IMG/31 May Had Lunch.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Started Decoration",
+        "completed": false,
+        "challenges": "Previous foundation does not fit and flexible to decorate",
+        "evidence": [
+          {
+            "name": "Bought a new foundation",
+            "src": "IMG/31 May New Foundation.jpg"
+          },
+          {
+            "name": "New Foundation",
+            "src": "IMG/31 May New Foundation 2.jpg"
+          },
+          {
+            "name": "New Foundation",
+            "src": "IMG/31 May New Foundation 3.jpg"
+          },
+          {
+            "name": "Setting up the wires",
+            "src": "IMG/31 May Decoration 2.jpg"
+          },
+          {
+            "name": "Setting up the wires",
+            "src": "IMG/31 May Decoration.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Road Decoation",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Printed road",
+            "src": "IMG/31 May Printed road.jpg"
+          },
+          {
+            "name": "Road Decoration",
+            "src": "IMG/31 May Road Decoration.jpg"
+          },
+          {
+            "name": "Road Decoration",
+            "src": "IMG/31 May Road Decoration 2.mp4"
+          }
+        ]
       }
     ]
   }
