@@ -325,7 +325,7 @@
     "activities": [
       {
         "name": "Discussed for decorations",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -375,7 +375,7 @@
     "activities": [
       {
         "name": "Started the report",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -456,7 +456,7 @@
       },
       {
         "name": "Testing L298N Motor Driver",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -478,7 +478,7 @@
       },
       {
         "name": "Soldering and testing Piezo",
-        "completed": false,
+        "completed": true,
         "challenges": "Being injured from soldering",
         "evidence": [
           {
@@ -531,7 +531,7 @@
     "activities": [
       {
         "name": "Drawing the system design",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -615,7 +615,7 @@
     "activities": [
       {
         "name": "Updating project report",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -630,7 +630,7 @@
     "activities": [
       {
         "name": "Wati and Min Thant met on Discord and updated the report",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -694,7 +694,7 @@
     "activities": [
       {
         "name": "Met at San Wint's home for decoration",
-        "completed": false,
+        "completed": true,
         "challenges": "",
         "evidence": [
           {
@@ -709,7 +709,7 @@
       },
       {
         "name": "Started Decoration",
-        "completed": false,
+        "completed": true,
         "challenges": "Previous foundation does not fit and flexible to decorate",
         "evidence": [
           {
@@ -746,6 +746,104 @@
           {
             "name": "Road Decoration",
             "src": "IMG/31 May Road Decoration 2.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-16": {
+    "activities": [
+      {
+        "name": "Testing moisture sensing",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Moisture sensing",
+            "src": "IMG/16 June Moisture sencing.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-18": {
+    "activities": [
+      {
+        "name": "Testing Wireless Charging Station Gate and Wireless Car Charging",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Wireless Charging Station Gate",
+            "src": "IMG/18 June Wireless Charging Station Gate.mp4"
+          },
+          {
+            "name": "Wireless Car Charging",
+            "src": "IMG/18 June Wireless Car Charging.jpg"
+          },
+          {
+            "name": "Wireless Car Charging",
+            "src": "IMG/18 June Wireless Car Charging 1.mp4"
+          }
+        ]
+      },
+      {
+        "name": "Testing Solar Tracking system",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Solar Tracking testing",
+            "src": "IMG/18 June Solar Tracking testing.mp4"
+          },
+          {
+            "name": "Solar Tracking",
+            "src": "IMG/18 June Solaring Tracking 2.mp4"
+          },
+          {
+            "name": "Solar Tracking",
+            "src": "IMG/18 June Solaring Tracking 3.mp4"
+          }
+        ]
+      },
+      {
+        "name": "Testing Water Level Sensing",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Water Level Sensing",
+            "src": "IMG/18 June Water Level Sensing.mp4"
+          }
+        ]
+      },
+      {
+        "name": "Final decoration and rain detection decoration setup",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Decoration",
+            "src": "IMG/18 June Decoration.mp4"
+          },
+          {
+            "name": "Rain detection decoration",
+            "src": "IMG/18 June rain detection decoration.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-19": {
+    "activities": [
+      {
+        "name": "Review and finalizing the project",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Review Finalizing",
+            "src": "IMG/19 June Review Finalizing.png"
           }
         ]
       }
