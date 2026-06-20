@@ -124,12 +124,10 @@
       <!-- ═══════════════════════════ View Page ═══════════════════════════ -->
       <div id="page-view" class="page hidden">
         <div class="page-inner view-layout">
-          <!-- Left: main content -->
           <div class="view-main">
             <button class="back-btn" onclick="goPage('calendar')">
               ← Back to Calendar
             </button>
-
             <div class="view-header">
               <span class="chip accent">Daily Log</span>
               <div class="view-date-nav">
@@ -152,18 +150,13 @@
                 </button>
               </div>
             </div>
-
-            <!-- Empty state -->
             <div id="view-empty" class="card empty-card hidden">
               <div class="title">Nothing logged yet</div>
               <p>No entry has been logged for this day.</p>
             </div>
-
-            <!-- Activity-by-activity content -->
             <div id="view-content" class="entry-stack hidden"></div>
           </div>
 
-          <!-- Right: project & progress sidebar -->
           <aside class="view-sidebar">
             <div class="sidebar-section card sidebar-card">
               <div class="label-sm">Project</div>
@@ -181,7 +174,6 @@
                 View Summary →
               </button>
             </div>
-
             <div
               class="sidebar-section card sidebar-card"
               id="sidebar-progress"
@@ -238,132 +230,7 @@
             </div>
           </div>
 
-          <div class="two-col">
-            <div class="card list-card">
-              <div class="label-sm">Hardware</div>
-              <div class="dot-list">
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Arduino Uno</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>ESP32</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Breadboard</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Mini Solar Panel (6V)</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Piezoelectric Disc (27mm PZT)</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>IR Sensor</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>LDR Sensor Module (Light Dependent Resistor)</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Relay Module</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Water Level Module</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Soil Moisture Sensor</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Rain Sensor</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>RFID Module</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>LED</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>LCD</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Servo</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Mini Water Pump</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Jumper Wire</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Resister</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Rechargeable Battery</span>
-                </div>
-              </div>
-            </div>
-            <div class="card list-card">
-              <div class="label-sm">Software</div>
-              <div class="dot-list">
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Arduino IDE</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Circuit Designer</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Visual Studio Code</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Telegram Bot</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Figma</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Canva</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Telegram</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Discord</span>
-                </div>
-                <div class="dot-row">
-                  <div class="dot-mark" style="background: var(--text)"></div>
-                  <span>Draw.io</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card list-card objectives">
+          <div class="card list-card objectives" style="margin-bottom: 14px">
             <div class="label-sm">Project Objectives</div>
             <div class="obj-grid">
               <div class="obj-item">
@@ -390,10 +257,1757 @@
             </div>
           </div>
 
-          <div class="card list-card">
+          <!-- ═══════════════ System Overview Card ═══════════════ -->
+          <div class="card list-card sys-overview-card">
             <div class="label-sm">System Overview</div>
-            <div class="obj-grid"></div>
+
+            <!-- Tab buttons -->
+            <div class="sys-tab-bar">
+              <button
+                class="sys-tab-btn active"
+                id="tab-btn-ldr"
+                onclick="switchSysTab('ldr')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="5" />
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                Auto Street Light
+              </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-ir"
+                onclick="switchSysTab('ir')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="1" y="3" width="15" height="13" rx="2" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+                Traffic Sensing Street Light
+              </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-rain"
+                onclick="switchSysTab('rain')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="16" y1="13" x2="16" y2="21" />
+                  <line x1="8" y1="13" x2="8" y2="21" />
+                  <line x1="12" y1="15" x2="12" y2="23" />
+                  <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" />
+                </svg>
+                Rain Detection
+              </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-wcs"
+                onclick="switchSysTab('wcs')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="1" y="3" width="15" height="13" rx="2" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                  <path d="M12 9 Q14 7 16 9" />
+                  <path d="M11 7 Q14 4 17 7" />
+                </svg>
+                Wireless Car Charging
+              </button>
+            </div>
+
+            <!-- ── Panel: Auto Street Light (LDR) ── -->
+            <div class="sys-tab-panel" id="tab-panel-ldr">
+              <div class="sys-overview" id="sysOverview">
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">Auto Street Light · LDR-Based</div>
+                    <h3>From dusk to data, automatically.</h3>
+                    <p>
+                      One sensor reading triggers the entire chain — no manual
+                      switching, no wasted power.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="sysToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">☀️</span>
+                    <span class="sys-toggle-label">Simulate nightfall</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="sysStage" data-state="day">
+                  <div class="sys-sky"></div>
+                  <div class="sys-stars" aria-hidden="true"></div>
+                  <div class="sys-flow">
+                    <div class="sys-node" data-node="ldr-battery">
+                      <div class="sys-node-badge">01</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="6"
+                            y="16"
+                            width="28"
+                            height="20"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="34"
+                            y="21"
+                            width="4"
+                            height="10"
+                            rx="1.5"
+                            fill="currentColor"
+                            opacity="0.6"
+                          />
+                          <line
+                            x1="14"
+                            y1="23"
+                            x2="14"
+                            y2="29"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="11"
+                            y1="26"
+                            x2="17"
+                            y2="26"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="22"
+                            y1="26"
+                            x2="28"
+                            y2="26"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">6V Battery</div>
+                      <div class="sys-node-reading" id="ldrBattReading">
+                        Standby
+                      </div>
+                      <div class="sys-node-sub">Power source</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ldr-0">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="ldr">
+                      <div class="sys-node-badge">02</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="15"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <path
+                            d="M16 17 L32 31 M32 17 L16 31"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <circle cx="24" cy="24" r="5" fill="currentColor" />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">LDR Sensor</div>
+                      <div class="sys-node-reading" id="ldrReading">
+                        812 lux
+                      </div>
+                      <div class="sys-node-sub">Light level</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ldr-1">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="ldr-relay">
+                      <div class="sys-node-badge">03</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="8"
+                            y="14"
+                            width="32"
+                            height="20"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <circle
+                            class="sys-relay-led"
+                            cx="33"
+                            cy="29"
+                            r="2.4"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M14 21 L22 21 L18 27 L26 27"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Relay Module</div>
+                      <div class="sys-node-reading" id="relayReading">OFF</div>
+                      <div class="sys-node-sub">Switch state</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ldr-2">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="light">
+                      <div class="sys-node-badge">04</div>
+                      <div class="sys-node-icon sys-light-icon">
+                        <div class="sys-light-glow"></div>
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <path
+                            d="M24 6 L24 18"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="14"
+                            y="18"
+                            width="20"
+                            height="9"
+                            rx="3"
+                            fill="currentColor"
+                            opacity="0.92"
+                          />
+                          <path
+                            d="M24 27 L24 42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Street Light</div>
+                      <div class="sys-node-reading" id="lightReading">Off</div>
+                      <div class="sys-node-sub">Output</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>+6V
+                    power
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Signal
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for LDR system -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Arduino Uno</span>
+                      <span class="hw-chip">LDR Sensor Module</span>
+                      <span class="hw-chip">Relay Module</span>
+                      <span class="hw-chip">LED (Street Light)</span>
+                      <span class="hw-chip">6V Battery</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                      <span class="hw-chip">Resistor</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Panel: Traffic Sensing Street Light (IR) ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-ir">
+              <div class="sys-overview" id="irOverview">
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Traffic Sensing Auto Street Light · IR-Based
+                    </div>
+                    <h3>Traffic detected — light activates, energy saved.</h3>
+                    <p>
+                      An IR sensor reads vehicle presence; a relay switches the
+                      street light only when traffic is nearby.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="irToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">🚗</span>
+                    <span class="sys-toggle-label">Simulate traffic</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="irStage" data-state="idle">
+                  <div class="sys-sky"></div>
+                  <div class="sys-flow">
+                    <div class="sys-node" data-node="ir-battery">
+                      <div class="sys-node-badge">01</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="6"
+                            y="16"
+                            width="28"
+                            height="20"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="34"
+                            y="21"
+                            width="4"
+                            height="10"
+                            rx="1.5"
+                            fill="currentColor"
+                            opacity="0.6"
+                          />
+                          <line
+                            x1="14"
+                            y1="23"
+                            x2="14"
+                            y2="29"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="11"
+                            y1="26"
+                            x2="17"
+                            y2="26"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="22"
+                            y1="26"
+                            x2="28"
+                            y2="26"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">6V Battery</div>
+                      <div class="sys-node-reading" id="irBattReading">
+                        Standby
+                      </div>
+                      <div class="sys-node-sub">Power source</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ir-0">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="ir-sensor">
+                      <div class="sys-node-badge">02</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <circle
+                            cx="16"
+                            cy="28"
+                            r="7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.2"
+                          />
+                          <circle
+                            cx="16"
+                            cy="28"
+                            r="3"
+                            fill="currentColor"
+                            opacity="0.5"
+                          />
+                          <circle
+                            cx="32"
+                            cy="28"
+                            r="7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.2"
+                          />
+                          <circle
+                            class="ir-emitter-dot"
+                            cx="32"
+                            cy="28"
+                            r="3"
+                            fill="currentColor"
+                            opacity="0.4"
+                          />
+                          <path
+                            d="M16 10 L16 18 M32 10 L32 18"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <rect
+                            x="8"
+                            y="34"
+                            width="32"
+                            height="6"
+                            rx="2"
+                            fill="currentColor"
+                            opacity="0.2"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">IR Sensor</div>
+                      <div class="sys-node-reading" id="irSensorReading">
+                        No traffic
+                      </div>
+                      <div class="sys-node-sub">Presence detect</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ir-1">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="ir-relay">
+                      <div class="sys-node-badge">03</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="8"
+                            y="14"
+                            width="32"
+                            height="20"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <circle
+                            class="ir-relay-led"
+                            cx="33"
+                            cy="29"
+                            r="2.4"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M14 21 L22 21 L18 27 L26 27"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Relay Module</div>
+                      <div class="sys-node-reading" id="irRelayReading">
+                        OFF
+                      </div>
+                      <div class="sys-node-sub">Switch state</div>
+                    </div>
+                    <div class="sys-wire" data-wire="ir-2">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+                    <div class="sys-node" data-node="ir-light">
+                      <div class="sys-node-badge">04</div>
+                      <div class="sys-node-icon ir-light-icon">
+                        <div class="ir-light-glow"></div>
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <path
+                            d="M24 6 L24 18"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="14"
+                            y="18"
+                            width="20"
+                            height="9"
+                            rx="3"
+                            fill="currentColor"
+                            opacity="0.92"
+                          />
+                          <path
+                            d="M24 27 L24 42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Street Light</div>
+                      <div class="sys-node-reading" id="irLightReading">
+                        Off
+                      </div>
+                      <div class="sys-node-sub">Output (LED)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>+6V
+                    power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Signal — IR out to relay in (green)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for IR system -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Arduino Uno</span>
+                      <span class="hw-chip">IR Sensor</span>
+                      <span class="hw-chip">Relay Module</span>
+                      <span class="hw-chip">LED (Street Light)</span>
+                      <span class="hw-chip">6V Battery</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                      <span class="hw-chip">Resistor</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Panel: Rain Detection System ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-rain">
+              <div class="sys-overview" id="rainOverview">
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Rain Detection System · Rain Sensor + Servo
+                    </div>
+                    <h3>Rain drops — roof closes, harvest saved.</h3>
+                    <p>
+                      A rain sensor signals the Arduino Nano; the servo motor
+                      drives the cover shut to protect the harvest.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="rainToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">☀️</span>
+                    <span class="sys-toggle-label">Simulate rain</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="rainStage" data-state="dry">
+                  <div class="sys-sky rain-sky"></div>
+                  <div class="sys-raindrops" aria-hidden="true"></div>
+                  <div class="sys-flow">
+                    <!-- Node 1: Power Adapter -->
+                    <div class="sys-node" data-node="rain-power">
+                      <div class="sys-node-badge">01</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="10"
+                            y="8"
+                            width="28"
+                            height="26"
+                            rx="4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <line
+                            x1="18"
+                            y1="34"
+                            x2="18"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="30"
+                            y1="34"
+                            x2="30"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="19"
+                            y1="16"
+                            x2="19"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="29"
+                            y1="16"
+                            x2="29"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">AC/DC Adapter</div>
+                      <div class="sys-node-reading" id="rainPowerReading">
+                        Standby
+                      </div>
+                      <div class="sys-node-sub">5V power supply</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="rain-0">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 2: Arduino Nano -->
+                    <div class="sys-node" data-node="rain-arduino">
+                      <div class="sys-node-badge">02</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="8"
+                            y="10"
+                            width="32"
+                            height="28"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="14"
+                            y="16"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            fill="currentColor"
+                            opacity="0.12"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                          />
+                          <circle
+                            cx="24"
+                            cy="23"
+                            r="4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="8"
+                            y1="17"
+                            x2="4"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="23"
+                            x2="4"
+                            y2="23"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="29"
+                            x2="4"
+                            y2="29"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="17"
+                            x2="44"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="23"
+                            x2="44"
+                            y2="23"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="29"
+                            x2="44"
+                            y2="29"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Arduino Nano</div>
+                      <div class="sys-node-reading" id="rainArduinoReading">
+                        Idle
+                      </div>
+                      <div class="sys-node-sub">Microcontroller</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="rain-1">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 3: Rain Sensor -->
+                    <div class="sys-node" data-node="rain-sensor">
+                      <div class="sys-node-badge">03</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <!-- sensor board -->
+                          <rect
+                            x="8"
+                            y="20"
+                            width="32"
+                            height="20"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <!-- rain lines on pad -->
+                          <line
+                            x1="16"
+                            y1="24"
+                            x2="16"
+                            y2="36"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <line
+                            x1="22"
+                            y1="24"
+                            x2="22"
+                            y2="36"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <line
+                            x1="28"
+                            y1="24"
+                            x2="28"
+                            y2="36"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <line
+                            x1="34"
+                            y1="24"
+                            x2="34"
+                            y2="36"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <!-- raindrop icons above -->
+                          <path
+                            class="rain-drop-a"
+                            d="M14 6 Q14 12 18 12 Q22 12 22 6 Q22 2 18 2 Q14 2 14 6Z"
+                            fill="currentColor"
+                            opacity="0.2"
+                          />
+                          <path
+                            class="rain-drop-b"
+                            d="M26 8 Q26 14 30 14 Q34 14 34 8 Q34 4 30 4 Q26 4 26 8Z"
+                            fill="currentColor"
+                            opacity="0.2"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Rain Sensor</div>
+                      <div class="sys-node-reading" id="rainSensorReading">
+                        Dry
+                      </div>
+                      <div class="sys-node-sub">A0 / D0 signal</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="rain-2">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 4: Servo Motor -->
+                    <div class="sys-node" data-node="rain-servo">
+                      <div class="sys-node-badge">04</div>
+                      <div class="sys-node-icon rain-servo-icon">
+                        <div class="rain-servo-glow"></div>
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <!-- servo body -->
+                          <rect
+                            x="8"
+                            y="16"
+                            width="24"
+                            height="22"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <!-- servo horn / arm -->
+                          <circle
+                            cx="20"
+                            cy="27"
+                            r="5"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                          <circle
+                            cx="20"
+                            cy="27"
+                            r="2"
+                            fill="currentColor"
+                            opacity="0.5"
+                          />
+                          <!-- arm extending (rotates on activate) -->
+                          <line
+                            class="servo-arm"
+                            x1="20"
+                            y1="27"
+                            x2="34"
+                            y2="18"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <!-- cable lines -->
+                          <line
+                            x1="32"
+                            y1="30"
+                            x2="40"
+                            y2="30"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <line
+                            x1="32"
+                            y1="34"
+                            x2="40"
+                            y2="34"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                          <line
+                            x1="32"
+                            y1="38"
+                            x2="40"
+                            y2="38"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            opacity="0.5"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Servo Motor</div>
+                      <div class="sys-node-reading" id="rainServoReading">
+                        Open
+                      </div>
+                      <div class="sys-node-sub">Roof / cover</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>+5V
+                    power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Analog A0 (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >Digital D2 (yellow)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c05800"></span
+                    >Servo D9 (orange)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for Rain Detection system -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Arduino Nano</span>
+                      <span class="hw-chip">Rain Sensor Module</span>
+                      <span class="hw-chip">Servo Motor</span>
+                      <span class="hw-chip">AC/DC Adapter (5V 2A)</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ── Panel: Wireless Car Charging Station ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-wcs">
+              <div class="sys-overview" id="wcsOverview">
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Wireless Car Charging Station · ESP32 + IR + Servo +
+                      Telegram
+                    </div>
+                    <h3>
+                      Car arrives — gate opens, charging starts, driver
+                      notified.
+                    </h3>
+                    <p>
+                      IR detects the vehicle; ESP32 triggers the servo gate,
+                      activates wireless coils, and sends a Telegram alert — all
+                      automatically.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="wcsToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">🚗</span>
+                    <span class="sys-toggle-label">Car approaches</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="wcsStage" data-state="idle">
+                  <div class="sys-sky wcs-sky"></div>
+
+                  <!-- Row 1: main linear chain -->
+                  <div class="wcs-flow-wrap">
+                    <div class="wcs-row wcs-row-main">
+                      <!-- Node 1: 9V Battery -->
+                      <div class="sys-node" data-node="wcs-battery">
+                        <div class="sys-node-badge">01</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="6"
+                              y="16"
+                              width="28"
+                              height="20"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <rect
+                              x="34"
+                              y="21"
+                              width="4"
+                              height="10"
+                              rx="1.5"
+                              fill="currentColor"
+                              opacity="0.6"
+                            />
+                            <line
+                              x1="14"
+                              y1="23"
+                              x2="14"
+                              y2="29"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="11"
+                              y1="26"
+                              x2="17"
+                              y2="26"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="22"
+                              y1="26"
+                              x2="28"
+                              y2="26"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">9V Battery</div>
+                        <div class="sys-node-reading" id="wcsBattReading">
+                          Standby
+                        </div>
+                        <div class="sys-node-sub">Power source</div>
+                      </div>
+                      <div class="wcs-wire" data-wire="wcs-0">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 2: ESP32 -->
+                      <div class="sys-node" data-node="wcs-esp32">
+                        <div class="sys-node-badge">02</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="8"
+                              y="10"
+                              width="32"
+                              height="28"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <rect
+                              x="14"
+                              y="16"
+                              width="20"
+                              height="14"
+                              rx="2"
+                              fill="currentColor"
+                              opacity="0.1"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                            />
+                            <text
+                              x="24"
+                              y="26"
+                              text-anchor="middle"
+                              font-size="7"
+                              font-weight="700"
+                              fill="currentColor"
+                              font-family="monospace"
+                            >
+                              ESP32
+                            </text>
+                            <line
+                              x1="8"
+                              y1="17"
+                              x2="4"
+                              y2="17"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="8"
+                              y1="22"
+                              x2="4"
+                              y2="22"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="8"
+                              y1="27"
+                              x2="4"
+                              y2="27"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="17"
+                              x2="44"
+                              y2="17"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="22"
+                              x2="44"
+                              y2="22"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="27"
+                              x2="44"
+                              y2="27"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">ESP32 DevKit</div>
+                        <div class="sys-node-reading" id="wcsEspReading">
+                          Idle
+                        </div>
+                        <div class="sys-node-sub">Controller + WiFi</div>
+                      </div>
+                      <div class="wcs-wire" data-wire="wcs-1">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 3: IR Sensor -->
+                      <div class="sys-node" data-node="wcs-ir">
+                        <div class="sys-node-badge">03</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <circle
+                              cx="16"
+                              cy="28"
+                              r="7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <circle
+                              cx="16"
+                              cy="28"
+                              r="3"
+                              fill="currentColor"
+                              opacity="0.5"
+                            />
+                            <circle
+                              cx="32"
+                              cy="28"
+                              r="7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <circle
+                              class="wcs-ir-dot"
+                              cx="32"
+                              cy="28"
+                              r="3"
+                              fill="currentColor"
+                              opacity="0.4"
+                            />
+                            <path
+                              d="M16 10 L16 18 M32 10 L32 18"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="8"
+                              y="34"
+                              width="32"
+                              height="6"
+                              rx="2"
+                              fill="currentColor"
+                              opacity="0.2"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">IR Sensor</div>
+                        <div class="sys-node-reading" id="wcsIrReading">
+                          No car
+                        </div>
+                        <div class="sys-node-sub">Car detection</div>
+                      </div>
+                    </div>
+
+                    <!-- vertical connector line -->
+                    <div class="wcs-branch-connector">
+                      <div class="wcs-branch-line"></div>
+                    </div>
+
+                    <!-- Row 2: outputs -->
+                    <div class="wcs-row wcs-row-outputs">
+                      <!-- Output A: Servo Gate -->
+                      <div class="sys-node" data-node="wcs-servo">
+                        <div class="sys-node-badge">04</div>
+                        <div class="sys-node-icon wcs-servo-icon">
+                          <div class="wcs-servo-glow"></div>
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="8"
+                              y="16"
+                              width="24"
+                              height="22"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <circle
+                              cx="20"
+                              cy="27"
+                              r="5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            />
+                            <circle
+                              cx="20"
+                              cy="27"
+                              r="2"
+                              fill="currentColor"
+                              opacity="0.5"
+                            />
+                            <line
+                              class="wcs-servo-arm"
+                              x1="20"
+                              y1="27"
+                              x2="34"
+                              y2="18"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="32"
+                              y1="30"
+                              x2="40"
+                              y2="30"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity="0.5"
+                            />
+                            <line
+                              x1="32"
+                              y1="34"
+                              x2="40"
+                              y2="34"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity="0.5"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Servo (Gate)</div>
+                        <div class="sys-node-reading" id="wcsServoReading">
+                          Closed
+                        </div>
+                        <div class="sys-node-sub">Gate control</div>
+                      </div>
+
+                      <!-- Output B: Wireless Coils -->
+                      <div class="sys-node" data-node="wcs-coil">
+                        <div class="sys-node-badge">05</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <!-- primary coil rings -->
+                            <ellipse
+                              cx="24"
+                              cy="32"
+                              rx="16"
+                              ry="5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity="0.4"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="28"
+                              rx="13"
+                              ry="4"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity="0.5"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="24"
+                              rx="10"
+                              ry="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity="0.7"
+                            />
+                            <!-- wireless waves -->
+                            <path
+                              class="wcs-wave-a"
+                              d="M14 14 Q24 8 34 14"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity="0.3"
+                            />
+                            <path
+                              class="wcs-wave-b"
+                              d="M18 10 Q24 5 30 10"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity="0.3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Wireless Coils</div>
+                        <div class="sys-node-reading" id="wcsCoilReading">
+                          Idle
+                        </div>
+                        <div class="sys-node-sub">Magnetic transfer</div>
+                      </div>
+
+                      <!-- Output C: Telegram -->
+                      <div class="sys-node" data-node="wcs-telegram">
+                        <div class="sys-node-badge">06</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <circle
+                              cx="24"
+                              cy="24"
+                              r="18"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <path
+                              d="M12 24 L36 14 L28 36 L22 28 Z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                            />
+                            <line
+                              x1="22"
+                              y1="28"
+                              x2="36"
+                              y2="14"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              opacity="0.5"
+                            />
+                            <circle
+                              class="wcs-tg-dot"
+                              cx="24"
+                              cy="24"
+                              r="3"
+                              fill="currentColor"
+                              opacity="0.3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Telegram Bot</div>
+                        <div class="sys-node-reading" id="wcsTgReading">
+                          Waiting
+                        </div>
+                        <div class="sys-node-sub">Driver notification</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Telegram notification toast -->
+                <div class="wcs-tg-toast" id="wcsTgToast">
+                  <div class="wcs-tg-toast-header">
+                    <svg width="14" height="14" viewBox="0 0 48 48" fill="none">
+                      <circle cx="24" cy="24" r="20" fill="#229ED9" />
+                      <path
+                        d="M12 24 L36 14 L28 36 L22 28 Z"
+                        fill="white"
+                        stroke="none"
+                      />
+                      <line
+                        x1="22"
+                        y1="28"
+                        x2="36"
+                        y2="14"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    Wireless Car Charger Bot
+                  </div>
+                  <div class="wcs-tg-toast-body">
+                    🚗 Car detected at station!<br />Gate opened. You can
+                    enter.<br /><span id="wcsTgTime"></span>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>+9V
+                    power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span>IR
+                    signal → GPIO D2 (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >Servo → GPIO D18 (yellow)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #229ed9"></span
+                    >WiFi → Telegram (blue)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for WCS -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">ESP32 DevKit</span>
+                      <span class="hw-chip">IR Sensor Module</span>
+                      <span class="hw-chip">Servo Motor</span>
+                      <span class="hw-chip">Primary Coil (Road)</span>
+                      <span class="hw-chip">Secondary Coil (Car)</span>
+                      <span class="hw-chip">9V Battery</span>
+                      <span class="hw-chip">LED (Road Status)</span>
+                      <span class="hw-chip">LED (Car Charging)</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Telegram Bot API</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                      <span class="hw-chip sw-chip">Telegram</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- end sys-overview-card -->
         </div>
       </div>
 
@@ -451,33 +2065,1382 @@
     </div>
 
     <script src="script.js"></script>
+
+    <style>
+      /* ── Tab bar ── */
+      .sys-tab-bar {
+        display: flex;
+        gap: 8px;
+        margin: 14px 0 20px;
+        flex-wrap: wrap;
+      }
+      .sys-tab-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 18px;
+        border-radius: 99px;
+        border: 1px solid var(--border-mid);
+        background: transparent;
+        font-family: var(--font);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-sub);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          border-color 0.15s,
+          color 0.15s;
+      }
+      .sys-tab-btn:hover {
+        background: var(--surface-alt);
+        border-color: var(--text-sub);
+      }
+      .sys-tab-btn.active {
+        background: var(--text);
+        border-color: var(--text);
+        color: #fff;
+      }
+      .sys-tab-btn svg {
+        flex-shrink: 0;
+        opacity: 0.7;
+      }
+      .sys-tab-btn.active svg {
+        opacity: 1;
+      }
+      .sys-tab-panel {
+        animation: tabFadeIn 0.2s ease;
+      }
+      .sys-tab-panel.hidden {
+        display: none !important;
+      }
+      @keyframes tabFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── Shared system overview vars ── */
+      .sys-overview {
+        --sys-wire-off: var(--border-mid);
+        --sys-wire-power: #d94f2b;
+        --sys-wire-signal: #2e7d52;
+        margin-top: 4px;
+      }
+      .sys-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+      }
+      .sys-eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 6px;
+      }
+      .sys-header-text h3 {
+        font-size: 19px;
+        font-weight: 650;
+        color: var(--text);
+        letter-spacing: -0.01em;
+        margin-bottom: 4px;
+      }
+      .sys-header-text p {
+        font-size: 13px;
+        color: var(--text-sub);
+        max-width: 46ch;
+      }
+      .sys-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--border-mid);
+        background: var(--surface);
+        border-radius: 99px;
+        padding: 8px 16px 8px 12px;
+        font-family: var(--font);
+        font-size: 12.5px;
+        font-weight: 600;
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          background 0.25s,
+          border-color 0.25s,
+          color 0.25s;
+        flex-shrink: 0;
+      }
+      .sys-toggle:hover {
+        border-color: var(--text-sub);
+      }
+      .sys-toggle-icon {
+        font-size: 14px;
+        transition: transform 0.4s;
+      }
+      #sysOverview[data-active="night"] .sys-toggle {
+        background: #1a2236;
+        border-color: #1a2236;
+        color: #f3f1ea;
+      }
+      #irOverview[data-active="traffic"] .sys-toggle {
+        background: #1a2f1e;
+        border-color: #1a2f1e;
+        color: #f3f1ea;
+      }
+      #rainOverview[data-active="raining"] .sys-toggle {
+        background: #143055;
+        border-color: #143055;
+        color: #e8f4fd;
+      }
+
+      .sys-stage {
+        position: relative;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 30px 26px 24px;
+        transition: background 0.7s ease;
+      }
+      .sys-sky {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, #fbf8f1 0%, #f7f6f3 100%);
+        transition: background 0.9s ease;
+        z-index: 0;
+      }
+      .rain-sky {
+        background: linear-gradient(180deg, #fbf8f1 0%, #f7f6f3 100%);
+      }
+      #rainOverview[data-active="raining"] .rain-sky {
+        background: linear-gradient(
+          180deg,
+          #1a2d40 0%,
+          #253547 100%
+        ) !important;
+      }
+      .sys-stars {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 0.9s ease;
+        background-image:
+          radial-gradient(1.4px 1.4px at 12% 20%, #fff 100%, transparent 0),
+          radial-gradient(1.2px 1.2px at 30% 65%, #fff 100%, transparent 0),
+          radial-gradient(1.6px 1.6px at 50% 15%, #fff 100%, transparent 0),
+          radial-gradient(1.2px 1.2px at 68% 50%, #fff 100%, transparent 0),
+          radial-gradient(1.4px 1.4px at 85% 25%, #fff 100%, transparent 0),
+          radial-gradient(1.2px 1.2px at 92% 70%, #fff 100%, transparent 0);
+      }
+      #sysOverview[data-active="night"] .sys-sky {
+        background: linear-gradient(180deg, #131a2c 0%, #1d2640 100%);
+      }
+      #sysOverview[data-active="night"] .sys-stars {
+        opacity: 1;
+      }
+      #irOverview[data-active="traffic"] .sys-sky {
+        background: linear-gradient(180deg, #eaf6ea 0%, #f0f7ee 100%);
+      }
+
+      /* Raindrops animation */
+      .sys-raindrops {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 0.6s;
+        pointer-events: none;
+      }
+      #rainOverview[data-active="raining"] .sys-raindrops {
+        opacity: 1;
+      }
+      .raindrop {
+        position: absolute;
+        width: 2px;
+        border-radius: 2px;
+        background: rgba(140, 195, 255, 0.7);
+        animation: rainFall linear infinite;
+      }
+      @keyframes rainFall {
+        0% {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(160px);
+          opacity: 0;
+        }
+      }
+
+      .sys-flow {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(0, 1fr)
+          64px minmax(0, 1fr);
+        align-items: center;
+        gap: 4px;
+      }
+      .sys-node {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 10px 14px;
+        position: relative;
+        transition:
+          border-color 0.4s,
+          box-shadow 0.4s,
+          background 0.4s;
+      }
+      #sysOverview[data-active="night"] .sys-node {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.12);
+      }
+      #sysOverview[data-active="night"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.35);
+      }
+      #sysOverview[data-active="night"] .sys-node-icon {
+        color: rgba(255, 255, 255, 0.55);
+      }
+      #sysOverview[data-active="night"] .sys-node-label {
+        color: #f3f1ea;
+      }
+      #sysOverview[data-active="night"] .sys-node-sub {
+        color: rgba(255, 255, 255, 0.35);
+      }
+      #rainOverview[data-active="raining"] .sys-node {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+      }
+      #rainOverview[data-active="raining"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.35);
+      }
+      #rainOverview[data-active="raining"] .sys-node-icon {
+        color: rgba(200, 230, 255, 0.7);
+      }
+      #rainOverview[data-active="raining"] .sys-node-label {
+        color: #e8f4fd;
+      }
+      #rainOverview[data-active="raining"] .sys-node-sub {
+        color: rgba(200, 230, 255, 0.4);
+      }
+      .sys-node-badge {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        font-size: 9.5px;
+        font-weight: 700;
+        color: var(--text-muted);
+        letter-spacing: 0.04em;
+      }
+      .sys-node-icon {
+        color: var(--text-muted);
+        margin-bottom: 2px;
+        transition: color 0.4s;
+        position: relative;
+      }
+      .sys-node-label {
+        font-size: 11.5px;
+        font-weight: 600;
+        color: var(--text);
+        margin-top: 2px;
+      }
+      .sys-node-reading {
+        font-size: 15px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        color: var(--text-sub);
+        transition: color 0.3s;
+      }
+      .sys-node-sub {
+        font-size: 9.5px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* LDR active */
+      .sys-node[data-node="ldr-battery"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="ldr-battery"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .sys-node[data-node="ldr"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="ldr"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .sys-relay-led {
+        fill: var(--border-mid);
+        transition: fill 0.3s;
+      }
+      .sys-node[data-node="ldr-relay"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="ldr-relay"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+      .sys-node[data-node="ldr-relay"].is-active .sys-relay-led {
+        fill: var(--green);
+      }
+      .sys-light-icon {
+        position: relative;
+      }
+      .sys-light-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 196, 77, 0.55) 0%,
+          rgba(255, 196, 77, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .sys-node[data-node="light"].is-active .sys-node-icon {
+        color: #e8a93b;
+      }
+      .sys-node[data-node="light"].is-active .sys-light-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="light"].is-active .sys-node-reading {
+        color: #c8841a;
+      }
+
+      /* IR active */
+      .sys-node[data-node="ir-battery"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="ir-battery"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .ir-emitter-dot {
+        fill: var(--border-mid);
+        transition: fill 0.3s;
+      }
+      .sys-node[data-node="ir-sensor"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="ir-sensor"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+      .sys-node[data-node="ir-sensor"].is-active .ir-emitter-dot {
+        fill: #d94f2b;
+      }
+      .ir-relay-led {
+        fill: var(--border-mid);
+        transition: fill 0.3s;
+      }
+      .sys-node[data-node="ir-relay"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="ir-relay"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+      .sys-node[data-node="ir-relay"].is-active .ir-relay-led {
+        fill: var(--green);
+      }
+      .ir-light-icon {
+        position: relative;
+      }
+      .ir-light-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 196, 77, 0.55) 0%,
+          rgba(255, 196, 77, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .sys-node[data-node="ir-light"].is-active .sys-node-icon {
+        color: #e8a93b;
+      }
+      .sys-node[data-node="ir-light"].is-active .ir-light-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="ir-light"].is-active .sys-node-reading {
+        color: #c8841a;
+      }
+
+      /* Rain active */
+      .sys-node[data-node="rain-power"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="rain-power"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .sys-node[data-node="rain-arduino"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="rain-arduino"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+      .rain-drop-a,
+      .rain-drop-b {
+        transition: opacity 0.4s;
+      }
+      .sys-node[data-node="rain-sensor"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="rain-sensor"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="rain-sensor"].is-active .rain-drop-a {
+        opacity: 0.9;
+      }
+      .sys-node[data-node="rain-sensor"].is-active .rain-drop-b {
+        opacity: 0.9;
+      }
+      .rain-servo-icon {
+        position: relative;
+      }
+      .rain-servo-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(58, 124, 200, 0.35) 0%,
+          rgba(58, 124, 200, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .servo-arm {
+        transform-origin: 20px 27px;
+        transform: rotate(0deg);
+        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .sys-node[data-node="rain-servo"].is-active .servo-arm {
+        transform: rotate(-70deg);
+      }
+      .sys-node[data-node="rain-servo"].is-active .rain-servo-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="rain-servo"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="rain-servo"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+
+      /* Wires */
+      .sys-wire {
+        position: relative;
+        height: 24px;
+      }
+      .sys-wire svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      .sys-pulse {
+        fill: var(--sys-wire-power);
+        opacity: 0;
+      }
+      .sys-wire[data-wire="ldr-0"] path,
+      .sys-wire[data-wire="ldr-1"] path,
+      .sys-wire[data-wire="ldr-2"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .sys-wire[data-wire="ldr-0"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .sys-wire[data-wire="ldr-1"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .sys-wire[data-wire="ldr-2"].is-live path {
+        stroke: var(--sys-wire-signal);
+      }
+      .sys-wire[data-wire="ldr-0"].is-live .sys-pulse,
+      .sys-wire[data-wire="ldr-1"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .sys-wire[data-wire="ldr-2"].is-live .sys-pulse {
+        fill: var(--sys-wire-signal);
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+
+      .sys-wire[data-wire="ir-0"] path,
+      .sys-wire[data-wire="ir-1"] path,
+      .sys-wire[data-wire="ir-2"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .sys-wire[data-wire="ir-0"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .sys-wire[data-wire="ir-1"].is-live path {
+        stroke: var(--sys-wire-signal);
+      }
+      .sys-wire[data-wire="ir-2"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .sys-wire[data-wire="ir-0"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .sys-wire[data-wire="ir-1"].is-live .sys-pulse {
+        fill: var(--sys-wire-signal);
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+      .sys-wire[data-wire="ir-2"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+
+      .sys-wire[data-wire="rain-0"] path,
+      .sys-wire[data-wire="rain-1"] path,
+      .sys-wire[data-wire="rain-2"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .sys-wire[data-wire="rain-0"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .sys-wire[data-wire="rain-1"].is-live path {
+        stroke: #3a7cc8;
+      }
+      .sys-wire[data-wire="rain-2"].is-live path {
+        stroke: #3a7cc8;
+      }
+      .sys-wire[data-wire="rain-0"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .sys-wire[data-wire="rain-1"].is-live .sys-pulse {
+        fill: #3a7cc8;
+        opacity: 1;
+        animation: sysFlow 1.5s linear infinite;
+      }
+      .sys-wire[data-wire="rain-2"].is-live .sys-pulse {
+        fill: #3a7cc8;
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+
+      @keyframes sysFlow {
+        0% {
+          transform: translateX(0);
+          opacity: 0;
+        }
+        8% {
+          opacity: 1;
+        }
+        92% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(94px);
+          opacity: 0;
+        }
+      }
+
+      .sys-legend {
+        display: flex;
+        gap: 18px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+      }
+      .sys-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        color: var(--text-sub);
+      }
+      .sys-dot {
+        width: 9px;
+        height: 2.5px;
+        border-radius: 2px;
+        display: inline-block;
+      }
+
+      /* ── Hardware / Software strips ── */
+      .sys-hw-sw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 20px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+      }
+      .sys-hw-block {
+      }
+      .sys-hw-label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 10px;
+      }
+      .sys-hw-label svg {
+        flex-shrink: 0;
+      }
+      .sys-hw-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .hw-chip {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 99px;
+        padding: 4px 11px;
+        font-size: 11.5px;
+        font-weight: 500;
+        background: var(--surface-alt);
+        color: var(--text-sub);
+        border: 1px solid var(--border-mid);
+      }
+      .sw-chip {
+        background: rgba(46, 125, 82, 0.07);
+        color: var(--green);
+        border-color: rgba(46, 125, 82, 0.18);
+      }
+
+      /* ── WCS layout ── */
+      .wcs-flow-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .wcs-row {
+        display: grid;
+        align-items: center;
+        gap: 4px;
+      }
+      .wcs-row-main {
+        grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(
+            0,
+            1fr
+          );
+      }
+      .wcs-row-outputs {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 10px;
+        margin-top: 4px;
+      }
+      .wcs-wire {
+        position: relative;
+        height: 24px;
+      }
+      .wcs-wire svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+
+      /* branch connector — vertical line from IR node down to output row */
+      .wcs-branch-connector {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: calc(0% + 0px);
+        pointer-events: none;
+      }
+      .wcs-branch-line {
+        width: 1px;
+        height: 18px;
+        background: var(--border-mid);
+        margin-right: calc(16.66% - 0.5px);
+        transition: background 0.4s;
+      }
+      #wcsOverview[data-active="car"] .wcs-branch-line {
+        background: #2e7d52;
+      }
+
+      /* WCS sky */
+      .wcs-sky {
+        background: linear-gradient(180deg, #e8f4fd 0%, #f0f7ff 100%);
+      }
+      #wcsOverview[data-active="car"] .wcs-sky {
+        background: linear-gradient(180deg, #1a2f1e 0%, #1e3622 100%);
+      }
+      #wcsOverview[data-active="car"] .sys-node {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+      #wcsOverview[data-active="car"] .sys-node-label {
+        color: #e8f8ea;
+      }
+      #wcsOverview[data-active="car"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #wcsOverview[data-active="car"] .sys-node-sub {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* toggle active */
+      #wcsOverview[data-active="car"] .sys-toggle {
+        background: #1a2f1e;
+        border-color: #1a2f1e;
+        color: #e8f8ea;
+      }
+
+      /* WCS wire colours */
+      .wcs-wire[data-wire="wcs-0"] path,
+      .wcs-wire[data-wire="wcs-1"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .wcs-wire[data-wire="wcs-0"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .wcs-wire[data-wire="wcs-1"].is-live path {
+        stroke: var(--sys-wire-signal);
+      }
+      .wcs-wire[data-wire="wcs-0"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .wcs-wire[data-wire="wcs-1"].is-live .sys-pulse {
+        fill: var(--sys-wire-signal);
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+
+      /* WCS node active states */
+      .sys-node[data-node="wcs-battery"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="wcs-battery"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .sys-node[data-node="wcs-esp32"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="wcs-esp32"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+      .wcs-ir-dot {
+        fill: var(--border-mid);
+        transition: fill 0.3s;
+      }
+      .sys-node[data-node="wcs-ir"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="wcs-ir"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+      .sys-node[data-node="wcs-ir"].is-active .wcs-ir-dot {
+        fill: #d94f2b;
+      }
+
+      /* Servo arm */
+      .wcs-servo-icon {
+        position: relative;
+      }
+      .wcs-servo-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(46, 125, 82, 0.35) 0%,
+          rgba(46, 125, 82, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .wcs-servo-arm {
+        transform-origin: 20px 27px;
+        transform: rotate(0deg);
+        transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .sys-node[data-node="wcs-servo"].is-active .wcs-servo-arm {
+        transform: rotate(-75deg);
+      }
+      .sys-node[data-node="wcs-servo"].is-active .wcs-servo-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="wcs-servo"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="wcs-servo"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+
+      /* Wireless coil waves */
+      .wcs-wave-a,
+      .wcs-wave-b {
+        transition:
+          opacity 0.4s,
+          stroke 0.4s;
+      }
+      .sys-node[data-node="wcs-coil"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="wcs-coil"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+      .sys-node[data-node="wcs-coil"].is-active .wcs-wave-a {
+        opacity: 1;
+        animation: wcsWave 1.2s ease-in-out infinite alternate;
+      }
+      .sys-node[data-node="wcs-coil"].is-active .wcs-wave-b {
+        opacity: 1;
+        animation: wcsWave 1.2s ease-in-out 0.3s infinite alternate;
+      }
+      @keyframes wcsWave {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Telegram node */
+      .wcs-tg-dot {
+        transition:
+          fill 0.3s,
+          opacity 0.3s;
+      }
+      .sys-node[data-node="wcs-telegram"].is-active .sys-node-icon {
+        color: #229ed9;
+      }
+      .sys-node[data-node="wcs-telegram"].is-active .sys-node-reading {
+        color: #229ed9;
+      }
+      .sys-node[data-node="wcs-telegram"].is-active .wcs-tg-dot {
+        fill: #229ed9;
+        opacity: 0.8;
+        animation: wcsTgPulse 1s ease-in-out infinite alternate;
+      }
+      @keyframes wcsTgPulse {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Telegram toast notification */
+      .wcs-tg-toast {
+        display: none;
+        border: 1px solid rgba(34, 158, 217, 0.25);
+        border-radius: 12px;
+        background: rgba(34, 158, 217, 0.07);
+        padding: 12px 14px;
+        margin-top: 14px;
+        font-size: 12.5px;
+        color: var(--text);
+        line-height: 1.6;
+        animation: wcsToastIn 0.35s ease;
+      }
+      .wcs-tg-toast.visible {
+        display: block;
+      }
+      @keyframes wcsToastIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .wcs-tg-toast-header {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #229ed9;
+        margin-bottom: 6px;
+      }
+      .wcs-tg-toast-body {
+        color: var(--text-sub);
+        font-size: 12.5px;
+      }
+      .wcs-tg-toast-body span {
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-top: 2px;
+        display: block;
+      }
+
+      @media (max-width: 760px) {
+        .sys-flow {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .sys-wire {
+          transform: rotate(90deg);
+          height: 30px;
+          width: 36px;
+          margin: 0 auto;
+        }
+        .sys-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .sys-hw-sw {
+          grid-template-columns: 1fr;
+        }
+        .wcs-row-main {
+          grid-template-columns: 1fr;
+        }
+        .wcs-wire {
+          transform: rotate(90deg);
+          height: 30px;
+          width: 36px;
+          margin: 0 auto;
+        }
+        .wcs-row-outputs {
+          grid-template-columns: 1fr;
+        }
+        .wcs-branch-connector {
+          display: none;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .sys-pulse {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+
+    <script>
+      /* ── Tab switching ── */
+      function switchSysTab(tab) {
+        document
+          .querySelectorAll(".sys-tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document
+          .querySelectorAll(".sys-tab-panel")
+          .forEach((p) => p.classList.add("hidden"));
+        document.getElementById("tab-btn-" + tab).classList.add("active");
+        document.getElementById("tab-panel-" + tab).classList.remove("hidden");
+      }
+
+      (function () {
+        /* ══ AUTO STREET LIGHT — LDR ══ */
+        var ldrRoot = document.getElementById("sysOverview");
+        var ldrToggle = document.getElementById("sysToggle");
+        var ldrBattR = document.getElementById("ldrBattReading");
+        var ldrR = document.getElementById("ldrReading");
+        var relayR = document.getElementById("relayReading");
+        var lightR = document.getElementById("lightReading");
+        var ldrNodes = {
+          battery: ldrRoot.querySelector('[data-node="ldr-battery"]'),
+          ldr: ldrRoot.querySelector('[data-node="ldr"]'),
+          relay: ldrRoot.querySelector('[data-node="ldr-relay"]'),
+          light: ldrRoot.querySelector('[data-node="light"]'),
+        };
+        var ldrWires = {
+          w0: ldrRoot.querySelector('[data-wire="ldr-0"]'),
+          w1: ldrRoot.querySelector('[data-wire="ldr-1"]'),
+          w2: ldrRoot.querySelector('[data-wire="ldr-2"]'),
+        };
+        var ldrIsNight = false,
+          ldrTimers = [];
+        function luxFor(n) {
+          return n
+            ? Math.floor(40 + Math.random() * 30)
+            : Math.floor(700 + Math.random() * 200);
+        }
+        function setNight(night, opts) {
+          opts = opts || {};
+          ldrIsNight = night;
+          ldrRoot.dataset.active = night ? "night" : "day";
+          ldrToggle.setAttribute("aria-pressed", String(night));
+          ldrToggle.querySelector(".sys-toggle-label").textContent = night
+            ? "Simulate daylight"
+            : "Simulate nightfall";
+          ldrToggle.querySelector(".sys-toggle-icon").textContent = night
+            ? "🌙"
+            : "☀️";
+          ldrR.textContent = luxFor(night) + " lux";
+          ldrTimers.forEach(clearTimeout);
+          ldrTimers = [];
+          Object.values(ldrNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(ldrWires).forEach((w) => w.classList.remove("is-live"));
+          if (!night) {
+            ldrBattR.textContent = "Standby";
+            relayR.textContent = "OFF";
+            lightR.textContent = "Off";
+            return;
+          }
+          var s = opts.skipDelay ? 0 : 450;
+          ldrNodes.battery.classList.add("is-active");
+          ldrBattR.textContent = "Active";
+          ldrTimers.push(
+            setTimeout(() => ldrWires.w0.classList.add("is-live"), s * 0),
+          );
+          ldrTimers.push(
+            setTimeout(() => {
+              ldrNodes.ldr.classList.add("is-active");
+              ldrWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          ldrTimers.push(
+            setTimeout(() => {
+              relayR.textContent = "ON";
+              ldrNodes.relay.classList.add("is-active");
+              ldrWires.w2.classList.add("is-live");
+            }, s * 2),
+          );
+          ldrTimers.push(
+            setTimeout(() => {
+              lightR.textContent = "On";
+              ldrNodes.light.classList.add("is-active");
+            }, s * 3),
+          );
+        }
+        ldrToggle.addEventListener("click", () => setNight(!ldrIsNight));
+        setInterval(() => {
+          if (ldrIsNight) ldrR.textContent = luxFor(true) + " lux";
+        }, 4000);
+        setNight(false, { skipDelay: true });
+
+        /* ══ TRAFFIC SENSING — IR ══ */
+        var irRoot = document.getElementById("irOverview");
+        var irToggle = document.getElementById("irToggle");
+        var irBattR = document.getElementById("irBattReading");
+        var irSensR = document.getElementById("irSensorReading");
+        var irRelayR = document.getElementById("irRelayReading");
+        var irLightR = document.getElementById("irLightReading");
+        var irNodes = {
+          battery: irRoot.querySelector('[data-node="ir-battery"]'),
+          sensor: irRoot.querySelector('[data-node="ir-sensor"]'),
+          relay: irRoot.querySelector('[data-node="ir-relay"]'),
+          light: irRoot.querySelector('[data-node="ir-light"]'),
+        };
+        var irWires = {
+          w0: irRoot.querySelector('[data-wire="ir-0"]'),
+          w1: irRoot.querySelector('[data-wire="ir-1"]'),
+          w2: irRoot.querySelector('[data-wire="ir-2"]'),
+        };
+        var irIsTraffic = false,
+          irTimers = [];
+        function setTraffic(on, opts) {
+          opts = opts || {};
+          irIsTraffic = on;
+          irRoot.dataset.active = on ? "traffic" : "idle";
+          irToggle.setAttribute("aria-pressed", String(on));
+          irToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Clear traffic"
+            : "Simulate traffic";
+          irToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "🛑"
+            : "🚗";
+          irTimers.forEach(clearTimeout);
+          irTimers = [];
+          Object.values(irNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(irWires).forEach((w) => w.classList.remove("is-live"));
+          if (!on) {
+            irBattR.textContent = "Standby";
+            irSensR.textContent = "No traffic";
+            irRelayR.textContent = "OFF";
+            irLightR.textContent = "Off";
+            return;
+          }
+          var s = opts.skipDelay ? 0 : 450;
+          irNodes.battery.classList.add("is-active");
+          irBattR.textContent = "Active";
+          irTimers.push(
+            setTimeout(() => irWires.w0.classList.add("is-live"), s * 0),
+          );
+          irTimers.push(
+            setTimeout(() => {
+              irSensR.textContent = "Traffic!";
+              irNodes.sensor.classList.add("is-active");
+              irWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          irTimers.push(
+            setTimeout(() => {
+              irRelayR.textContent = "ON";
+              irNodes.relay.classList.add("is-active");
+              irWires.w2.classList.add("is-live");
+            }, s * 2),
+          );
+          irTimers.push(
+            setTimeout(() => {
+              irLightR.textContent = "On";
+              irNodes.light.classList.add("is-active");
+            }, s * 3),
+          );
+        }
+        irToggle.addEventListener("click", () => setTraffic(!irIsTraffic));
+        setTraffic(false, { skipDelay: true });
+
+        /* ══ RAIN DETECTION SYSTEM ══ */
+        var rainRoot = document.getElementById("rainOverview");
+        var rainToggle = document.getElementById("rainToggle");
+        var rainPowerR = document.getElementById("rainPowerReading");
+        var rainArduinoR = document.getElementById("rainArduinoReading");
+        var rainSensorR = document.getElementById("rainSensorReading");
+        var rainServoR = document.getElementById("rainServoReading");
+        var rainNodes = {
+          power: rainRoot.querySelector('[data-node="rain-power"]'),
+          arduino: rainRoot.querySelector('[data-node="rain-arduino"]'),
+          sensor: rainRoot.querySelector('[data-node="rain-sensor"]'),
+          servo: rainRoot.querySelector('[data-node="rain-servo"]'),
+        };
+        var rainWires = {
+          w0: rainRoot.querySelector('[data-wire="rain-0"]'),
+          w1: rainRoot.querySelector('[data-wire="rain-1"]'),
+          w2: rainRoot.querySelector('[data-wire="rain-2"]'),
+        };
+        var rainIsRaining = false,
+          rainTimers = [],
+          rainDropEls = [];
+
+        // Spawn animated raindrops in the stage
+        function spawnRaindrops() {
+          var container = rainRoot.querySelector(".sys-raindrops");
+          for (var i = 0; i < 22; i++) {
+            var d = document.createElement("div");
+            d.className = "raindrop";
+            d.style.left = Math.random() * 96 + "%";
+            var h = 8 + Math.random() * 18;
+            d.style.height = h + "px";
+            d.style.opacity = 0.5 + Math.random() * 0.5;
+            d.style.animationDuration = 0.5 + Math.random() * 0.6 + "s";
+            d.style.animationDelay = -Math.random() * 1.2 + "s";
+            container.appendChild(d);
+            rainDropEls.push(d);
+          }
+        }
+        spawnRaindrops();
+
+        function setRain(on, opts) {
+          opts = opts || {};
+          rainIsRaining = on;
+          rainRoot.dataset.active = on ? "raining" : "dry";
+          rainToggle.setAttribute("aria-pressed", String(on));
+          rainToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Clear rain"
+            : "Simulate rain";
+          rainToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "🌧️"
+            : "☀️";
+          rainTimers.forEach(clearTimeout);
+          rainTimers = [];
+          Object.values(rainNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(rainWires).forEach((w) =>
+            w.classList.remove("is-live"),
+          );
+          if (!on) {
+            rainPowerR.textContent = "Standby";
+            rainArduinoR.textContent = "Idle";
+            rainSensorR.textContent = "Dry";
+            rainServoR.textContent = "Open";
+            return;
+          }
+          var s = opts.skipDelay ? 0 : 450;
+          rainNodes.power.classList.add("is-active");
+          rainPowerR.textContent = "Active (5V)";
+          rainTimers.push(
+            setTimeout(() => rainWires.w0.classList.add("is-live"), s * 0),
+          );
+          rainTimers.push(
+            setTimeout(() => {
+              rainArduinoR.textContent = "Processing";
+              rainNodes.arduino.classList.add("is-active");
+              rainWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          rainTimers.push(
+            setTimeout(() => {
+              rainSensorR.textContent = "Rain!";
+              rainNodes.sensor.classList.add("is-active");
+              rainWires.w2.classList.add("is-live");
+            }, s * 2),
+          );
+          rainTimers.push(
+            setTimeout(() => {
+              rainServoR.textContent = "Closed";
+              rainNodes.servo.classList.add("is-active");
+            }, s * 3),
+          );
+        }
+        rainToggle.addEventListener("click", () => setRain(!rainIsRaining));
+        setRain(false, { skipDelay: true });
+
+        /* ══ WIRELESS CAR CHARGING STATION ══ */
+        var wcsRoot = document.getElementById("wcsOverview");
+        var wcsToggle = document.getElementById("wcsToggle");
+        var wcsBattR = document.getElementById("wcsBattReading");
+        var wcsEspR = document.getElementById("wcsEspReading");
+        var wcsIrR = document.getElementById("wcsIrReading");
+        var wcsServoR = document.getElementById("wcsServoReading");
+        var wcsCoilR = document.getElementById("wcsCoilReading");
+        var wcsTgR = document.getElementById("wcsTgReading");
+        var wcsTgToast = document.getElementById("wcsTgToast");
+        var wcsTgTime = document.getElementById("wcsTgTime");
+
+        var wcsNodes = {
+          battery: wcsRoot.querySelector('[data-node="wcs-battery"]'),
+          esp32: wcsRoot.querySelector('[data-node="wcs-esp32"]'),
+          ir: wcsRoot.querySelector('[data-node="wcs-ir"]'),
+          servo: wcsRoot.querySelector('[data-node="wcs-servo"]'),
+          coil: wcsRoot.querySelector('[data-node="wcs-coil"]'),
+          telegram: wcsRoot.querySelector('[data-node="wcs-telegram"]'),
+        };
+        var wcsWires = {
+          w0: wcsRoot.querySelector('[data-wire="wcs-0"]'),
+          w1: wcsRoot.querySelector('[data-wire="wcs-1"]'),
+        };
+        var wcsIsActive = false,
+          wcsTimers = [];
+
+        function fmtTime() {
+          var d = new Date();
+          var h = d.getHours(),
+            m = d.getMinutes();
+          var ampm = h >= 12 ? "PM" : "AM";
+          h = h % 12 || 12;
+          return "Time: " + h + ":" + String(m).padStart(2, "0") + " " + ampm;
+        }
+
+        function setWCS(on, opts) {
+          opts = opts || {};
+          wcsIsActive = on;
+          wcsRoot.dataset.active = on ? "car" : "idle";
+          wcsToggle.setAttribute("aria-pressed", String(on));
+          wcsToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Car departs"
+            : "Car approaches";
+          wcsToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "🏁"
+            : "🚗";
+
+          wcsTimers.forEach(clearTimeout);
+          wcsTimers = [];
+          Object.values(wcsNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(wcsWires).forEach((w) => w.classList.remove("is-live"));
+          wcsTgToast.classList.remove("visible");
+
+          if (!on) {
+            wcsBattR.textContent = "Standby";
+            wcsEspR.textContent = "Idle";
+            wcsIrR.textContent = "No car";
+            wcsServoR.textContent = "Closed";
+            wcsCoilR.textContent = "Idle";
+            wcsTgR.textContent = "Waiting";
+            return;
+          }
+
+          var s = opts.skipDelay ? 0 : 450;
+          wcsNodes.battery.classList.add("is-active");
+          wcsBattR.textContent = "Active (9V)";
+          wcsTimers.push(
+            setTimeout(() => wcsWires.w0.classList.add("is-live"), s * 0),
+          );
+          wcsTimers.push(
+            setTimeout(() => {
+              wcsEspR.textContent = "Processing";
+              wcsNodes.esp32.classList.add("is-active");
+              wcsWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          wcsTimers.push(
+            setTimeout(() => {
+              wcsIrR.textContent = "Car detected!";
+              wcsNodes.ir.classList.add("is-active");
+            }, s * 2),
+          );
+          // outputs branch in parallel
+          wcsTimers.push(
+            setTimeout(() => {
+              wcsServoR.textContent = "Gate open";
+              wcsNodes.servo.classList.add("is-active");
+            }, s * 3),
+          );
+          wcsTimers.push(
+            setTimeout(() => {
+              wcsCoilR.textContent = "Charging";
+              wcsNodes.coil.classList.add("is-active");
+            }, s * 3),
+          );
+          wcsTimers.push(
+            setTimeout(() => {
+              wcsTgR.textContent = "Sent!";
+              wcsNodes.telegram.classList.add("is-active");
+            }, s * 4),
+          );
+          wcsTimers.push(
+            setTimeout(
+              () => {
+                wcsTgTime.textContent = fmtTime();
+                wcsTgToast.classList.add("visible");
+              },
+              s * 4 + 200,
+            ),
+          );
+        }
+        wcsToggle.addEventListener("click", () => setWCS(!wcsIsActive));
+        setWCS(false, { skipDelay: true });
+      })();
+    </script>
   </body>
 </html>
-
-<!-- "2026-05-23": {
-    "activities": [
-      {
-        "name": "Purchased IoT products and decorations",
-        "completed": true,
-        "challenges": "",
-        "evidence": [
-          {
-            "name": "Purchasing IoT product",
-            "src": "IMG/23 May Purchasing IoT product.jpg"
-          },
-          {
-            "name": "Purchasing Decoration",
-            "src": "IMG/23 May Purchasing Decoration.jpg"
-          },
-          {
-            "name": "Purchasing Decoration",
-            "src": "IMG/23 May Purchasing Decoration 2.jpg"
-          },
-          {
-            "name": "Purchasing Decoration",
-            "src": "IMG/23 May Purchasing Decoration 3.jpg"
-          }
-        ]
-      }
-    ]
-  }, -->
