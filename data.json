@@ -449,8 +449,20 @@
             "src": "IMG/17 May Soldering Injure.jpg"
           },
           {
+            "name": "Getting injured by Soldering",
+            "src": "IMG/17 May  Soldering Injure.jpg"
+          },
+          {
             "name": "Injure solution",
             "src": "IMG/17 May Injure solution.MP4"
+          },
+          {
+            "name": "Help from Cho Zin's Dad",
+            "src": "IMG/17 May Helps from Chozin's Dad.MP4"
+          },
+          {
+            "name": "Help from Cho Zin's Dad",
+            "src": "IMG/17 May Helps from Chozin's Dad 2.MP4"
           }
         ]
       },
@@ -535,8 +547,60 @@
         "challenges": "",
         "evidence": [
           {
-            "name": "System design 1",
-            "src": "IMG/22 May System design 1.png"
+            "name": "Auto street light system",
+            "src": "IMG/Auto street light system.png"
+          },{
+            "name": "Auto-watering system",
+            "src": "IMG/Auto-watering system.png"
+          },{
+            "name": "Rain detecting system",
+            "src": "IMG/Rain detecting system.png"
+          },{
+            "name": "Solar tracking system",
+            "src": "IMG/Solar tracking system.png"
+          },{
+            "name": "Traffic Sensing Auto Street Light System",
+            "src": "IMG/Traffic Sensing Auto Street Light System.png"
+          },{
+            "name": "Water level sensing system",
+            "src": "IMG/Water level sensing system.png"
+          },{
+            "name": "Wireless Charging Station",
+            "src": "IMG/Wireless Charging Station.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-05-23": {
+    "activities": [
+      {
+        "name": "Purchased remaining IoT components from CE Store",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Purchasing IoT product (Relay Module, Arduino UNO R3, SG90 Micro Servo)",
+            "src": "IMG/23 May Purchasing IoT product.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Researched and selected decoration references for the project model",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Decoration reference",
+            "src": "IMG/23 May Purchasing Decoration.jpg"
+          },
+          {
+            "name": "Decoration reference",
+            "src": "IMG/23 May Purchasing Decoration 2.jpg"
+          },
+          {
+            "name": "Decoration reference",
+            "src": "IMG/23 May Purchasing Decoration 3.jpg"
           }
         ]
       }
@@ -746,6 +810,55 @@
           {
             "name": "Road Decoration",
             "src": "IMG/31 May Road Decoration 2.mp4"
+          },
+          {
+            "name": "Discussing road decoration placement via video call",
+            "src": "IMG/31 May Road Decoration.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-01": {
+    "activities": [
+      {
+        "name": "Selected water slime decoration material via Discord discussion",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Selecting for water decoration",
+            "src": "IMG/1 June Selecting for waterdecoration.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-02": {
+    "activities": [
+      {
+        "name": "Refining the project report based on Group 2 feedback",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Refining report",
+            "src": "IMG/2 June Refining report.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-07": {
+    "activities": [
+      {
+        "name": "Received water slime decoration material",
+        "completed": true,
+        "challenges": "Package leaked during delivery",
+        "evidence": [
+          {
+            "name": "Water slime challenge",
+            "src": "IMG/7 June water slime challenge.jpg"
           }
         ]
       }
@@ -844,6 +957,48 @@
           {
             "name": "Review Finalizing",
             "src": "IMG/19 June Review Finalizing.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-20": {
+    "activities": [
+      {
+        "name": "Final decoration assembly via video call",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Finalizing decoration",
+            "src": "IMG/20 June Finalizing decoration.png"
+          },
+          {
+            "name": "Finalizing decoration",
+            "src": "IMG/20 June Finalizating decoration 2.png"
+          },
+          {
+            "name": "Finalizing decoration",
+            "src": "IMG/Finalizing decoration 3.png"
+          },
+          {
+            "name": "Finalizing decoration",
+            "src": "IMG/20 June Finalizing decoration 4.png"
+          }
+        ]
+      }
+    ]
+  },
+  "2026-06-21": {
+    "activities": [
+      {
+        "name": "Submitted the final project report on GLMS",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Submitted the report",
+            "src": "IMG/20 June Submited the report.jpg"
           }
         ]
       }

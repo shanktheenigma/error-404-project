@@ -47,9 +47,17 @@ let currentPage = "calendar";
 (async () => {
   await loadDays();
 
-  // Restore last page & date from sessionStorage so refresh keeps your place
+  // Restore last page, date & calendar position from sessionStorage so
+  // refresh/reload keeps the user exactly where they were before.
   const savedPage = sessionStorage.getItem("lastPage");
   const savedDate = sessionStorage.getItem("lastDate");
+  const savedYear = sessionStorage.getItem("lastCalYear");
+  const savedMonth = sessionStorage.getItem("lastCalMonth");
+
+  if (savedYear && savedMonth) {
+    calYear = Number(savedYear);
+    calMonth = Number(savedMonth);
+  }
 
   if (savedPage === "view" && savedDate) {
     currentDate = savedDate;
@@ -58,6 +66,8 @@ let currentPage = "calendar";
     calYear = sy;
     calMonth = sm;
     goPage("view");
+  } else if (savedPage === "project") {
+    goPage("project");
   } else {
     goPage("calendar");
   }
@@ -82,13 +92,16 @@ function goPage(page, dateKey) {
   );
   if (navTarget) navTarget.classList.add("active");
 
-  // Persist current page & date so refresh/reload returns here
+  // Persist current page, date & calendar position so refresh/reload returns here
   sessionStorage.setItem("lastPage", page);
   if (currentDate) sessionStorage.setItem("lastDate", currentDate);
+  sessionStorage.setItem("lastCalYear", calYear);
+  sessionStorage.setItem("lastCalMonth", calMonth);
 
   if (page === "calendar") renderCalendar();
   if (page === "view") renderView();
   if (page === "edit") renderEdit();
+  if (page === "project") restoreSysTab();
 }
 
 function shiftMonth(d) {
@@ -101,6 +114,8 @@ function shiftMonth(d) {
     calMonth = 12;
     calYear--;
   }
+  sessionStorage.setItem("lastCalYear", calYear);
+  sessionStorage.setItem("lastCalMonth", calMonth);
   renderCalendar();
 }
 
@@ -162,6 +177,23 @@ function renderCalendar() {
 function openDay(day) {
   currentDate = makeKey(calYear, calMonth, day);
   goPage("view");
+}
+
+// ── Project page: restore last active system tab ─────────────────────────────
+function restoreSysTab() {
+  const savedTab = sessionStorage.getItem("lastSysTab") || "ldr";
+  const btn = document.getElementById("tab-btn-" + savedTab);
+  const panel = document.getElementById("tab-panel-" + savedTab);
+  if (!btn || !panel) return;
+
+  document
+    .querySelectorAll(".sys-tab-btn")
+    .forEach((b) => b.classList.remove("active"));
+  document
+    .querySelectorAll(".sys-tab-panel")
+    .forEach((p) => p.classList.add("hidden"));
+  btn.classList.add("active");
+  panel.classList.remove("hidden");
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

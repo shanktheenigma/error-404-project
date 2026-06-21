@@ -358,11 +358,96 @@
                 </svg>
                 Wireless Car Charging
               </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-solar"
+                onclick="switchSysTab('solar')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="5" />
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                Solar Tracking
+              </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-watering"
+                onclick="switchSysTab('watering')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2.5C12 2.5 5.5 10.5 5.5 15.2C5.5 18.84 8.41 21.5 12 21.5C15.59 21.5 18.5 18.84 18.5 15.2C18.5 10.5 12 2.5 12 2.5Z"
+                  />
+                </svg>
+                Auto-Watering
+              </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-wls"
+                onclick="switchSysTab('wls')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="5" y="3" width="14" height="18" rx="2" />
+                  <path d="M5 13 H19" />
+                  <path d="M5 13 Q9 11 12 13 T19 13" />
+                </svg>
+                Water Level Sensing
+              </button>
             </div>
 
             <!-- ── Panel: Auto Street Light (LDR) ── -->
             <div class="sys-tab-panel" id="tab-panel-ldr">
               <div class="sys-overview" id="sysOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Auto street light system.png"
+                    alt="Auto Street Light System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Auto street light system.png',
+                        'Auto Street Light System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">Auto Street Light · LDR-Based</div>
@@ -647,6 +732,22 @@
             <!-- ── Panel: Traffic Sensing Street Light (IR) ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-ir">
               <div class="sys-overview" id="irOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Traffic Sensing Auto Street Light System.png"
+                    alt="Traffic Sensing Auto Street Light System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Traffic Sensing Auto Street Light System.png',
+                        'Traffic Sensing Auto Street Light System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -967,6 +1068,22 @@
             <!-- ── Panel: Rain Detection System ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-rain">
               <div class="sys-overview" id="rainOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Rain detecting system.png"
+                    alt="Rain Detection System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Rain detecting system.png',
+                        'Rain Detection System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -1430,6 +1547,22 @@
             <!-- ── Panel: Wireless Car Charging Station ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-wcs">
               <div class="sys-overview" id="wcsOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Wireless Charging Station.png"
+                    alt="Wireless Charging Station Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Wireless Charging Station.png',
+                        'Wireless Charging Station Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -2005,6 +2138,1495 @@
                 </div>
               </div>
             </div>
+
+            <!-- ── Panel: Solar Tracking System ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-solar">
+              <div class="sys-overview" id="solarOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Solar tracking system.png"
+                    alt="Solar Tracking System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Solar tracking system.png',
+                        'Solar Tracking System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Solar Tracking System · Dual LDR + Servo Pan-Tilt
+                    </div>
+
+                    <h3>Sun shifts — panel follows, harvest maximised.</h3>
+                    <p>
+                      Two LDR sensors compare light levels left vs right;
+                      Arduino drives a pan-tilt servo to align the solar panel
+                      toward the brighter side.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="solarToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">☀️</span>
+                    <span class="sys-toggle-label">Shift sun left</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="solarStage" data-state="balanced">
+                  <div class="sys-sky solar-sky"></div>
+                  <!-- animated sun -->
+                  <div class="solar-sun-wrap" id="solarSunWrap">
+                    <div class="solar-sun" id="solarSun">☀️</div>
+                  </div>
+
+                  <!-- 5-node grid: LDR-L, wire, Arduino, wire, LDR-R, then servo + LEDs below -->
+                  <div class="solar-top-row">
+                    <!-- Node 1: LDR Left -->
+                    <div class="sys-node" data-node="solar-ldr-l">
+                      <div class="sys-node-badge">01</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="15"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <path
+                            d="M16 17 L32 31 M32 17 L16 31"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <circle cx="24" cy="24" r="5" fill="currentColor" />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">LDR 1 (Left)</div>
+                      <div class="sys-node-reading" id="solarLdrLReading">
+                        — lux
+                      </div>
+                      <div class="sys-node-sub">A0 · analog in</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="solar-0">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 2: Arduino Uno -->
+                    <div
+                      class="sys-node solar-arduino-node"
+                      data-node="solar-arduino"
+                    >
+                      <div class="sys-node-badge">02</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="8"
+                            y="10"
+                            width="32"
+                            height="28"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="14"
+                            y="16"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            fill="currentColor"
+                            opacity="0.1"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                          />
+                          <text
+                            x="24"
+                            y="26"
+                            text-anchor="middle"
+                            font-size="6"
+                            font-weight="700"
+                            fill="currentColor"
+                            font-family="monospace"
+                          >
+                            UNO
+                          </text>
+                          <line
+                            x1="8"
+                            y1="17"
+                            x2="4"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="22"
+                            x2="4"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="27"
+                            x2="4"
+                            y2="27"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="17"
+                            x2="44"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="22"
+                            x2="44"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="27"
+                            x2="44"
+                            y2="27"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Arduino Uno</div>
+                      <div class="sys-node-reading" id="solarArduinoReading">
+                        Comparing
+                      </div>
+                      <div class="sys-node-sub">A0 vs A1</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="solar-1">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 3: LDR Right -->
+                    <div class="sys-node" data-node="solar-ldr-r">
+                      <div class="sys-node-badge">03</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="15"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <path
+                            d="M16 17 L32 31 M32 17 L16 31"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <circle cx="24" cy="24" r="5" fill="currentColor" />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">LDR 2 (Right)</div>
+                      <div class="sys-node-reading" id="solarLdrRReading">
+                        — lux
+                      </div>
+                      <div class="sys-node-sub">A1 · analog in</div>
+                    </div>
+                  </div>
+
+                  <!-- vertical connector -->
+                  <div class="solar-branch-connector">
+                    <div class="solar-branch-line" id="solarBranchLine"></div>
+                  </div>
+
+                  <!-- Bottom outputs row: LED Left, Servo, LED Right -->
+                  <div class="solar-bottom-row">
+                    <!-- LED Left (Green) -->
+                    <div class="sys-node" data-node="solar-led-l">
+                      <div class="sys-node-badge">04a</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <ellipse
+                            cx="24"
+                            cy="20"
+                            rx="10"
+                            ry="12"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <line
+                            x1="19"
+                            y1="32"
+                            x2="19"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="29"
+                            y1="32"
+                            x2="29"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="14"
+                            y1="32"
+                            x2="34"
+                            y2="32"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <circle
+                            class="solar-led-l-glow"
+                            cx="24"
+                            cy="18"
+                            r="6"
+                            fill="currentColor"
+                            opacity="0.15"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">LED 1 (Green)</div>
+                      <div class="sys-node-reading" id="solarLedLReading">
+                        Off
+                      </div>
+                      <div class="sys-node-sub">D8 · panel up</div>
+                    </div>
+
+                    <!-- Servo / Solar Panel -->
+                    <div class="sys-node" data-node="solar-servo">
+                      <div class="sys-node-badge">05</div>
+                      <div class="sys-node-icon solar-panel-icon">
+                        <div class="solar-panel-glow"></div>
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <!-- solar panel -->
+                          <rect
+                            class="solar-panel-rect"
+                            x="6"
+                            y="10"
+                            width="36"
+                            height="20"
+                            rx="2"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <line
+                            x1="18"
+                            y1="10"
+                            x2="18"
+                            y2="30"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            opacity="0.4"
+                          />
+                          <line
+                            x1="30"
+                            y1="10"
+                            x2="30"
+                            y2="30"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            opacity="0.4"
+                          />
+                          <line
+                            x1="6"
+                            y1="18"
+                            x2="42"
+                            y2="18"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            opacity="0.4"
+                          />
+                          <line
+                            x1="6"
+                            y1="22"
+                            x2="42"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            opacity="0.4"
+                          />
+                          <!-- stand -->
+                          <line
+                            x1="24"
+                            y1="30"
+                            x2="24"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="16"
+                            y1="42"
+                            x2="32"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Solar Panel</div>
+                      <div class="sys-node-reading" id="solarServoReading">
+                        Centred
+                      </div>
+                      <div class="sys-node-sub">Servo D10</div>
+                    </div>
+
+                    <!-- LED Right (Red) -->
+                    <div class="sys-node" data-node="solar-led-r">
+                      <div class="sys-node-badge">04b</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <ellipse
+                            cx="24"
+                            cy="20"
+                            rx="10"
+                            ry="12"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <line
+                            x1="19"
+                            y1="32"
+                            x2="19"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="29"
+                            y1="32"
+                            x2="29"
+                            y2="42"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="14"
+                            y1="32"
+                            x2="34"
+                            y2="32"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <circle
+                            class="solar-led-r-glow"
+                            cx="24"
+                            cy="18"
+                            r="6"
+                            fill="currentColor"
+                            opacity="0.15"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">LED 2 (Red)</div>
+                      <div class="sys-node-reading" id="solarLedRReading">
+                        Off
+                      </div>
+                      <div class="sys-node-sub">D9 · panel down</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Direction indicator -->
+                <div class="solar-direction-bar" id="solarDirectionBar">
+                  <div class="solar-dir-item" id="solarDirLeft">
+                    <span class="solar-dir-arrow">↑</span> Left brighter → Panel
+                    moves <strong>up</strong>
+                  </div>
+                  <div class="solar-dir-mid">|</div>
+                  <div class="solar-dir-item" id="solarDirRight">
+                    <span class="solar-dir-arrow">↓</span> Right brighter →
+                    Panel moves <strong>down</strong>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>5V
+                    power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Analog signal A0/A1 (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #7b3fa0"></span
+                    >Digital D8/D9 LEDs (purple)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >Servo D10 (orange)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for Solar Tracking -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Arduino Uno</span>
+                      <span class="hw-chip">LDR Module × 2</span>
+                      <span class="hw-chip">Servo Motor (SG90/MG90S)</span>
+                      <span class="hw-chip">LED Green (Left)</span>
+                      <span class="hw-chip">LED Red (Right)</span>
+                      <span class="hw-chip">Resistor 220Ω × 2</span>
+                      <span class="hw-chip">Solar Panel</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Panel: Auto-Watering System ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-watering">
+              <div class="sys-overview" id="wateringOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Auto-watering system.png"
+                    alt="Auto-Watering System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Auto-watering system.png',
+                        'Auto-Watering System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Auto-Watering System · ESP32 + Moisture Sensor +
+                      Telegram
+                    </div>
+                    <h3>Soil runs dry — pump kicks in, owner notified.</h3>
+                    <p>
+                      A moisture probe reports soil condition to the ESP32;
+                      when it's dry the relay switches the pump on and a
+                      Telegram alert goes out — all over WiFi.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="wateringToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">🌱</span>
+                    <span class="sys-toggle-label">Simulate dry soil</span>
+                  </button>
+                </div>
+
+                <div
+                  class="sys-stage"
+                  id="wateringStage"
+                  data-state="idle"
+                >
+                  <div class="sys-sky watering-sky"></div>
+
+                  <!-- Row 1: main linear chain -->
+                  <div class="watering-flow-wrap">
+                    <div class="watering-row watering-row-main">
+                      <!-- Node 1: Power Adapter -->
+                      <div class="sys-node" data-node="watering-adapter">
+                        <div class="sys-node-badge">01</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="10"
+                              y="8"
+                              width="22"
+                              height="26"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <line
+                              x1="14"
+                              y1="34"
+                              x2="14"
+                              y2="40"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="28"
+                              y1="34"
+                              x2="28"
+                              y2="40"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              stroke-linecap="round"
+                            />
+                            <circle
+                              cx="21"
+                              cy="20"
+                              r="5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            />
+                            <path
+                              d="M21 15 L21 11 M17 12 L15 9 M25 12 L27 9"
+                              stroke="currentColor"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">AC/DC Adapter</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringAdapterReading"
+                        >
+                          Standby
+                        </div>
+                        <div class="sys-node-sub">+12V power</div>
+                      </div>
+                      <div class="watering-wire" data-wire="watering-0">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 2: ESP32 -->
+                      <div class="sys-node" data-node="watering-esp32">
+                        <div class="sys-node-badge">02</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="8"
+                              y="10"
+                              width="32"
+                              height="28"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <rect
+                              x="14"
+                              y="16"
+                              width="20"
+                              height="14"
+                              rx="2"
+                              fill="currentColor"
+                              opacity="0.1"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                            />
+                            <text
+                              x="24"
+                              y="26"
+                              text-anchor="middle"
+                              font-size="7"
+                              font-weight="700"
+                              fill="currentColor"
+                              font-family="monospace"
+                            >
+                              ESP32
+                            </text>
+                            <line
+                              x1="8"
+                              y1="17"
+                              x2="4"
+                              y2="17"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="8"
+                              y1="22"
+                              x2="4"
+                              y2="22"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="8"
+                              y1="27"
+                              x2="4"
+                              y2="27"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="17"
+                              x2="44"
+                              y2="17"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="22"
+                              x2="44"
+                              y2="22"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="27"
+                              x2="44"
+                              y2="27"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">ESP32 DevKit</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringEspReading"
+                        >
+                          Idle
+                        </div>
+                        <div class="sys-node-sub">Controller + WiFi</div>
+                      </div>
+                      <div class="watering-wire" data-wire="watering-1">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 3: Moisture Sensor -->
+                      <div class="sys-node" data-node="watering-moisture">
+                        <div class="sys-node-badge">03</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <path
+                              d="M16 8 L16 26"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M24 8 L24 26"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M14 26 Q14 32 20 32 Q26 32 26 26"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity="0.5"
+                            />
+                            <path
+                              class="watering-drop"
+                              d="M34 16 C34 16 29 23 29 27.5 C29 30.8 31.4 33 34 33 C36.6 33 39 30.8 39 27.5 C39 23 34 16 34 16Z"
+                              fill="currentColor"
+                              opacity="0.45"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Moisture Sensor</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringMoistureReading"
+                        >
+                          Soil: Wet
+                        </div>
+                        <div class="sys-node-sub">Probe + amplifier</div>
+                      </div>
+                    </div>
+
+                    <!-- vertical connector line -->
+                    <div class="watering-branch-connector">
+                      <div class="watering-branch-line"></div>
+                    </div>
+
+                    <!-- Row 2: outputs -->
+                    <div class="watering-row watering-row-outputs">
+                      <!-- Output A: Relay Module -->
+                      <div class="sys-node" data-node="watering-relay">
+                        <div class="sys-node-badge">04</div>
+                        <div class="sys-node-icon watering-relay-icon">
+                          <div class="watering-relay-glow"></div>
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="8"
+                              y="12"
+                              width="32"
+                              height="24"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <circle
+                              class="watering-relay-led"
+                              cx="16"
+                              cy="30"
+                              r="2.4"
+                              fill="currentColor"
+                              opacity="0.3"
+                            />
+                            <rect
+                              x="22"
+                              y="17"
+                              width="12"
+                              height="9"
+                              rx="1.5"
+                              fill="currentColor"
+                              opacity="0.12"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              x1="8"
+                              y1="20"
+                              x2="4"
+                              y2="20"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="8"
+                              y1="26"
+                              x2="4"
+                              y2="26"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="20"
+                              x2="44"
+                              y2="20"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="40"
+                              y1="26"
+                              x2="44"
+                              y2="26"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Relay Module</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringRelayReading"
+                        >
+                          OFF
+                        </div>
+                        <div class="sys-node-sub">Pump switch</div>
+                      </div>
+
+                      <!-- Output B: Water Pump -->
+                      <div class="sys-node" data-node="watering-pump">
+                        <div class="sys-node-badge">05</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <circle
+                              cx="20"
+                              cy="24"
+                              r="13"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <circle
+                              cx="20"
+                              cy="24"
+                              r="3.2"
+                              fill="currentColor"
+                              opacity="0.5"
+                            />
+                            <rect
+                              x="31"
+                              y="20"
+                              width="11"
+                              height="8"
+                              rx="2"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <path
+                              class="watering-pump-stream"
+                              d="M20 37 Q18 41 20 44 Q22 41 20 37Z"
+                              fill="currentColor"
+                              opacity="0.3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Water Pump</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringPumpReading"
+                        >
+                          OFF
+                        </div>
+                        <div class="sys-node-sub">Irrigation</div>
+                      </div>
+
+                      <!-- Output C: Telegram -->
+                      <div class="sys-node" data-node="watering-telegram">
+                        <div class="sys-node-badge">06</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <circle
+                              cx="24"
+                              cy="24"
+                              r="18"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <path
+                              d="M12 24 L36 14 L28 36 L22 28 Z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linejoin="round"
+                            />
+                            <line
+                              x1="22"
+                              y1="28"
+                              x2="36"
+                              y2="14"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              opacity="0.5"
+                            />
+                            <circle
+                              class="watering-tg-dot"
+                              cx="24"
+                              cy="24"
+                              r="3"
+                              fill="currentColor"
+                              opacity="0.3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Telegram Bot</div>
+                        <div
+                          class="sys-node-reading"
+                          id="wateringTgReading"
+                        >
+                          Waiting
+                        </div>
+                        <div class="sys-node-sub">Owner notification</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Telegram notification toast -->
+                <div class="watering-tg-toast" id="wateringTgToast">
+                  <div class="watering-tg-toast-header">
+                    <svg width="14" height="14" viewBox="0 0 48 48" fill="none">
+                      <circle cx="24" cy="24" r="20" fill="#229ED9" />
+                      <path
+                        d="M12 24 L36 14 L28 36 L22 28 Z"
+                        fill="white"
+                        stroke="none"
+                      />
+                      <line
+                        x1="22"
+                        y1="28"
+                        x2="36"
+                        y2="14"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    Auto Watering Bot
+                  </div>
+                  <div class="watering-tg-toast-body">
+                    🟤 Soil: Dry · 💧 Pump: ON<br />Watering the
+                    plants.<br /><span id="wateringTgTime"></span>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span
+                    >+12V power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >Digital Out → GPIO (yellow)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Analog Out → GPIO (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #6a3fb5"></span
+                    >Pump positive, via relay (purple)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #229ed9"></span
+                    >WiFi → Telegram (blue)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for Auto-Watering -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">ESP32 DevKit</span>
+                      <span class="hw-chip">Soil Moisture Probe</span>
+                      <span class="hw-chip">Amplifier/Driver Module</span>
+                      <span class="hw-chip">Relay Module</span>
+                      <span class="hw-chip">Mini Water Pump</span>
+                      <span class="hw-chip">AC/DC Adapter (12V)</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">Telegram Bot API</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                      <span class="hw-chip sw-chip">Telegram</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Panel: Water Level Sensing System ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-wls">
+              <div class="sys-overview" id="wlsOverview">
+                <!-- Circuit diagram image, centered above the header -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Water level sensing system.png"
+                    alt="Water Level Sensing System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Water level sensing system.png',
+                        'Water Level Sensing System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Water Level Sensing System · Save Water in Tank
+                    </div>
+                    <h3>Tank fills — level reads out, water gets saved.</h3>
+                    <p>
+                      A water sensor strip reports tank level to the Arduino
+                      UNO; the percentage is shown live on a 16×2 I2C LCD.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="wlsToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">🚰</span>
+                    <span class="sys-toggle-label">Fill the tank</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="wlsStage" data-state="idle">
+                  <div class="sys-sky wls-sky"></div>
+
+                  <div class="sys-flow wls-flow">
+                    <!-- Node 1: Water Sensor + Tank gauge -->
+                    <div class="sys-node" data-node="wls-sensor">
+                      <div class="sys-node-badge">01</div>
+                      <div class="sys-node-icon wls-tank-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="11"
+                            y="6"
+                            width="26"
+                            height="36"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.2"
+                          />
+                          <clipPath id="wlsTankClip">
+                            <rect x="11" y="6" width="26" height="36" rx="3" />
+                          </clipPath>
+                          <rect
+                            class="wls-tank-fill"
+                            x="11"
+                            y="42"
+                            width="26"
+                            height="0"
+                            fill="currentColor"
+                            opacity="0.35"
+                            clip-path="url(#wlsTankClip)"
+                          />
+                          <line
+                            x1="22"
+                            y1="3"
+                            x2="22"
+                            y2="10"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="26"
+                            y1="3"
+                            x2="26"
+                            y2="10"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Water Sensor</div>
+                      <div class="sys-node-reading" id="wlsSensorReading">
+                        0% (Empty)
+                      </div>
+                      <div class="sys-node-sub">Level strip (AOUT/DOUT)</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="wls-0">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 2: Arduino UNO -->
+                    <div class="sys-node" data-node="wls-arduino">
+                      <div class="sys-node-badge">02</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="8"
+                            y="10"
+                            width="32"
+                            height="28"
+                            rx="3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                          />
+                          <rect
+                            x="14"
+                            y="16"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            fill="currentColor"
+                            opacity="0.1"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                          />
+                          <text
+                            x="24"
+                            y="26"
+                            text-anchor="middle"
+                            font-size="6.5"
+                            font-weight="700"
+                            fill="currentColor"
+                            font-family="monospace"
+                          >
+                            UNO
+                          </text>
+                          <line
+                            x1="8"
+                            y1="17"
+                            x2="4"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="22"
+                            x2="4"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="8"
+                            y1="27"
+                            x2="4"
+                            y2="27"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="17"
+                            x2="44"
+                            y2="17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="22"
+                            x2="44"
+                            y2="22"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="40"
+                            y1="27"
+                            x2="44"
+                            y2="27"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">Arduino UNO</div>
+                      <div class="sys-node-reading" id="wlsArduinoReading">
+                        Idle
+                      </div>
+                      <div class="sys-node-sub">Reads A0 / A1</div>
+                    </div>
+
+                    <div class="sys-wire" data-wire="wls-1">
+                      <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                        <path
+                          d="M0 12 H100"
+                          stroke="var(--sys-wire-off)"
+                          stroke-width="2.5"
+                          fill="none"
+                        />
+                        <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                      </svg>
+                    </div>
+
+                    <!-- Node 3: 16x2 LCD (I2C) -->
+                    <div class="sys-node" data-node="wls-lcd">
+                      <div class="sys-node-badge">03</div>
+                      <div class="sys-node-icon">
+                        <svg viewBox="0 0 48 48" width="34" height="34">
+                          <rect
+                            x="4"
+                            y="12"
+                            width="40"
+                            height="24"
+                            rx="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.2"
+                          />
+                          <rect
+                            class="wls-lcd-screen"
+                            x="7"
+                            y="15"
+                            width="34"
+                            height="18"
+                            rx="1"
+                            fill="currentColor"
+                            opacity="0.12"
+                          />
+                          <line
+                            x1="11"
+                            y1="21"
+                            x2="31"
+                            y2="21"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            opacity="0.7"
+                          />
+                          <line
+                            x1="11"
+                            y1="27"
+                            x2="24"
+                            y2="27"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="sys-node-label">16×2 LCD (I2C)</div>
+                      <div class="sys-node-reading" id="wlsLcdReading">
+                        Off
+                      </div>
+                      <div class="sys-node-sub">SDA → A4 · SCL → A5</div>
+                    </div>
+                  </div>
+
+                  <!-- LCD message preview -->
+                  <div class="wls-lcd-preview" id="wlsLcdPreview">
+                    <div class="wls-lcd-preview-line" id="wlsLcdLine1">
+                      WATER LEVEL: 0%
+                    </div>
+                    <div class="wls-lcd-preview-line" id="wlsLcdLine2">
+                      &nbsp;
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span
+                    >+5V power (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >Analog Out → A0 (yellow)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Digital Out → A1 (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e86c8"></span
+                    >SDA → A4 (blue)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span
+                    >SCL → A5 (yellow)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software for Water Level Sensing -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Arduino UNO</span>
+                      <span class="hw-chip">Water Sensor Module</span>
+                      <span class="hw-chip">16×2 LCD (I2C)</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Arduino IDE</span>
+                      <span class="hw-chip sw-chip">LiquidCrystal_I2C</span>
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- end sys-overview-card -->
@@ -2291,9 +3913,10 @@
         position: relative;
         z-index: 1;
         display: grid;
-        grid-template-columns:
-          minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(0, 1fr)
-          64px minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(
+            0,
+            1fr
+          ) 64px minmax(0, 1fr);
         align-items: center;
         gap: 4px;
       }
@@ -3017,44 +4640,704 @@
         display: block;
       }
 
-      @media (max-width: 760px) {
-        .sys-flow {
-          grid-template-columns: 1fr;
-          gap: 10px;
+      /* ── Solar Tracking System CSS ── */
+      .solar-sky {
+        background: linear-gradient(
+          180deg,
+          #87ceeb 0%,
+          #e0f4ff 100%
+        ) !important;
+        transition: background 1s ease;
+      }
+      #solarOverview[data-dir="left"] .solar-sky {
+        background: linear-gradient(
+          180deg,
+          #ffd700 0%,
+          #ffe87c 40%,
+          #e0f4ff 100%
+        ) !important;
+      }
+      #solarOverview[data-dir="right"] .solar-sky {
+        background: linear-gradient(
+          180deg,
+          #e0f4ff 0%,
+          #ffe87c 60%,
+          #ffd700 100%
+        ) !important;
+      }
+
+      /* Animated sun */
+      .solar-sun-wrap {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        transition:
+          left 1.2s cubic-bezier(0.34, 1.4, 0.64, 1),
+          transform 1.2s cubic-bezier(0.34, 1.4, 0.64, 1);
+        pointer-events: none;
+      }
+      #solarOverview[data-dir="left"] .solar-sun-wrap {
+        left: 20%;
+      }
+      #solarOverview[data-dir="right"] .solar-sun-wrap {
+        left: 80%;
+      }
+      .solar-sun {
+        font-size: 28px;
+        filter: drop-shadow(0 0 8px rgba(255, 200, 0, 0.7));
+        animation: solarSpin 8s linear infinite;
+      }
+      @keyframes solarSpin {
+        from {
+          transform: rotate(0deg);
         }
-        .sys-wire {
-          transform: rotate(90deg);
-          height: 30px;
-          width: 36px;
-          margin: 0 auto;
-        }
-        .sys-header {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .sys-hw-sw {
-          grid-template-columns: 1fr;
-        }
-        .wcs-row-main {
-          grid-template-columns: 1fr;
-        }
-        .wcs-wire {
-          transform: rotate(90deg);
-          height: 30px;
-          width: 36px;
-          margin: 0 auto;
-        }
-        .wcs-row-outputs {
-          grid-template-columns: 1fr;
-        }
-        .wcs-branch-connector {
-          display: none;
+        to {
+          transform: rotate(360deg);
         }
       }
-      @media (prefers-reduced-motion: reduce) {
-        .sys-pulse {
-          animation: none !important;
-          transition: none !important;
+
+      /* Layout */
+      .solar-top-row {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(
+            0,
+            1fr
+          );
+        align-items: center;
+        gap: 4px;
+      }
+      .solar-branch-connector {
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+      }
+      .solar-branch-line {
+        width: 1px;
+        height: 16px;
+        background: var(--border-mid);
+        transition: background 0.4s;
+      }
+      #solarOverview[data-dir="left"] .solar-branch-line {
+        background: #2e7d52;
+      }
+      #solarOverview[data-dir="right"] .solar-branch-line {
+        background: #d94f2b;
+      }
+      .solar-bottom-row {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      /* Solar panel node */
+      .solar-panel-icon {
+        position: relative;
+      }
+      .solar-panel-glow {
+        position: absolute;
+        inset: -8px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 200, 0, 0.3) 0%,
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .solar-panel-rect {
+        transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transform-origin: 24px 20px;
+      }
+      #solarOverview[data-dir="left"] .solar-panel-rect {
+        transform: rotate(-18deg);
+      }
+      #solarOverview[data-dir="right"] .solar-panel-rect {
+        transform: rotate(18deg);
+      }
+      .sys-node[data-node="solar-servo"].is-active .solar-panel-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="solar-servo"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="solar-servo"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+
+      /* LED nodes */
+      .solar-led-l-glow,
+      .solar-led-r-glow {
+        transition: opacity 0.4s;
+      }
+      .sys-node[data-node="solar-led-l"].is-active .sys-node-icon {
+        color: #2e7d52;
+      }
+      .sys-node[data-node="solar-led-l"].is-active .solar-led-l-glow {
+        opacity: 0.7;
+      }
+      .sys-node[data-node="solar-led-l"].is-active .sys-node-reading {
+        color: #2e7d52;
+      }
+      .sys-node[data-node="solar-led-r"].is-active .sys-node-icon {
+        color: #d94f2b;
+      }
+      .sys-node[data-node="solar-led-r"].is-active .solar-led-r-glow {
+        opacity: 0.7;
+      }
+      .sys-node[data-node="solar-led-r"].is-active .sys-node-reading {
+        color: #d94f2b;
+      }
+
+      /* LDR nodes */
+      .sys-node[data-node="solar-ldr-l"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="solar-ldr-l"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+      .sys-node[data-node="solar-ldr-r"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="solar-ldr-r"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+      .sys-node[data-node="solar-arduino"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="solar-arduino"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+
+      /* Solar wires */
+      .sys-wire[data-wire="solar-0"] path,
+      .sys-wire[data-wire="solar-1"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .sys-wire[data-wire="solar-0"].is-live path {
+        stroke: #2e7d52;
+      }
+      .sys-wire[data-wire="solar-1"].is-live path {
+        stroke: #d94f2b;
+      }
+      .sys-wire[data-wire="solar-0"].is-live .sys-pulse {
+        fill: #2e7d52;
+        opacity: 1;
+        animation: sysFlow 1.5s linear infinite;
+      }
+      .sys-wire[data-wire="solar-1"].is-live .sys-pulse {
+        fill: #d94f2b;
+        opacity: 1;
+        animation: sysFlow 1.5s linear infinite;
+      }
+
+      /* Direction indicator bar */
+      .solar-direction-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        margin-top: 14px;
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--surface-alt);
+        font-size: 12.5px;
+        color: var(--text-sub);
+        transition: background 0.4s;
+      }
+      .solar-dir-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        opacity: 0.4;
+        transition:
+          opacity 0.4s,
+          color 0.4s;
+      }
+      .solar-dir-mid {
+        color: var(--border-mid);
+        font-size: 18px;
+      }
+      .solar-dir-arrow {
+        font-size: 16px;
+      }
+      #solarOverview[data-dir="left"] .solar-dir-item:first-child {
+        opacity: 1;
+        color: var(--green);
+        font-weight: 600;
+      }
+      #solarOverview[data-dir="right"] .solar-dir-item:last-child {
+        opacity: 1;
+        color: var(--accent);
+        font-weight: 600;
+      }
+      #solarOverview[data-dir="left"] .solar-direction-bar {
+        background: var(--green-soft);
+        border-color: rgba(46, 125, 82, 0.2);
+      }
+      #solarOverview[data-dir="right"] .solar-direction-bar {
+        background: var(--accent-soft);
+        border-color: rgba(217, 79, 43, 0.2);
+      }
+
+      /* Diagram image under eyebrow */
+      .sys-diagram-img-wrap {
+        margin: 10px auto 14px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .sys-diagram-img {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        cursor: zoom-in;
+        transition: box-shadow 0.2s;
+        display: block;
+        margin: 0 auto;
+      }
+      .sys-diagram-img:hover {
+        box-shadow: var(--shadow-hov);
+      }
+      .sys-diagram-img-hint {
+        font-size: 10.5px;
+        color: var(--text-muted);
+        text-align: center;
+        margin-top: 4px;
+      }
+
+      /* ── Auto-Watering System CSS ── */
+      .watering-flow-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .watering-row {
+        display: grid;
+        align-items: center;
+        gap: 4px;
+      }
+      .watering-row-main {
+        grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(
+            0,
+            1fr
+          );
+      }
+      .watering-row-outputs {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 10px;
+        margin-top: 4px;
+      }
+      .watering-wire {
+        position: relative;
+        height: 24px;
+      }
+      .watering-wire svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+
+      /* branch connector — vertical line from sensor node down to output row */
+      .watering-branch-connector {
+        display: flex;
+        justify-content: flex-end;
+        pointer-events: none;
+      }
+      .watering-branch-line {
+        width: 1px;
+        height: 18px;
+        background: var(--border-mid);
+        margin-right: calc(16.66% - 0.5px);
+        transition: background 0.4s;
+      }
+      #wateringOverview[data-active="dry"] .watering-branch-line {
+        background: #c8a000;
+      }
+
+      /* Watering sky */
+      .watering-sky {
+        background: linear-gradient(180deg, #fdf6e8 0%, #f7f6f3 100%);
+      }
+      #wateringOverview[data-active="dry"] .watering-sky {
+        background: linear-gradient(180deg, #2e2412 0%, #3a2e16 100%);
+      }
+      #wateringOverview[data-active="dry"] .sys-node {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+      #wateringOverview[data-active="dry"] .sys-node-label {
+        color: #faf2e2;
+      }
+      #wateringOverview[data-active="dry"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #wateringOverview[data-active="dry"] .sys-node-sub {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* toggle active */
+      #wateringOverview[data-active="dry"] .sys-toggle {
+        background: #2e2412;
+        border-color: #2e2412;
+        color: #faf2e2;
+      }
+
+      /* Watering wire colours */
+      .watering-wire[data-wire="watering-0"] path,
+      .watering-wire[data-wire="watering-1"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .watering-wire[data-wire="watering-0"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .watering-wire[data-wire="watering-1"].is-live path {
+        stroke: var(--sys-wire-signal);
+      }
+      .watering-wire[data-wire="watering-0"].is-live .sys-pulse {
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .watering-wire[data-wire="watering-1"].is-live .sys-pulse {
+        fill: var(--sys-wire-signal);
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+
+      /* Watering node active states */
+      .sys-node[data-node="watering-adapter"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="watering-adapter"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .sys-node[data-node="watering-esp32"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="watering-esp32"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+
+      /* Moisture sensor droplet */
+      .watering-drop {
+        transition:
+          opacity 0.4s,
+          fill 0.4s;
+      }
+      .sys-node[data-node="watering-moisture"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="watering-moisture"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+      .sys-node[data-node="watering-moisture"].is-active .watering-drop {
+        opacity: 0.85;
+        fill: #c8a000;
+      }
+
+      /* Relay module */
+      .watering-relay-icon {
+        position: relative;
+      }
+      .watering-relay-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(46, 125, 82, 0.35) 0%,
+          rgba(46, 125, 82, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .watering-relay-led {
+        transition:
+          fill 0.3s,
+          opacity 0.3s;
+      }
+      .sys-node[data-node="watering-relay"].is-active .watering-relay-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="watering-relay"].is-active .watering-relay-led {
+        fill: #2e7d52;
+        opacity: 1;
+      }
+      .sys-node[data-node="watering-relay"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="watering-relay"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+
+      /* Water pump stream */
+      .watering-pump-stream {
+        transition:
+          opacity 0.3s,
+          fill 0.3s;
+        opacity: 0;
+      }
+      .sys-node[data-node="watering-pump"].is-active .sys-node-icon {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="watering-pump"].is-active .sys-node-reading {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="watering-pump"].is-active .watering-pump-stream {
+        fill: #2e86c8;
+        opacity: 0.9;
+        animation: wateringDrip 0.9s ease-in-out infinite alternate;
+      }
+      @keyframes wateringDrip {
+        from {
+          transform: translateY(0);
+          opacity: 0.4;
+        }
+        to {
+          transform: translateY(4px);
+          opacity: 0.9;
+        }
+      }
+
+      /* Telegram node */
+      .watering-tg-dot {
+        transition:
+          fill 0.3s,
+          opacity 0.3s;
+      }
+      .sys-node[data-node="watering-telegram"].is-active .sys-node-icon {
+        color: #229ed9;
+      }
+      .sys-node[data-node="watering-telegram"].is-active .sys-node-reading {
+        color: #229ed9;
+      }
+      .sys-node[data-node="watering-telegram"].is-active .watering-tg-dot {
+        fill: #229ed9;
+        opacity: 0.8;
+        animation: wateringTgPulse 1s ease-in-out infinite alternate;
+      }
+      @keyframes wateringTgPulse {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Telegram toast notification */
+      .watering-tg-toast {
+        display: none;
+        border: 1px solid rgba(34, 158, 217, 0.25);
+        border-radius: 12px;
+        background: rgba(34, 158, 217, 0.07);
+        padding: 12px 14px;
+        margin-top: 14px;
+        font-size: 12.5px;
+        color: var(--text);
+        line-height: 1.6;
+        animation: wateringToastIn 0.35s ease;
+      }
+      .watering-tg-toast.visible {
+        display: block;
+      }
+      @keyframes wateringToastIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .watering-tg-toast-header {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #229ed9;
+        margin-bottom: 6px;
+      }
+      .watering-tg-toast-body {
+        color: var(--text-sub);
+        font-size: 12.5px;
+      }
+      .watering-tg-toast-body span {
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-top: 2px;
+        display: block;
+      }
+
+      /* ── Water Level Sensing System CSS ── */
+      .wls-sky {
+        background: linear-gradient(180deg, #eaf5fb 0%, #f5fbfe 100%);
+      }
+      #wlsOverview[data-active="filling"] .wls-sky {
+        background: linear-gradient(180deg, #0f2a3a 0%, #143a4f 100%);
+      }
+      #wlsOverview[data-active="filling"] .sys-node {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+      #wlsOverview[data-active="filling"] .sys-node-label {
+        color: #e7f6ff;
+      }
+      #wlsOverview[data-active="filling"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #wlsOverview[data-active="filling"] .sys-node-sub {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #wlsOverview[data-active="filling"] .sys-toggle {
+        background: #0f2a3a;
+        border-color: #0f2a3a;
+        color: #e7f6ff;
+      }
+
+      /* Water level wire colours */
+      .wls-flow .sys-wire[data-wire="wls-0"] path,
+      .wls-flow .sys-wire[data-wire="wls-1"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .wls-flow .sys-wire[data-wire="wls-0"].is-live path {
+        stroke: #c8a000;
+      }
+      .wls-flow .sys-wire[data-wire="wls-1"].is-live path {
+        stroke: #2e86c8;
+      }
+      .wls-flow .sys-wire[data-wire="wls-0"].is-live .sys-pulse {
+        fill: #c8a000;
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .wls-flow .sys-wire[data-wire="wls-1"].is-live .sys-pulse {
+        fill: #2e86c8;
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+
+      /* Tank fill gauge inside the sensor node icon */
+      .wls-tank-icon {
+        position: relative;
+      }
+      .wls-tank-fill {
+        transition: height 1.6s ease, y 1.6s ease;
+        color: var(--border-mid);
+      }
+      .sys-node[data-node="wls-sensor"].is-active .sys-node-icon {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="wls-sensor"].is-active .sys-node-reading {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="wls-sensor"].is-active .wls-tank-fill {
+        color: #2e86c8;
+      }
+
+      .sys-node[data-node="wls-arduino"].is-active .sys-node-icon {
+        color: #3a7cc8;
+      }
+      .sys-node[data-node="wls-arduino"].is-active .sys-node-reading {
+        color: #3a7cc8;
+      }
+
+      /* LCD node */
+      .wls-lcd-screen {
+        transition: opacity 0.4s, fill 0.4s;
+      }
+      .sys-node[data-node="wls-lcd"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="wls-lcd"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+      .sys-node[data-node="wls-lcd"].is-active .wls-lcd-screen {
+        fill: var(--green);
+        opacity: 0.28;
+      }
+
+      /* LCD message preview panel */
+      .wls-lcd-preview {
+        position: relative;
+        z-index: 1;
+        margin-top: 18px;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #c7e6b0;
+        border: 3px solid #1f2937;
+        border-radius: 6px;
+        padding: 12px 14px;
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: #1f3a1f;
+        box-shadow: var(--shadow);
+        transition:
+          background 0.4s,
+          color 0.4s;
+      }
+      #wlsOverview[data-active="filling"] .wls-lcd-preview {
+        background: #36b37e;
+        color: #06281a;
+      }
+      .wls-lcd-preview-line {
+        white-space: pre;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 760px) {
+        .solar-top-row {
+          grid-template-columns: 1fr;
+        }
+        .solar-bottom-row {
+          grid-template-columns: 1fr;
+        }
+        .solar-branch-connector {
+          display: none;
+        }
+        .watering-row-main {
+          grid-template-columns: 1fr;
+        }
+        .watering-row-main .watering-wire {
+          display: none;
+        }
+        .watering-row-outputs {
+          grid-template-columns: 1fr;
+        }
+        .watering-branch-connector {
+          display: none;
+        }
+        .wls-flow {
+          grid-template-columns: 1fr;
+        }
+        .wls-flow .sys-wire {
+          display: none;
         }
       }
     </style>
@@ -3070,6 +5353,9 @@
           .forEach((p) => p.classList.add("hidden"));
         document.getElementById("tab-btn-" + tab).classList.add("active");
         document.getElementById("tab-panel-" + tab).classList.remove("hidden");
+
+        // Persist so a refresh/reload keeps the same system tab open
+        sessionStorage.setItem("lastSysTab", tab);
       }
 
       (function () {
@@ -3440,6 +5726,379 @@
         }
         wcsToggle.addEventListener("click", () => setWCS(!wcsIsActive));
         setWCS(false, { skipDelay: true });
+
+        /* ══ SOLAR TRACKING SYSTEM ══ */
+        var solarRoot = document.getElementById("solarOverview");
+        var solarToggle = document.getElementById("solarToggle");
+        var solarLdrLR = document.getElementById("solarLdrLReading");
+        var solarLdrRR = document.getElementById("solarLdrRReading");
+        var solarArduinoR = document.getElementById("solarArduinoReading");
+        var solarServoR = document.getElementById("solarServoReading");
+        var solarLedLR = document.getElementById("solarLedLReading");
+        var solarLedRR = document.getElementById("solarLedRReading");
+
+        var solarNodes = {
+          ldrL: solarRoot.querySelector('[data-node="solar-ldr-l"]'),
+          arduino: solarRoot.querySelector('[data-node="solar-arduino"]'),
+          ldrR: solarRoot.querySelector('[data-node="solar-ldr-r"]'),
+          ledL: solarRoot.querySelector('[data-node="solar-led-l"]'),
+          servo: solarRoot.querySelector('[data-node="solar-servo"]'),
+          ledR: solarRoot.querySelector('[data-node="solar-led-r"]'),
+        };
+        var solarWires = {
+          w0: solarRoot.querySelector('[data-wire="solar-0"]'),
+          w1: solarRoot.querySelector('[data-wire="solar-1"]'),
+        };
+        var solarDir = "balanced"; // 'balanced' | 'left' | 'right'
+        var solarTimers = [];
+
+        function luxSim(side, dir) {
+          if (dir === "balanced") return Math.floor(480 + Math.random() * 40);
+          if (side === "left")
+            return dir === "left"
+              ? Math.floor(720 + Math.random() * 80)
+              : Math.floor(220 + Math.random() * 60);
+          return dir === "right"
+            ? Math.floor(720 + Math.random() * 80)
+            : Math.floor(220 + Math.random() * 60);
+        }
+
+        function setSolar(dir, opts) {
+          opts = opts || {};
+          solarDir = dir;
+          solarRoot.dataset.dir = dir;
+          solarToggle.setAttribute(
+            "aria-pressed",
+            dir !== "balanced" ? "true" : "false",
+          );
+          solarTimers.forEach(clearTimeout);
+          solarTimers = [];
+          Object.values(solarNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(solarWires).forEach((w) =>
+            w.classList.remove("is-live"),
+          );
+
+          var lL = luxSim("left", dir),
+            lR = luxSim("right", dir);
+          solarLdrLR.textContent = lL + " lux";
+          solarLdrRR.textContent = lR + " lux";
+
+          if (dir === "balanced") {
+            solarArduinoR.textContent = "Balanced";
+            solarServoR.textContent = "Centred";
+            solarLedLR.textContent = "Off";
+            solarLedRR.textContent = "Off";
+            solarToggle.querySelector(".sys-toggle-label").textContent =
+              "Shift sun left";
+            solarToggle.querySelector(".sys-toggle-icon").textContent = "☀️";
+            return;
+          }
+
+          var s = opts.skipDelay ? 0 : 420;
+          var isLeft = dir === "left";
+
+          if (isLeft) {
+            solarToggle.querySelector(".sys-toggle-label").textContent =
+              "Shift sun right";
+            solarToggle.querySelector(".sys-toggle-icon").textContent = "➡️";
+          } else {
+            solarToggle.querySelector(".sys-toggle-label").textContent =
+              "Reset to centre";
+            solarToggle.querySelector(".sys-toggle-icon").textContent = "↩️";
+          }
+
+          // LDR-L fires (brighter side)
+          solarTimers.push(
+            setTimeout(() => {
+              solarNodes.ldrL.classList.add("is-active");
+              solarWires.w0.classList.add("is-live");
+            }, s * 0),
+          );
+          solarTimers.push(
+            setTimeout(() => {
+              solarNodes.ldrR.classList.add("is-active");
+              solarWires.w1.classList.add("is-live");
+            }, s * 0),
+          );
+          solarTimers.push(
+            setTimeout(() => {
+              solarArduinoR.textContent = isLeft
+                ? "Left > Right"
+                : "Right > Left";
+              solarNodes.arduino.classList.add("is-active");
+            }, s * 1),
+          );
+          solarTimers.push(
+            setTimeout(() => {
+              solarServoR.textContent = isLeft ? "Tilts up" : "Tilts down";
+              solarNodes.servo.classList.add("is-active");
+              if (isLeft) {
+                solarLedLR.textContent = "ON (Green)";
+                solarNodes.ledL.classList.add("is-active");
+              } else {
+                solarLedRR.textContent = "ON (Red)";
+                solarNodes.ledR.classList.add("is-active");
+              }
+            }, s * 2),
+          );
+        }
+
+        solarToggle.addEventListener("click", () => {
+          if (solarDir === "balanced") setSolar("left");
+          else if (solarDir === "left") setSolar("right");
+          else setSolar("balanced");
+        });
+
+        // Live lux flicker
+        setInterval(() => {
+          if (solarDir !== "balanced") {
+            solarLdrLR.textContent = luxSim("left", solarDir) + " lux";
+            solarLdrRR.textContent = luxSim("right", solarDir) + " lux";
+          }
+        }, 3000);
+
+        setSolar("balanced", { skipDelay: true });
+
+        /* ══ AUTO-WATERING SYSTEM ══ */
+        var wateringRoot = document.getElementById("wateringOverview");
+        var wateringToggle = document.getElementById("wateringToggle");
+        var wateringAdapterR = document.getElementById(
+          "wateringAdapterReading",
+        );
+        var wateringEspR = document.getElementById("wateringEspReading");
+        var wateringMoistureR = document.getElementById(
+          "wateringMoistureReading",
+        );
+        var wateringRelayR = document.getElementById("wateringRelayReading");
+        var wateringPumpR = document.getElementById("wateringPumpReading");
+        var wateringTgR = document.getElementById("wateringTgReading");
+        var wateringTgToast = document.getElementById("wateringTgToast");
+        var wateringTgTime = document.getElementById("wateringTgTime");
+
+        var wateringNodes = {
+          adapter: wateringRoot.querySelector('[data-node="watering-adapter"]'),
+          esp32: wateringRoot.querySelector('[data-node="watering-esp32"]'),
+          moisture: wateringRoot.querySelector(
+            '[data-node="watering-moisture"]',
+          ),
+          relay: wateringRoot.querySelector('[data-node="watering-relay"]'),
+          pump: wateringRoot.querySelector('[data-node="watering-pump"]'),
+          telegram: wateringRoot.querySelector(
+            '[data-node="watering-telegram"]',
+          ),
+        };
+        var wateringWires = {
+          w0: wateringRoot.querySelector('[data-wire="watering-0"]'),
+          w1: wateringRoot.querySelector('[data-wire="watering-1"]'),
+        };
+        var wateringIsActive = false,
+          wateringTimers = [];
+
+        function fmtTimeWatering() {
+          var d = new Date();
+          var h = d.getHours(),
+            m = d.getMinutes();
+          var ampm = h >= 12 ? "PM" : "AM";
+          h = h % 12 || 12;
+          return "Time: " + h + ":" + String(m).padStart(2, "0") + " " + ampm;
+        }
+
+        function setWatering(on, opts) {
+          opts = opts || {};
+          wateringIsActive = on;
+          wateringRoot.dataset.active = on ? "dry" : "idle";
+          wateringToggle.setAttribute("aria-pressed", String(on));
+          wateringToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Soil is wet again"
+            : "Simulate dry soil";
+          wateringToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "💧"
+            : "🌱";
+
+          wateringTimers.forEach(clearTimeout);
+          wateringTimers = [];
+          Object.values(wateringNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(wateringWires).forEach((w) =>
+            w.classList.remove("is-live"),
+          );
+          wateringTgToast.classList.remove("visible");
+
+          if (!on) {
+            wateringAdapterR.textContent = "Standby";
+            wateringEspR.textContent = "Idle";
+            wateringMoistureR.textContent = "Soil: Wet";
+            wateringRelayR.textContent = "OFF";
+            wateringPumpR.textContent = "OFF";
+            wateringTgR.textContent = "Waiting";
+            return;
+          }
+
+          var s = opts.skipDelay ? 0 : 450;
+          wateringNodes.adapter.classList.add("is-active");
+          wateringAdapterR.textContent = "Active (12V)";
+          wateringTimers.push(
+            setTimeout(() => wateringWires.w0.classList.add("is-live"), s * 0),
+          );
+          wateringTimers.push(
+            setTimeout(() => {
+              wateringEspR.textContent = "Processing";
+              wateringNodes.esp32.classList.add("is-active");
+              wateringWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          wateringTimers.push(
+            setTimeout(() => {
+              wateringMoistureR.textContent = "Soil: Dry";
+              wateringNodes.moisture.classList.add("is-active");
+            }, s * 2),
+          );
+          // outputs branch in parallel
+          wateringTimers.push(
+            setTimeout(() => {
+              wateringRelayR.textContent = "ON";
+              wateringNodes.relay.classList.add("is-active");
+            }, s * 3),
+          );
+          wateringTimers.push(
+            setTimeout(() => {
+              wateringPumpR.textContent = "Watering";
+              wateringNodes.pump.classList.add("is-active");
+            }, s * 3),
+          );
+          wateringTimers.push(
+            setTimeout(() => {
+              wateringTgR.textContent = "Sent!";
+              wateringNodes.telegram.classList.add("is-active");
+            }, s * 4),
+          );
+          wateringTimers.push(
+            setTimeout(
+              () => {
+                wateringTgTime.textContent = fmtTimeWatering();
+                wateringTgToast.classList.add("visible");
+              },
+              s * 4 + 200,
+            ),
+          );
+        }
+        wateringToggle.addEventListener("click", () =>
+          setWatering(!wateringIsActive),
+        );
+        setWatering(false, { skipDelay: true });
+
+        /* ══ WATER LEVEL SENSING SYSTEM ══ */
+        var wlsRoot = document.getElementById("wlsOverview");
+        var wlsToggle = document.getElementById("wlsToggle");
+        var wlsSensorR = document.getElementById("wlsSensorReading");
+        var wlsArduinoR = document.getElementById("wlsArduinoReading");
+        var wlsLcdR = document.getElementById("wlsLcdReading");
+        var wlsLcdLine1 = document.getElementById("wlsLcdLine1");
+        var wlsLcdLine2 = document.getElementById("wlsLcdLine2");
+        var wlsTankFill = wlsRoot.querySelector(".wls-tank-fill");
+
+        var wlsNodes = {
+          sensor: wlsRoot.querySelector('[data-node="wls-sensor"]'),
+          arduino: wlsRoot.querySelector('[data-node="wls-arduino"]'),
+          lcd: wlsRoot.querySelector('[data-node="wls-lcd"]'),
+        };
+        var wlsWires = {
+          w0: wlsRoot.querySelector('[data-wire="wls-0"]'),
+          w1: wlsRoot.querySelector('[data-wire="wls-1"]'),
+        };
+        var wlsIsFilling = false,
+          wlsTimers = [];
+
+        // tank rect: y=6, height=36 inside the 48x48 viewBox (bottom at y=42)
+        function setTankLevel(pct) {
+          var maxH = 36;
+          var h = (maxH * pct) / 100;
+          wlsTankFill.setAttribute("height", h);
+          wlsTankFill.setAttribute("y", 42 - h);
+        }
+
+        function wlsLevelLabel(pct) {
+          if (pct === 0) return "0% (Empty)";
+          if (pct >= 100) return "100% (Full)";
+          return pct + "%";
+        }
+
+        function wlsLcdMessage(pct) {
+          if (pct >= 100) return ["WATER LEVEL: 100%", "TANK FULL!"];
+          if (pct === 0) return ["WATER LEVEL: 0%", "TANK EMPTY"];
+          return ["WATER LEVEL: " + pct + "%", "SAVE WATER"];
+        }
+
+        function setWLS(on, opts) {
+          opts = opts || {};
+          wlsIsFilling = on;
+          wlsRoot.dataset.active = on ? "filling" : "idle";
+          wlsToggle.setAttribute("aria-pressed", String(on));
+          wlsToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Drain the tank"
+            : "Fill the tank";
+          wlsToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "🌊"
+            : "🚰";
+
+          wlsTimers.forEach(clearTimeout);
+          wlsTimers = [];
+          Object.values(wlsNodes).forEach((n) =>
+            n.classList.remove("is-active"),
+          );
+          Object.values(wlsWires).forEach((w) => w.classList.remove("is-live"));
+
+          if (!on) {
+            setTankLevel(0);
+            wlsSensorR.textContent = wlsLevelLabel(0);
+            wlsArduinoR.textContent = "Idle";
+            wlsLcdR.textContent = "Off";
+            wlsLcdLine1.textContent = "WATER LEVEL: 0%";
+            wlsLcdLine2.innerHTML = "&nbsp;";
+            return;
+          }
+
+          var s = opts.skipDelay ? 0 : 450;
+          wlsNodes.sensor.classList.add("is-active");
+          wlsTimers.push(
+            setTimeout(() => wlsWires.w0.classList.add("is-live"), s * 0),
+          );
+          wlsTimers.push(
+            setTimeout(() => {
+              wlsArduinoR.textContent = "Reading A0/A1";
+              wlsNodes.arduino.classList.add("is-active");
+              wlsWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+          wlsTimers.push(
+            setTimeout(() => {
+              wlsLcdR.textContent = "On";
+              wlsNodes.lcd.classList.add("is-active");
+            }, s * 2),
+          );
+
+          // Animate the tank rising through 0 → 25 → 50 → 75 → 100%
+          var steps = [0, 25, 50, 75, 100];
+          steps.forEach(function (pct, i) {
+            wlsTimers.push(
+              setTimeout(
+                function () {
+                  setTankLevel(pct);
+                  wlsSensorR.textContent = wlsLevelLabel(pct);
+                  var msg = wlsLcdMessage(pct);
+                  wlsLcdLine1.textContent = msg[0];
+                  wlsLcdLine2.textContent = msg[1];
+                },
+                s * 2 + i * (opts.skipDelay ? 0 : 700),
+              ),
+            );
+          });
+        }
+        wlsToggle.addEventListener("click", () => setWLS(!wlsIsFilling));
+        setWLS(false, { skipDelay: true });
       })();
     </script>
   </body>
