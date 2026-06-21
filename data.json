@@ -549,22 +549,28 @@
           {
             "name": "Auto street light system",
             "src": "IMG/Auto street light system.png"
-          },{
+          },
+          {
             "name": "Auto-watering system",
             "src": "IMG/Auto-watering system.png"
-          },{
+          },
+          {
             "name": "Rain detecting system",
             "src": "IMG/Rain detecting system.png"
-          },{
+          },
+          {
             "name": "Solar tracking system",
             "src": "IMG/Solar tracking system.png"
-          },{
+          },
+          {
             "name": "Traffic Sensing Auto Street Light System",
             "src": "IMG/Traffic Sensing Auto Street Light System.png"
-          },{
+          },
+          {
             "name": "Water level sensing system",
             "src": "IMG/Water level sensing system.png"
-          },{
+          },
+          {
             "name": "Wireless Charging Station",
             "src": "IMG/Wireless Charging Station.png"
           }
@@ -822,7 +828,7 @@
   "2026-06-01": {
     "activities": [
       {
-        "name": "Selected water slime decoration material via Discord discussion",
+        "name": "Selected water slime decoration material via Telegram",
         "completed": true,
         "challenges": "",
         "evidence": [
@@ -837,7 +843,7 @@
   "2026-06-02": {
     "activities": [
       {
-        "name": "Refining the project report based on Group 2 feedback",
+        "name": "Refining the project report based on lecturer feedback",
         "completed": true,
         "challenges": "",
         "evidence": [
@@ -931,7 +937,7 @@
         ]
       },
       {
-        "name": "Final decoration and rain detection decoration setup",
+        "name": "Continuing decoration and rain detection decoration setup",
         "completed": true,
         "challenges": "",
         "evidence": [
@@ -965,7 +971,7 @@
   "2026-06-20": {
     "activities": [
       {
-        "name": "Final decoration assembly via video call",
+        "name": "Continuing decoration",
         "completed": true,
         "challenges": "",
         "evidence": [
@@ -999,6 +1005,23 @@
           {
             "name": "Submitted the report",
             "src": "IMG/20 June Submited the report.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Finalizing Decorations",
+        "completed": true,
+        "challenges": "",
+        "evidence": [
+          {
+            "name": "Finalizing Decorations",
+            "src": "IMG/21 June Finalizing Decoration.jpg"
+          },{
+            "name": "Finalizing Decorations",
+            "src": "IMG/21 June Finalizing Decoration 2.jpg"
+          }, {
+            "name": "Finalizing Decorations",
+            "src": "IMG/21 June Finalizing Decoration.png"
           }
         ]
       }

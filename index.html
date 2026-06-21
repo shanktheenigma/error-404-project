@@ -427,6 +427,25 @@
                 </svg>
                 Water Level Sensing
               </button>
+              <button
+                class="sys-tab-btn"
+                id="tab-btn-piezo"
+                onclick="switchSysTab('piezo')"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                Piezo Harvesting
+              </button>
             </div>
 
             <!-- ── Panel: Auto Street Light (LDR) ── -->
@@ -2699,14 +2718,13 @@
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
-                      Auto-Watering System · ESP32 + Moisture Sensor +
-                      Telegram
+                      Auto-Watering System · ESP32 + Moisture Sensor + Telegram
                     </div>
                     <h3>Soil runs dry — pump kicks in, owner notified.</h3>
                     <p>
-                      A moisture probe reports soil condition to the ESP32;
-                      when it's dry the relay switches the pump on and a
-                      Telegram alert goes out — all over WiFi.
+                      A moisture probe reports soil condition to the ESP32; when
+                      it's dry the relay switches the pump on and a Telegram
+                      alert goes out — all over WiFi.
                     </p>
                   </div>
                   <button
@@ -2720,11 +2738,7 @@
                   </button>
                 </div>
 
-                <div
-                  class="sys-stage"
-                  id="wateringStage"
-                  data-state="idle"
-                >
+                <div class="sys-stage" id="wateringStage" data-state="idle">
                   <div class="sys-sky watering-sky"></div>
 
                   <!-- Row 1: main linear chain -->
@@ -2894,10 +2908,7 @@
                           </svg>
                         </div>
                         <div class="sys-node-label">ESP32 DevKit</div>
-                        <div
-                          class="sys-node-reading"
-                          id="wateringEspReading"
-                        >
+                        <div class="sys-node-reading" id="wateringEspReading">
                           Idle
                         </div>
                         <div class="sys-node-sub">Controller + WiFi</div>
@@ -3038,10 +3049,7 @@
                           </svg>
                         </div>
                         <div class="sys-node-label">Relay Module</div>
-                        <div
-                          class="sys-node-reading"
-                          id="wateringRelayReading"
-                        >
+                        <div class="sys-node-reading" id="wateringRelayReading">
                           OFF
                         </div>
                         <div class="sys-node-sub">Pump switch</div>
@@ -3086,10 +3094,7 @@
                           </svg>
                         </div>
                         <div class="sys-node-label">Water Pump</div>
-                        <div
-                          class="sys-node-reading"
-                          id="wateringPumpReading"
-                        >
+                        <div class="sys-node-reading" id="wateringPumpReading">
                           OFF
                         </div>
                         <div class="sys-node-sub">Irrigation</div>
@@ -3135,10 +3140,7 @@
                           </svg>
                         </div>
                         <div class="sys-node-label">Telegram Bot</div>
-                        <div
-                          class="sys-node-reading"
-                          id="wateringTgReading"
-                        >
+                        <div class="sys-node-reading" id="wateringTgReading">
                           Waiting
                         </div>
                         <div class="sys-node-sub">Owner notification</div>
@@ -3169,8 +3171,9 @@
                     Auto Watering Bot
                   </div>
                   <div class="watering-tg-toast-body">
-                    🟤 Soil: Dry · 💧 Pump: ON<br />Watering the
-                    plants.<br /><span id="wateringTgTime"></span>
+                    🟤 Soil: Dry · 💧 Pump: ON<br />Watering the plants.<br /><span
+                      id="wateringTgTime"
+                    ></span>
                   </div>
                 </div>
 
@@ -3529,9 +3532,7 @@
                         </svg>
                       </div>
                       <div class="sys-node-label">16×2 LCD (I2C)</div>
-                      <div class="sys-node-reading" id="wlsLcdReading">
-                        Off
-                      </div>
+                      <div class="sys-node-reading" id="wlsLcdReading">Off</div>
                       <div class="sys-node-sub">SDA → A4 · SCL → A5</div>
                     </div>
                   </div>
@@ -3549,8 +3550,8 @@
 
                 <div class="sys-legend">
                   <div class="sys-legend-item">
-                    <span class="sys-dot" style="background: #d94f2b"></span
-                    >+5V power (red)
+                    <span class="sys-dot" style="background: #d94f2b"></span>+5V
+                    power (red)
                   </div>
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #2b2b2b"></span
@@ -3565,12 +3566,12 @@
                     >Digital Out → A1 (green)
                   </div>
                   <div class="sys-legend-item">
-                    <span class="sys-dot" style="background: #2e86c8"></span
-                    >SDA → A4 (blue)
+                    <span class="sys-dot" style="background: #2e86c8"></span>SDA
+                    → A4 (blue)
                   </div>
                   <div class="sys-legend-item">
-                    <span class="sys-dot" style="background: #c8a000"></span
-                    >SCL → A5 (yellow)
+                    <span class="sys-dot" style="background: #c8a000"></span>SCL
+                    → A5 (yellow)
                   </div>
                 </div>
 
@@ -3627,6 +3628,684 @@
                 </div>
               </div>
             </div>
+
+            <!-- ── Panel: Piezo Energy Harvesting System ── -->
+            <div class="sys-tab-panel hidden" id="tab-panel-piezo">
+              <div class="sys-overview" id="piezoOverview" data-active="idle">
+                <!-- Circuit diagram image -->
+                <div class="sys-diagram-img-wrap">
+                  <img
+                    src="IMG/Piezo energy harvesting system.png"
+                    alt="Piezo Energy Harvesting System Circuit Diagram"
+                    class="sys-diagram-img"
+                    onclick="
+                      openLightbox(
+                        'IMG/Piezo energy harvesting system.png',
+                        'Piezo Energy Harvesting System Circuit Diagram',
+                      )
+                    "
+                  />
+                  <div class="sys-diagram-img-hint">Click to enlarge</div>
+                </div>
+
+                <div class="sys-header">
+                  <div class="sys-header-text">
+                    <div class="sys-eyebrow">
+                      Piezo Energy Harvesting · Road Pressure → Wireless
+                      Charging
+                    </div>
+                    <h3>Car drives over — energy harvested, device charged.</h3>
+                    <p>
+                      Piezo discs under the road generate AC voltage from
+                      vehicle pressure. A bridge rectifier converts it to DC, a
+                      supercapacitor stores it, and a 5V regulator powers the
+                      wireless charging module and indicator LEDs.
+                    </p>
+                  </div>
+                  <button
+                    class="sys-toggle"
+                    id="piezoToggle"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    <span class="sys-toggle-icon">🚗</span>
+                    <span class="sys-toggle-label">Car drives over</span>
+                  </button>
+                </div>
+
+                <div class="sys-stage" id="piezoStage" data-state="idle">
+                  <div class="sys-sky piezo-sky"></div>
+
+                  <div
+                    class="piezo-flow-wrap"
+                    style="position: relative; z-index: 1"
+                  >
+                    <!-- Row 1: main chain -->
+                    <div class="piezo-row piezo-row-main">
+                      <!-- Node 1: Piezo Disc Array -->
+                      <div class="sys-node" data-node="piezo-disc">
+                        <div class="sys-node-badge">01</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <ellipse
+                              cx="24"
+                              cy="16"
+                              rx="14"
+                              ry="6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="24"
+                              rx="14"
+                              ry="6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              opacity=".7"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="32"
+                              rx="14"
+                              ry="6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                              opacity=".5"
+                            />
+                            <line
+                              x1="10"
+                              y1="16"
+                              x2="10"
+                              y2="32"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="38"
+                              y1="16"
+                              x2="38"
+                              y2="32"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M20 8 L24 4 L28 8"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              opacity=".6"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Piezo Disc Array</div>
+                        <div class="sys-node-reading" id="piezoDiscReading">
+                          Idle
+                        </div>
+                        <div class="sys-node-sub">AC output</div>
+                      </div>
+
+                      <div class="piezo-wire" data-wire="piezo-0">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 2: Bridge Rectifier -->
+                      <div class="sys-node" data-node="piezo-rect">
+                        <div class="sys-node-badge">02</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="8"
+                              y="8"
+                              width="32"
+                              height="32"
+                              rx="4"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            />
+                            <polygon
+                              class="piezo-rect-diode"
+                              points="20,18 28,23 20,28"
+                              fill="currentColor"
+                              opacity=".4"
+                            />
+                            <polygon
+                              class="piezo-rect-diode"
+                              points="28,18 20,23 28,28"
+                              fill="currentColor"
+                              opacity=".4"
+                            />
+                            <line
+                              x1="8"
+                              y1="24"
+                              x2="15"
+                              y2="24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity=".6"
+                            />
+                            <line
+                              x1="33"
+                              y1="24"
+                              x2="40"
+                              y2="24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity=".6"
+                            />
+                            <text
+                              x="24"
+                              y="42"
+                              text-anchor="middle"
+                              font-size="7"
+                              fill="currentColor"
+                              font-family="monospace"
+                              opacity=".7"
+                            >
+                              AC→DC
+                            </text>
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Bridge Rectifier</div>
+                        <div class="sys-node-reading" id="piezoRectReading">
+                          Standby
+                        </div>
+                        <div class="sys-node-sub">4× IN4007 diodes</div>
+                      </div>
+
+                      <div class="piezo-wire" data-wire="piezo-1">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 3: Supercapacitor -->
+                      <div class="sys-node" data-node="piezo-cap">
+                        <div class="sys-node-badge">03</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="12"
+                              y="6"
+                              width="24"
+                              height="36"
+                              rx="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <clipPath id="capClipPiezo">
+                              <rect
+                                x="12"
+                                y="6"
+                                width="24"
+                                height="36"
+                                rx="3"
+                              />
+                            </clipPath>
+                            <rect
+                              class="piezo-cap-fill"
+                              x="12"
+                              y="42"
+                              width="24"
+                              height="0"
+                              fill="currentColor"
+                              opacity=".35"
+                              clip-path="url(#capClipPiezo)"
+                            />
+                            <line
+                              x1="19"
+                              y1="3"
+                              x2="19"
+                              y2="9"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="29"
+                              y1="3"
+                              x2="29"
+                              y2="9"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <text
+                              x="24"
+                              y="28"
+                              text-anchor="middle"
+                              font-size="6.5"
+                              fill="currentColor"
+                              font-family="monospace"
+                              opacity=".7"
+                            >
+                              4700µF
+                            </text>
+                            <text
+                              x="24"
+                              y="36"
+                              text-anchor="middle"
+                              font-size="6"
+                              fill="currentColor"
+                              font-family="monospace"
+                              opacity=".5"
+                            >
+                              16V
+                            </text>
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Supercapacitor</div>
+                        <div class="sys-node-reading" id="piezoCapReading">
+                          0 V
+                        </div>
+                        <div class="sys-node-sub">Energy storage</div>
+                      </div>
+
+                      <div class="piezo-wire" data-wire="piezo-2">
+                        <svg viewBox="0 0 100 24" preserveAspectRatio="none">
+                          <path
+                            d="M0 12 H100"
+                            stroke="var(--sys-wire-off)"
+                            stroke-width="2.5"
+                            fill="none"
+                          />
+                          <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
+                        </svg>
+                      </div>
+
+                      <!-- Node 4: Voltage Regulator -->
+                      <div class="sys-node" data-node="piezo-vreg">
+                        <div class="sys-node-badge">04</div>
+                        <div class="sys-node-icon piezo-vreg-icon">
+                          <div class="piezo-vreg-glow"></div>
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <rect
+                              x="10"
+                              y="14"
+                              width="28"
+                              height="20"
+                              rx="4"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.2"
+                            />
+                            <line
+                              x1="16"
+                              y1="34"
+                              x2="16"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="24"
+                              y1="34"
+                              x2="24"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="32"
+                              y1="34"
+                              x2="32"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <text
+                              x="24"
+                              y="27"
+                              text-anchor="middle"
+                              font-size="7.5"
+                              fill="currentColor"
+                              font-family="monospace"
+                              font-weight="700"
+                            >
+                              5V
+                            </text>
+                            <line
+                              x1="24"
+                              y1="6"
+                              x2="24"
+                              y2="14"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Voltage Regulator</div>
+                        <div class="sys-node-reading" id="piezoVregReading">
+                          OFF
+                        </div>
+                        <div class="sys-node-sub">Regulated 5V out</div>
+                      </div>
+                    </div>
+                    <!-- end piezo-row-main -->
+
+                    <!-- Capacitor voltage gauge bar -->
+                    <div class="piezo-voltage-bar-wrap">
+                      <span
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          white-space: nowrap;
+                          flex-shrink: 0;
+                        "
+                        >Capacitor charge</span
+                      >
+                      <div class="piezo-voltage-track">
+                        <div
+                          class="piezo-voltage-fill"
+                          id="piezoVoltageFill"
+                        ></div>
+                      </div>
+                      <span class="piezo-voltage-label" id="piezoVoltageLabel"
+                        >0 V</span
+                      >
+                    </div>
+
+                    <!-- Branch connector line -->
+                    <div class="piezo-branch-connector">
+                      <div class="piezo-branch-line"></div>
+                    </div>
+
+                    <!-- Row 2: output nodes -->
+                    <div class="piezo-row piezo-row-outputs">
+                      <!-- Output A: LED Green (Power OK) -->
+                      <div class="sys-node" data-node="piezo-led-green">
+                        <div class="sys-node-badge">05a</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <ellipse
+                              cx="24"
+                              cy="20"
+                              rx="10"
+                              ry="12"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <line
+                              x1="19"
+                              y1="32"
+                              x2="19"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="29"
+                              y1="32"
+                              x2="29"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="14"
+                              y1="32"
+                              x2="34"
+                              y2="32"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <circle
+                              class="piezo-led-green-glow"
+                              cx="24"
+                              cy="18"
+                              r="6"
+                              fill="#2e7d52"
+                              opacity=".15"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">LED 1 (Green)</div>
+                        <div class="sys-node-reading" id="piezoLedGreenReading">
+                          Off
+                        </div>
+                        <div class="sys-node-sub">Power OK</div>
+                      </div>
+
+                      <!-- Output B: Wireless Charging Coil -->
+                      <div class="sys-node" data-node="piezo-coil">
+                        <div class="sys-node-badge">06</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <ellipse
+                              cx="24"
+                              cy="32"
+                              rx="16"
+                              ry="5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity=".4"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="28"
+                              rx="13"
+                              ry="4"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity=".5"
+                            />
+                            <ellipse
+                              cx="24"
+                              cy="24"
+                              rx="10"
+                              ry="3"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              opacity=".7"
+                            />
+                            <path
+                              class="piezo-wave-a"
+                              d="M14 14 Q24 8 34 14"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity=".3"
+                            />
+                            <path
+                              class="piezo-wave-b"
+                              d="M18 10 Q24 5 30 10"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              opacity=".3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">Wireless Coil</div>
+                        <div class="sys-node-reading" id="piezoCoilReading">
+                          Idle
+                        </div>
+                        <div class="sys-node-sub">Transmitter (5V)</div>
+                      </div>
+
+                      <!-- Output C: LED Blue (Charging) -->
+                      <div class="sys-node" data-node="piezo-led-blue">
+                        <div class="sys-node-badge">05b</div>
+                        <div class="sys-node-icon">
+                          <svg viewBox="0 0 48 48" width="34" height="34">
+                            <ellipse
+                              cx="24"
+                              cy="20"
+                              rx="10"
+                              ry="12"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                            />
+                            <line
+                              x1="19"
+                              y1="32"
+                              x2="19"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="29"
+                              y1="32"
+                              x2="29"
+                              y2="42"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                            />
+                            <line
+                              x1="14"
+                              y1="32"
+                              x2="34"
+                              y2="32"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <circle
+                              class="piezo-led-blue-glow"
+                              cx="24"
+                              cy="18"
+                              r="6"
+                              fill="#2e86c8"
+                              opacity=".15"
+                            />
+                          </svg>
+                        </div>
+                        <div class="sys-node-label">LED 2 (Blue)</div>
+                        <div class="sys-node-reading" id="piezoLedBlueReading">
+                          Off
+                        </div>
+                        <div class="sys-node-sub">Charging active</div>
+                      </div>
+                    </div>
+                    <!-- end piezo-row-outputs -->
+                  </div>
+                  <!-- end piezo-flow-wrap -->
+                </div>
+                <!-- end sys-stage -->
+
+                <div class="sys-legend">
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #c8a000"></span>AC
+                    from piezo (yellow)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #d94f2b"></span>DC
+                    positive (red)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2b2b2b"></span
+                    >Ground (black)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #2e7d52"></span
+                    >Regulated 5V out (green)
+                  </div>
+                  <div class="sys-legend-item">
+                    <span class="sys-dot" style="background: #229ed9"></span
+                    >Wireless TX (blue)
+                  </div>
+                </div>
+
+                <!-- Hardware & Software -->
+                <div class="sys-hw-sw">
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                      </svg>
+                      Hardware
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip">Piezoelectric Disc (27mm)</span>
+                      <span class="hw-chip">Bridge Rectifier (IN4007 ×4)</span>
+                      <span class="hw-chip">Supercapacitor (4700µF / 16V)</span>
+                      <span class="hw-chip">Voltage Regulator (5V)</span>
+                      <span class="hw-chip">Wireless Charging Module (5V)</span>
+                      <span class="hw-chip">LED Green (Power OK)</span>
+                      <span class="hw-chip">LED Blue (Charging)</span>
+                      <span class="hw-chip">Resistor 220Ω ×2</span>
+                      <span class="hw-chip">Breadboard</span>
+                      <span class="hw-chip">Jumper Wire</span>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <div class="sys-hw-chips">
+                      <span class="hw-chip sw-chip">Circuit Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end piezoOverview -->
+            </div>
+            <!-- end tab-panel-piezo -->
           </div>
 
           <!-- end sys-overview-card -->
@@ -3913,10 +4592,9 @@
         position: relative;
         z-index: 1;
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(
-            0,
-            1fr
-          ) 64px minmax(0, 1fr);
+        grid-template-columns:
+          minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(0, 1fr)
+          64px minmax(0, 1fr);
         align-items: center;
         gap: 4px;
       }
@@ -5245,7 +5923,9 @@
         position: relative;
       }
       .wls-tank-fill {
-        transition: height 1.6s ease, y 1.6s ease;
+        transition:
+          height 1.6s ease,
+          y 1.6s ease;
         color: var(--border-mid);
       }
       .sys-node[data-node="wls-sensor"].is-active .sys-node-icon {
@@ -5267,7 +5947,9 @@
 
       /* LCD node */
       .wls-lcd-screen {
-        transition: opacity 0.4s, fill 0.4s;
+        transition:
+          opacity 0.4s,
+          fill 0.4s;
       }
       .sys-node[data-node="wls-lcd"].is-active .sys-node-icon {
         color: var(--green);
@@ -5337,6 +6019,290 @@
           grid-template-columns: 1fr;
         }
         .wls-flow .sys-wire {
+          display: none;
+        }
+      }
+      /* ── Piezo Energy Harvesting System ── */
+      .piezo-sky {
+        background: linear-gradient(180deg, #f8f4ee 0%, #f2ede6 100%);
+      }
+      #piezoOverview[data-active="rolling"] .piezo-sky {
+        background: linear-gradient(
+          180deg,
+          #232010 0%,
+          #2c2810 100%
+        ) !important;
+      }
+      #piezoOverview[data-active="rolling"] .sys-node {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+      #piezoOverview[data-active="rolling"] .sys-node-label {
+        color: #faf2e2;
+      }
+      #piezoOverview[data-active="rolling"] .sys-node-badge {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #piezoOverview[data-active="rolling"] .sys-node-sub {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #piezoOverview[data-active="rolling"] .sys-toggle {
+        background: #232010;
+        border-color: #232010;
+        color: #faf2e2;
+      }
+
+      .piezo-flow-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .piezo-row {
+        display: grid;
+        align-items: center;
+        gap: 4px;
+      }
+      .piezo-row-main {
+        grid-template-columns:
+          minmax(0, 1fr) 56px minmax(0, 1fr) 56px minmax(0, 1fr)
+          56px minmax(0, 1fr);
+      }
+      .piezo-row-outputs {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      .piezo-wire {
+        position: relative;
+        height: 24px;
+      }
+      .piezo-wire svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+
+      .piezo-branch-connector {
+        display: flex;
+        justify-content: flex-end;
+        pointer-events: none;
+      }
+      .piezo-branch-line {
+        width: 1px;
+        height: 18px;
+        background: var(--border-mid);
+        margin-right: calc(16.66% - 0.5px);
+        transition: background 0.4s;
+      }
+      #piezoOverview[data-active="rolling"] .piezo-branch-line {
+        background: #c8a000;
+      }
+
+      /* Wire colours */
+      .piezo-wire[data-wire="piezo-0"] path,
+      .piezo-wire[data-wire="piezo-1"] path,
+      .piezo-wire[data-wire="piezo-2"] path {
+        stroke: var(--sys-wire-off);
+        transition: stroke 0.4s;
+      }
+      .piezo-wire[data-wire="piezo-0"].is-live path {
+        stroke: #c8a000;
+      }
+      .piezo-wire[data-wire="piezo-1"].is-live path {
+        stroke: var(--sys-wire-power);
+      }
+      .piezo-wire[data-wire="piezo-2"].is-live path {
+        stroke: var(--sys-wire-signal);
+      }
+      .piezo-wire[data-wire="piezo-0"].is-live .sys-pulse {
+        fill: #c8a000;
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+      .piezo-wire[data-wire="piezo-1"].is-live .sys-pulse {
+        fill: var(--sys-wire-power);
+        opacity: 1;
+        animation: sysFlow 1.6s linear infinite;
+      }
+      .piezo-wire[data-wire="piezo-2"].is-live .sys-pulse {
+        fill: var(--sys-wire-signal);
+        opacity: 1;
+        animation: sysFlow 1.4s linear infinite;
+      }
+
+      /* Node active states */
+      .sys-node[data-node="piezo-disc"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="piezo-disc"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+
+      .sys-node[data-node="piezo-rect"].is-active .sys-node-icon {
+        color: var(--accent);
+      }
+      .sys-node[data-node="piezo-rect"].is-active .sys-node-reading {
+        color: var(--accent);
+      }
+      .piezo-rect-diode {
+        transition:
+          fill 0.3s,
+          opacity 0.3s;
+      }
+      .sys-node[data-node="piezo-rect"].is-active .piezo-rect-diode {
+        fill: #d94f2b;
+        opacity: 1;
+      }
+
+      .sys-node[data-node="piezo-cap"].is-active .sys-node-icon {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="piezo-cap"].is-active .sys-node-reading {
+        color: #2e86c8;
+      }
+      .piezo-cap-fill {
+        transition:
+          height 1.5s ease,
+          y 1.5s ease;
+      }
+      .sys-node[data-node="piezo-cap"].is-active .piezo-cap-fill {
+        fill: #2e86c8;
+        opacity: 0.7;
+      }
+
+      .piezo-vreg-icon {
+        position: relative;
+      }
+      .piezo-vreg-glow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(46, 125, 82, 0.35) 0%,
+          rgba(46, 125, 82, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.4s;
+        pointer-events: none;
+      }
+      .sys-node[data-node="piezo-vreg"].is-active .piezo-vreg-glow {
+        opacity: 1;
+      }
+      .sys-node[data-node="piezo-vreg"].is-active .sys-node-icon {
+        color: var(--green);
+      }
+      .sys-node[data-node="piezo-vreg"].is-active .sys-node-reading {
+        color: var(--green);
+      }
+
+      .piezo-led-green-glow,
+      .piezo-led-blue-glow {
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+
+      .sys-node[data-node="piezo-led-green"].is-active .sys-node-icon {
+        color: #2e7d52;
+      }
+      .sys-node[data-node="piezo-led-green"].is-active .sys-node-reading {
+        color: #2e7d52;
+      }
+      .sys-node[data-node="piezo-led-green"].is-active .piezo-led-green-glow {
+        opacity: 0.7;
+      }
+
+      .sys-node[data-node="piezo-coil"].is-active .sys-node-icon {
+        color: #c8a000;
+      }
+      .sys-node[data-node="piezo-coil"].is-active .sys-node-reading {
+        color: #c8a000;
+      }
+      .piezo-wave-a,
+      .piezo-wave-b {
+        transition:
+          opacity 0.4s,
+          stroke 0.4s;
+      }
+      .sys-node[data-node="piezo-coil"].is-active .piezo-wave-a {
+        opacity: 1;
+        animation: piezoWave 1.2s ease-in-out infinite alternate;
+      }
+      .sys-node[data-node="piezo-coil"].is-active .piezo-wave-b {
+        opacity: 1;
+        animation: piezoWave 1.2s ease-in-out 0.3s infinite alternate;
+      }
+      @keyframes piezoWave {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .sys-node[data-node="piezo-led-blue"].is-active .sys-node-icon {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="piezo-led-blue"].is-active .sys-node-reading {
+        color: #2e86c8;
+      }
+      .sys-node[data-node="piezo-led-blue"].is-active .piezo-led-blue-glow {
+        opacity: 0.7;
+      }
+
+      /* Voltage gauge bar */
+      .piezo-voltage-bar-wrap {
+        position: relative;
+        z-index: 1;
+        margin: 14px 0 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .piezo-voltage-track {
+        flex: 1;
+        height: 8px;
+        background: var(--surface-alt);
+        border-radius: 99px;
+        overflow: hidden;
+        border: 1px solid var(--border-mid);
+      }
+      .piezo-voltage-fill {
+        height: 100%;
+        width: 0%;
+        border-radius: 99px;
+        background: linear-gradient(90deg, #2e7d52, #c8a000, #d94f2b);
+        transition: width 2s ease;
+      }
+      .piezo-voltage-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--text-sub);
+        min-width: 52px;
+        text-align: right;
+        transition: color 0.4s;
+      }
+      #piezoOverview[data-active="rolling"] .piezo-voltage-label {
+        color: #c8a000;
+      }
+
+      @media (max-width: 760px) {
+        .piezo-row-main {
+          grid-template-columns: 1fr;
+        }
+        .piezo-row-main .piezo-wire {
+          display: none;
+        }
+        .piezo-row-outputs {
+          grid-template-columns: 1fr;
+        }
+        .piezo-branch-connector {
           display: none;
         }
       }
@@ -6099,6 +7065,161 @@
         }
         wlsToggle.addEventListener("click", () => setWLS(!wlsIsFilling));
         setWLS(false, { skipDelay: true });
+
+        /* ══ PIEZO ENERGY HARVESTING SYSTEM ══ */
+        var piezoRoot = document.getElementById("piezoOverview");
+        var piezoToggle = document.getElementById("piezoToggle");
+        var piezoDiscR = document.getElementById("piezoDiscReading");
+        var piezoRectR = document.getElementById("piezoRectReading");
+        var piezoCapR = document.getElementById("piezoCapReading");
+        var piezoVregR = document.getElementById("piezoVregReading");
+        var piezoLedGR = document.getElementById("piezoLedGreenReading");
+        var piezoCoilR = document.getElementById("piezoCoilReading");
+        var piezoLedBR = document.getElementById("piezoLedBlueReading");
+        var piezoVFill = document.getElementById("piezoVoltageFill");
+        var piezoVLabel = document.getElementById("piezoVoltageLabel");
+        var piezoCapFill = piezoRoot.querySelector(".piezo-cap-fill");
+
+        var piezoNodes = {
+          disc: piezoRoot.querySelector('[data-node="piezo-disc"]'),
+          rect: piezoRoot.querySelector('[data-node="piezo-rect"]'),
+          cap: piezoRoot.querySelector('[data-node="piezo-cap"]'),
+          vreg: piezoRoot.querySelector('[data-node="piezo-vreg"]'),
+          ledG: piezoRoot.querySelector('[data-node="piezo-led-green"]'),
+          coil: piezoRoot.querySelector('[data-node="piezo-coil"]'),
+          ledB: piezoRoot.querySelector('[data-node="piezo-led-blue"]'),
+        };
+        var piezoWires = {
+          w0: piezoRoot.querySelector('[data-wire="piezo-0"]'),
+          w1: piezoRoot.querySelector('[data-wire="piezo-1"]'),
+          w2: piezoRoot.querySelector('[data-wire="piezo-2"]'),
+        };
+        var piezoIsActive = false,
+          piezoTimers = [],
+          piezoVoltAnim = null;
+
+        function setPiezoCapLevel(pct) {
+          var maxH = 36;
+          var h = (maxH * pct) / 100;
+          piezoCapFill.setAttribute("height", h);
+          piezoCapFill.setAttribute("y", 42 - h);
+          piezoVFill.style.width = pct + "%";
+          var v = ((pct / 100) * 5).toFixed(1);
+          piezoVLabel.textContent = v + " V";
+          piezoCapR.textContent = v + " V";
+        }
+
+        function animatePiezoVoltage(from, to, duration, cb) {
+          clearInterval(piezoVoltAnim);
+          var steps = 40;
+          var interval = duration / steps;
+          var step = 0;
+          piezoVoltAnim = setInterval(function () {
+            step++;
+            var pct = from + (to - from) * (step / steps);
+            setPiezoCapLevel(pct);
+            if (step >= steps) {
+              clearInterval(piezoVoltAnim);
+              setPiezoCapLevel(to);
+              if (cb) cb();
+            }
+          }, interval);
+        }
+
+        function setPiezo(on, opts) {
+          opts = opts || {};
+          piezoIsActive = on;
+          piezoRoot.dataset.active = on ? "rolling" : "idle";
+          piezoToggle.setAttribute("aria-pressed", String(on));
+          piezoToggle.querySelector(".sys-toggle-label").textContent = on
+            ? "Car departs"
+            : "Car drives over";
+          piezoToggle.querySelector(".sys-toggle-icon").textContent = on
+            ? "🏁"
+            : "🚗";
+
+          piezoTimers.forEach(clearTimeout);
+          piezoTimers = [];
+          clearInterval(piezoVoltAnim);
+          Object.values(piezoNodes).forEach(function (n) {
+            n.classList.remove("is-active");
+          });
+          Object.values(piezoWires).forEach(function (w) {
+            w.classList.remove("is-live");
+          });
+
+          if (!on) {
+            piezoDiscR.textContent = "Idle";
+            piezoRectR.textContent = "Standby";
+            piezoVregR.textContent = "OFF";
+            piezoLedGR.textContent = "Off";
+            piezoCoilR.textContent = "Idle";
+            piezoLedBR.textContent = "Off";
+            animatePiezoVoltage(
+              parseFloat(piezoVFill.style.width || "0"),
+              0,
+              1200,
+            );
+            return;
+          }
+
+          var s = opts.skipDelay ? 0 : 450;
+
+          // Step 1 – Piezo discs generate AC
+          piezoNodes.disc.classList.add("is-active");
+          piezoDiscR.textContent = "AC ~3 V";
+          piezoTimers.push(
+            setTimeout(function () {
+              piezoWires.w0.classList.add("is-live");
+            }, s * 0),
+          );
+
+          // Step 2 – Bridge rectifier converts AC → DC
+          piezoTimers.push(
+            setTimeout(function () {
+              piezoRectR.textContent = "Converting";
+              piezoNodes.rect.classList.add("is-active");
+              piezoWires.w1.classList.add("is-live");
+            }, s * 1),
+          );
+
+          // Step 3 – Supercapacitor charges up
+          piezoTimers.push(
+            setTimeout(function () {
+              piezoNodes.cap.classList.add("is-active");
+              piezoWires.w2.classList.add("is-live");
+              animatePiezoVoltage(0, 88, 2000, function () {
+                setPiezoCapLevel(88);
+              });
+            }, s * 2),
+          );
+
+          // Step 4 – Voltage regulator outputs stable 5V
+          piezoTimers.push(
+            setTimeout(function () {
+              piezoVregR.textContent = "5 V stable";
+              piezoNodes.vreg.classList.add("is-active");
+            }, s * 3),
+          );
+
+          // Step 5 – Outputs: both LEDs and wireless coil
+          piezoTimers.push(
+            setTimeout(function () {
+              piezoLedGR.textContent = "ON — Power OK";
+              piezoNodes.ledG.classList.add("is-active");
+              piezoCoilR.textContent = "Charging";
+              piezoNodes.coil.classList.add("is-active");
+              piezoLedBR.textContent = "ON — Charging";
+              piezoNodes.ledB.classList.add("is-active");
+            }, s * 4),
+          );
+        }
+
+        piezoToggle.addEventListener("click", function () {
+          setPiezo(!piezoIsActive);
+        });
+        setPiezoCapLevel(0);
+        setPiezo(false, { skipDelay: true });
       })();
     </script>
   </body>
