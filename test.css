@@ -1,0 +1,87 @@
+<!-- Piezo Energy Harvesting Hardware -->
+                    <div class="sys-hw-chips hw-cost-grid">
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Piezoelectric Disc (27mm)</span>
+                        <span class="hw-cost-qty">× 1</span>
+                        <span class="hw-cost-price">22,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Bridge Rectifier (IN4007 ×4)</span>
+                        <span class="hw-cost-qty">× 1</span>
+                        <span class="hw-cost-price">3,500 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Supercapacitor (4700µF / 16V)</span>
+                        <span class="hw-cost-qty">× 1</span>
+                        <span class="hw-cost-price">8,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Voltage Regulator (5V)</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Wireless Charging Module (5V)</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">LED Green (Power OK)</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">LED Blue (Charging)</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Resistor 220Ω</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Breadboard</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Jumper Wire</span>
+                        <span class="hw-cost-qty">× 20</span>
+                        <span class="hw-cost-price">2,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-total">
+                        Hardware subtotal: <span>45,000 MMK</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sys-hw-block">
+                    <div class="sys-hw-label">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                      </svg>
+                      Software
+                    </div>
+                    <!-- Rain Detection Software -->
+                    <div class="sys-hw-chips hw-cost-grid">
+                      
+                      
+                      <div class="hw-cost-row sw-cost-row">
+                        <span class="hw-cost-name">Circuit Designer</span>
+                        <span class="hw-cost-qty">× 1</span>
+                        <span class="hw-cost-price">Free</span>
+                      </div>
+                      <div class="hw-cost-total">
+                        Software subtotal: <span>Free</span>
+                      </div>
+                    </div>
