@@ -29,7 +29,7 @@
         </div>
       </nav>
 
-      <!-- ═══════════════════════════ Calendar Page ═══════════════════════════ -->
+      <!-- Calendar Page -->
       <div id="page-calendar" class="page">
         <div class="page-inner">
           <div class="cal-header">
@@ -54,7 +54,6 @@
               </div>
             </div>
           </div>
-
           <div class="card" style="margin-bottom: 14px; overflow: hidden">
             <div class="cal-nav">
               <button onclick="shiftMonth(-1)">‹</button>
@@ -95,7 +94,6 @@
               </div>
             </div>
           </div>
-
           <div
             class="card hoverable project-banner"
             onclick="goPage('project')"
@@ -121,7 +119,7 @@
         </div>
       </div>
 
-      <!-- ═══════════════════════════ View Page ═══════════════════════════ -->
+      <!-- View Page -->
       <div id="page-view" class="page hidden">
         <div class="page-inner view-layout">
           <div class="view-main">
@@ -156,7 +154,6 @@
             </div>
             <div id="view-content" class="entry-stack hidden"></div>
           </div>
-
           <aside class="view-sidebar">
             <div class="sidebar-section card sidebar-card">
               <div class="label-sm">Project</div>
@@ -196,7 +193,7 @@
         </div>
       </div>
 
-      <!-- ═══════════════════════════ Project Page ═══════════════════════════ -->
+      <!-- Project Page -->
       <div id="page-project" class="page hidden">
         <div class="page-inner mid">
           <button class="back-btn" onclick="goPage('calendar')">
@@ -257,7 +254,7 @@
             </div>
           </div>
 
-          <!-- ═══════════════ System Overview Card ═══════════════ -->
+          <!-- System Overview Card -->
           <div class="card list-card sys-overview-card">
             <div class="label-sm">System Overview</div>
 
@@ -451,7 +448,6 @@
             <!-- ── Panel: Auto Street Light (LDR) ── -->
             <div class="sys-tab-panel" id="tab-panel-ldr">
               <div class="sys-overview" id="sysOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Auto street light system.png"
@@ -466,7 +462,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">Auto Street Light · LDR-Based</div>
@@ -486,7 +481,6 @@
                     <span class="sys-toggle-label">Simulate nightfall</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="sysStage" data-state="day">
                   <div class="sys-sky"></div>
                   <div class="sys-stars" aria-hidden="true"></div>
@@ -676,7 +670,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>+6V
@@ -691,8 +684,6 @@
                     >Signal
                   </div>
                 </div>
-
-                <!-- Hardware & Software for LDR system -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -707,54 +698,56 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Auto Street Light Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Arduino Uno</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Arduino Uno R3</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">16,700 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LDR Sensor Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name">LDR Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Relay Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >1-Channel Relay Module (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">5,100 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED (Street Light)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
+                        <span class="hw-cost-name">LED 5mm (Street Light)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">6V Battery</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >6V Battery (4×AA holder)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Resistor</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Resistor (220Ω / 10kΩ pack)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">1,500 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>38,600 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -771,21 +764,20 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Auto street light Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -799,7 +791,6 @@
             <!-- ── Panel: Traffic Sensing Street Light (IR) ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-ir">
               <div class="sys-overview" id="irOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Traffic Sensing Auto Street Light System.png"
@@ -814,7 +805,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -836,7 +826,6 @@
                     <span class="sys-toggle-label">Simulate traffic</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="irStage" data-state="idle">
                   <div class="sys-sky"></div>
                   <div class="sys-flow">
@@ -1060,7 +1049,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>+6V
@@ -1075,8 +1063,6 @@
                     >Signal — IR out to relay in (green)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for IR system -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -1091,54 +1077,56 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Traffic sensing Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Arduino Uno</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Arduino Uno R3</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">16,700 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">IR Sensor Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name"
+                          >IR Obstacle Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Relay Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >1-Channel Relay Module (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">5,100 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED (Street Light)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
+                        <span class="hw-cost-name">LED 5mm (Street Light)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">6V Battery</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >6V Battery (4×AA holder)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Resistor</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">Resistor (220Ω pack)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">1,500 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>38,600 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -1155,21 +1143,20 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Traffic Sensing Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -1180,10 +1167,9 @@
               </div>
             </div>
 
-            <!-- ── Panel: Rain Detection System ── -->
+            <!-- ── Panel: Rain Detection ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-rain">
               <div class="sys-overview" id="rainOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Rain detecting system.png"
@@ -1198,7 +1184,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -1220,12 +1205,10 @@
                     <span class="sys-toggle-label">Simulate rain</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="rainStage" data-state="dry">
                   <div class="sys-sky rain-sky"></div>
                   <div class="sys-raindrops" aria-hidden="true"></div>
                   <div class="sys-flow">
-                    <!-- Node 1: Power Adapter -->
                     <div class="sys-node" data-node="rain-power">
                       <div class="sys-node-badge">01</div>
                       <div class="sys-node-icon">
@@ -1284,7 +1267,6 @@
                       </div>
                       <div class="sys-node-sub">5V power supply</div>
                     </div>
-
                     <div class="sys-wire" data-wire="rain-0">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -1296,8 +1278,6 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 2: Arduino Nano -->
                     <div class="sys-node" data-node="rain-arduino">
                       <div class="sys-node-badge">02</div>
                       <div class="sys-node-icon">
@@ -1393,7 +1373,6 @@
                       </div>
                       <div class="sys-node-sub">Microcontroller</div>
                     </div>
-
                     <div class="sys-wire" data-wire="rain-1">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -1405,13 +1384,10 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 3: Rain Sensor -->
                     <div class="sys-node" data-node="rain-sensor">
                       <div class="sys-node-badge">03</div>
                       <div class="sys-node-icon">
                         <svg viewBox="0 0 48 48" width="34" height="34">
-                          <!-- sensor board -->
                           <rect
                             x="8"
                             y="20"
@@ -1422,7 +1398,6 @@
                             stroke="currentColor"
                             stroke-width="2.5"
                           />
-                          <!-- rain lines on pad -->
                           <line
                             x1="16"
                             y1="24"
@@ -1463,7 +1438,6 @@
                             stroke-linecap="round"
                             opacity="0.5"
                           />
-                          <!-- raindrop icons above -->
                           <path
                             class="rain-drop-a"
                             d="M14 6 Q14 12 18 12 Q22 12 22 6 Q22 2 18 2 Q14 2 14 6Z"
@@ -1484,7 +1458,6 @@
                       </div>
                       <div class="sys-node-sub">A0 / D0 signal</div>
                     </div>
-
                     <div class="sys-wire" data-wire="rain-2">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -1496,14 +1469,11 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 4: Servo Motor -->
                     <div class="sys-node" data-node="rain-servo">
                       <div class="sys-node-badge">04</div>
                       <div class="sys-node-icon rain-servo-icon">
                         <div class="rain-servo-glow"></div>
                         <svg viewBox="0 0 48 48" width="34" height="34">
-                          <!-- servo body -->
                           <rect
                             x="8"
                             y="16"
@@ -1514,7 +1484,6 @@
                             stroke="currentColor"
                             stroke-width="2.5"
                           />
-                          <!-- servo horn / arm -->
                           <circle
                             cx="20"
                             cy="27"
@@ -1530,7 +1499,6 @@
                             fill="currentColor"
                             opacity="0.5"
                           />
-                          <!-- arm extending (rotates on activate) -->
                           <line
                             class="servo-arm"
                             x1="20"
@@ -1541,7 +1509,6 @@
                             stroke-width="2.5"
                             stroke-linecap="round"
                           />
-                          <!-- cable lines -->
                           <line
                             x1="32"
                             y1="30"
@@ -1582,7 +1549,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>+5V
@@ -1605,8 +1571,6 @@
                     >Servo D9 (orange)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for Rain Detection system -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -1621,41 +1585,40 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Rain Detection Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Arduino Nano</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Arduino Nano</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">16,700 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Rain Sensor Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name">Rain Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">4,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Servo Motor</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                        <span class="hw-cost-name">SG90 Micro Servo Motor</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">7,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">AC/DC Adapter (5V 2A)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
+                        <span class="hw-cost-name">AC/DC Adapter (5V 2A)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">8,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-total">
                         Hardware subtotal: <span>45,000 MMK</span>
@@ -1675,21 +1638,20 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Rain Detection Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -1699,10 +1661,10 @@
                 </div>
               </div>
             </div>
-            <!-- ── Panel: Wireless Car Charging Station ── -->
+
+            <!-- ── Panel: Wireless Car Charging ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-wcs">
               <div class="sys-overview" id="wcsOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Wireless Charging Station.png"
@@ -1717,7 +1679,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -1744,14 +1705,10 @@
                     <span class="sys-toggle-label">Car approaches</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="wcsStage" data-state="idle">
                   <div class="sys-sky wcs-sky"></div>
-
-                  <!-- Row 1: main linear chain -->
                   <div class="wcs-flow-wrap">
                     <div class="wcs-row wcs-row-main">
-                      <!-- Node 1: 9V Battery -->
                       <div class="sys-node" data-node="wcs-battery">
                         <div class="sys-node-badge">01</div>
                         <div class="sys-node-icon">
@@ -1821,8 +1778,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 2: ESP32 -->
                       <div class="sys-node" data-node="wcs-esp32">
                         <div class="sys-node-badge">02</div>
                         <div class="sys-node-icon">
@@ -1932,8 +1887,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 3: IR Sensor -->
                       <div class="sys-node" data-node="wcs-ir">
                         <div class="sys-node-badge">03</div>
                         <div class="sys-node-icon">
@@ -1993,15 +1946,10 @@
                         <div class="sys-node-sub">Car detection</div>
                       </div>
                     </div>
-
-                    <!-- vertical connector line -->
                     <div class="wcs-branch-connector">
                       <div class="wcs-branch-line"></div>
                     </div>
-
-                    <!-- Row 2: outputs -->
                     <div class="wcs-row wcs-row-outputs">
-                      <!-- Output A: Servo Gate -->
                       <div class="sys-node" data-node="wcs-servo">
                         <div class="sys-node-badge">04</div>
                         <div class="sys-node-icon wcs-servo-icon">
@@ -2070,13 +2018,10 @@
                         </div>
                         <div class="sys-node-sub">Gate control</div>
                       </div>
-
-                      <!-- Output B: Wireless Coils -->
                       <div class="sys-node" data-node="wcs-coil">
                         <div class="sys-node-badge">05</div>
                         <div class="sys-node-icon">
                           <svg viewBox="0 0 48 48" width="34" height="34">
-                            <!-- primary coil rings -->
                             <ellipse
                               cx="24"
                               cy="32"
@@ -2107,7 +2052,6 @@
                               stroke-width="2"
                               opacity="0.7"
                             />
-                            <!-- wireless waves -->
                             <path
                               class="wcs-wave-a"
                               d="M14 14 Q24 8 34 14"
@@ -2134,8 +2078,6 @@
                         </div>
                         <div class="sys-node-sub">Magnetic transfer</div>
                       </div>
-
-                      <!-- Output C: Telegram -->
                       <div class="sys-node" data-node="wcs-telegram">
                         <div class="sys-node-badge">06</div>
                         <div class="sys-node-icon">
@@ -2183,8 +2125,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Telegram notification toast -->
                 <div class="wcs-tg-toast" id="wcsTgToast">
                   <div class="wcs-tg-toast-header">
                     <svg width="14" height="14" viewBox="0 0 48 48" fill="none">
@@ -2201,16 +2141,14 @@
                         y2="14"
                         stroke="white"
                         stroke-width="2"
-                      />
-                    </svg>
-                    Wireless Car Charger Bot
+                      /></svg
+                    >Wireless Car Charger Bot
                   </div>
                   <div class="wcs-tg-toast-body">
                     🚗 Car detected at station!<br />Gate opened. You can
                     enter.<br /><span id="wcsTgTime"></span>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>+9V
@@ -2233,8 +2171,6 @@
                     >WiFi → Telegram (blue)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for WCS -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -2249,66 +2185,66 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Wireless car charging Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">ESP32 DevKit</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">IR Sensor Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Servo Motor</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Primary Coil (Road)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Secondary Coil (Car)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">9V Battery</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">ESP32 DevKit (Type-C)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">33,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Jumper WireLED (Road Status)</span
-                        >
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                          >IR Obstacle Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED (Car Charging)</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">SG90 Micro Servo Motor</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">7,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Wireless Charging Module (5V TX)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">12,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Wireless Charging Module (5V RX)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">8,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">9V Battery + clip</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">LED 5mm (status ×2)</span
+                        ><span class="hw-cost-qty">× 2</span
+                        ><span class="hw-cost-price">1,000 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Resistor (220Ω pack)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">1,500 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>78,300 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -2325,26 +2261,25 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Wireless car charging Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Telegram Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Telegram (Bot API)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -2355,10 +2290,9 @@
               </div>
             </div>
 
-            <!-- ── Panel: Solar Tracking System ── -->
+            <!-- ── Panel: Solar Tracking ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-solar">
               <div class="sys-overview" id="solarOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Solar tracking system.png"
@@ -2373,13 +2307,11 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
                       Solar Tracking System · Dual LDR + Servo Pan-Tilt
                     </div>
-
                     <h3>Sun shifts — panel follows, harvest maximised.</h3>
                     <p>
                       Two LDR sensors compare light levels left vs right;
@@ -2397,17 +2329,12 @@
                     <span class="sys-toggle-label">Shift sun left</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="solarStage" data-state="balanced">
                   <div class="sys-sky solar-sky"></div>
-                  <!-- animated sun -->
                   <div class="solar-sun-wrap" id="solarSunWrap">
                     <div class="solar-sun" id="solarSun">☀️</div>
                   </div>
-
-                  <!-- 5-node grid: LDR-L, wire, Arduino, wire, LDR-R, then servo + LEDs below -->
                   <div class="solar-top-row">
-                    <!-- Node 1: LDR Left -->
                     <div class="sys-node" data-node="solar-ldr-l">
                       <div class="sys-node-badge">01</div>
                       <div class="sys-node-icon">
@@ -2435,7 +2362,6 @@
                       </div>
                       <div class="sys-node-sub">A0 · analog in</div>
                     </div>
-
                     <div class="sys-wire" data-wire="solar-0">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -2447,8 +2373,6 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 2: Arduino Uno -->
                     <div
                       class="sys-node solar-arduino-node"
                       data-node="solar-arduino"
@@ -2550,7 +2474,6 @@
                       </div>
                       <div class="sys-node-sub">A0 vs A1</div>
                     </div>
-
                     <div class="sys-wire" data-wire="solar-1">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -2562,8 +2485,6 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 3: LDR Right -->
                     <div class="sys-node" data-node="solar-ldr-r">
                       <div class="sys-node-badge">03</div>
                       <div class="sys-node-icon">
@@ -2592,15 +2513,10 @@
                       <div class="sys-node-sub">A1 · analog in</div>
                     </div>
                   </div>
-
-                  <!-- vertical connector -->
                   <div class="solar-branch-connector">
                     <div class="solar-branch-line" id="solarBranchLine"></div>
                   </div>
-
-                  <!-- Bottom outputs row: LED Left, Servo, LED Right -->
                   <div class="solar-bottom-row">
-                    <!-- LED Left (Green) -->
                     <div class="sys-node" data-node="solar-led-l">
                       <div class="sys-node-badge">04a</div>
                       <div class="sys-node-icon">
@@ -2657,14 +2573,11 @@
                       </div>
                       <div class="sys-node-sub">D8 · panel up</div>
                     </div>
-
-                    <!-- Servo / Solar Panel -->
                     <div class="sys-node" data-node="solar-servo">
                       <div class="sys-node-badge">05</div>
                       <div class="sys-node-icon solar-panel-icon">
                         <div class="solar-panel-glow"></div>
                         <svg viewBox="0 0 48 48" width="34" height="34">
-                          <!-- solar panel -->
                           <rect
                             class="solar-panel-rect"
                             x="6"
@@ -2712,7 +2625,6 @@
                             stroke-width="1.2"
                             opacity="0.4"
                           />
-                          <!-- stand -->
                           <line
                             x1="24"
                             y1="30"
@@ -2739,8 +2651,6 @@
                       </div>
                       <div class="sys-node-sub">Servo D10</div>
                     </div>
-
-                    <!-- LED Right (Red) -->
                     <div class="sys-node" data-node="solar-led-r">
                       <div class="sys-node-badge">04b</div>
                       <div class="sys-node-icon">
@@ -2799,8 +2709,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Direction indicator -->
                 <div class="solar-direction-bar" id="solarDirectionBar">
                   <div class="solar-dir-item" id="solarDirLeft">
                     <span class="solar-dir-arrow">↑</span> Left brighter → Panel
@@ -2812,7 +2720,6 @@
                     Panel moves <strong>down</strong>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>5V
@@ -2835,8 +2742,6 @@
                     >Servo D10 (orange)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for Solar Tracking -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -2851,61 +2756,58 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Solar tracking Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Arduino Uno</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Arduino Uno R3</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">16,700 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LDR Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name">LDR Sensor Module</span
+                        ><span class="hw-cost-qty">× 2</span
+                        ><span class="hw-cost-price">7,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Servo Motor</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                        <span class="hw-cost-name">SG90 Micro Servo Motor</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">7,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED Green (Left)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
+                        <span class="hw-cost-name">Mini Solar Panel (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">8,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED Red (Right)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">LED Green (D8)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Resistor 220Ω</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">LED Red (D9)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Resistor 220Ω pack</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">1,500 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Solar Panel(Road Status)</span
-                        >
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>49,500 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -2922,21 +2824,20 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Solar tracking Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -2947,10 +2848,9 @@
               </div>
             </div>
 
-            <!-- ── Panel: Auto-Watering System ── -->
+            <!-- ── Panel: Auto-Watering ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-watering">
               <div class="sys-overview" id="wateringOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Auto-watering system.png"
@@ -2965,7 +2865,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -2988,14 +2887,10 @@
                     <span class="sys-toggle-label">Simulate dry soil</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="wateringStage" data-state="idle">
                   <div class="sys-sky watering-sky"></div>
-
-                  <!-- Row 1: main linear chain -->
                   <div class="watering-flow-wrap">
                     <div class="watering-row watering-row-main">
-                      <!-- Node 1: Power Adapter -->
                       <div class="sys-node" data-node="watering-adapter">
                         <div class="sys-node-badge">01</div>
                         <div class="sys-node-icon">
@@ -3064,8 +2959,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 2: ESP32 -->
                       <div class="sys-node" data-node="watering-esp32">
                         <div class="sys-node-badge">02</div>
                         <div class="sys-node-icon">
@@ -3175,8 +3068,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 3: Moisture Sensor -->
                       <div class="sys-node" data-node="watering-moisture">
                         <div class="sys-node-badge">03</div>
                         <div class="sys-node-icon">
@@ -3218,15 +3109,10 @@
                         <div class="sys-node-sub">Probe + amplifier</div>
                       </div>
                     </div>
-
-                    <!-- vertical connector line -->
                     <div class="watering-branch-connector">
                       <div class="watering-branch-line"></div>
                     </div>
-
-                    <!-- Row 2: outputs -->
                     <div class="watering-row watering-row-outputs">
-                      <!-- Output A: Relay Module -->
                       <div class="sys-node" data-node="watering-relay">
                         <div class="sys-node-badge">04</div>
                         <div class="sys-node-icon watering-relay-icon">
@@ -3305,8 +3191,6 @@
                         </div>
                         <div class="sys-node-sub">Pump switch</div>
                       </div>
-
-                      <!-- Output B: Water Pump -->
                       <div class="sys-node" data-node="watering-pump">
                         <div class="sys-node-badge">05</div>
                         <div class="sys-node-icon">
@@ -3350,8 +3234,6 @@
                         </div>
                         <div class="sys-node-sub">Irrigation</div>
                       </div>
-
-                      <!-- Output C: Telegram -->
                       <div class="sys-node" data-node="watering-telegram">
                         <div class="sys-node-badge">06</div>
                         <div class="sys-node-icon">
@@ -3399,8 +3281,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Telegram notification toast -->
                 <div class="watering-tg-toast" id="wateringTgToast">
                   <div class="watering-tg-toast-header">
                     <svg width="14" height="14" viewBox="0 0 48 48" fill="none">
@@ -3417,9 +3297,8 @@
                         y2="14"
                         stroke="white"
                         stroke-width="2"
-                      />
-                    </svg>
-                    Auto Watering Bot
+                      /></svg
+                    >Auto Watering Bot
                   </div>
                   <div class="watering-tg-toast-body">
                     🟤 Soil: Dry · 💧 Pump: ON<br />Watering the plants.<br /><span
@@ -3427,7 +3306,6 @@
                     ></span>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span
@@ -3454,8 +3332,6 @@
                     >WiFi → Telegram (blue)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for Auto-Watering -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -3470,56 +3346,50 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Auto-watering Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">ESP32 DevKit</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Soil Moisture Probe</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name">ESP32 DevKit (Type-C)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">33,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Amplifier/Driver Module</span
-                        >
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                          >Soil Moisture Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">4,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Relay Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">6,500 MMK</span>
+                        <span class="hw-cost-name"
+                          >1-Channel Relay Module (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">5,100 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Mini Water Pump</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">Mini Water Pump (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">8,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">AC/DC Adapter (12V)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,000 MMK</span>
+                        <span class="hw-cost-name">AC/DC Adapter (12V 1A)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">9,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>68,400 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -3536,26 +3406,25 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Auto-watering Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Telegram</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Telegram (Bot API)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -3566,10 +3435,9 @@
               </div>
             </div>
 
-            <!-- ── Panel: Water Level Sensing System ── -->
+            <!-- ── Panel: Water Level Sensing ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-wls">
               <div class="sys-overview" id="wlsOverview">
-                <!-- Circuit diagram image, centered above the header -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Water level sensing system.png"
@@ -3584,7 +3452,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -3606,12 +3473,9 @@
                     <span class="sys-toggle-label">Fill the tank</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="wlsStage" data-state="idle">
                   <div class="sys-sky wls-sky"></div>
-
                   <div class="sys-flow wls-flow">
-                    <!-- Node 1: Water Sensor + Tank gauge -->
                     <div class="sys-node" data-node="wls-sensor">
                       <div class="sys-node-badge">01</div>
                       <div class="sys-node-icon wls-tank-icon">
@@ -3665,7 +3529,6 @@
                       </div>
                       <div class="sys-node-sub">Level strip (AOUT/DOUT)</div>
                     </div>
-
                     <div class="sys-wire" data-wire="wls-0">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -3677,8 +3540,6 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 2: Arduino UNO -->
                     <div class="sys-node" data-node="wls-arduino">
                       <div class="sys-node-badge">02</div>
                       <div class="sys-node-icon">
@@ -3777,7 +3638,6 @@
                       </div>
                       <div class="sys-node-sub">Reads A0 / A1</div>
                     </div>
-
                     <div class="sys-wire" data-wire="wls-1">
                       <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                         <path
@@ -3789,8 +3649,6 @@
                         <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                       </svg>
                     </div>
-
-                    <!-- Node 3: 16x2 LCD (I2C) -->
                     <div class="sys-node" data-node="wls-lcd">
                       <div class="sys-node-badge">03</div>
                       <div class="sys-node-icon">
@@ -3840,8 +3698,6 @@
                       <div class="sys-node-sub">SDA → A4 · SCL → A5</div>
                     </div>
                   </div>
-
-                  <!-- LCD message preview -->
                   <div class="wls-lcd-preview" id="wlsLcdPreview">
                     <div class="wls-lcd-preview-line" id="wlsLcdLine1">
                       WATER LEVEL: 0%
@@ -3851,7 +3707,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #d94f2b"></span>+5V
@@ -3878,8 +3733,6 @@
                     → A5 (yellow)
                   </div>
                 </div>
-
-                <!-- Hardware & Software for Water Level Sensing -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -3894,39 +3747,40 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Water Level sensing Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Arduino UNO</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Arduino UNO R3</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">16,700 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Water Sensor Module</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                        <span class="hw-cost-name"
+                          >Water Level Sensor Module</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">16×2 LCD (I2C)</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >16×2 LCD with I2C Adapter</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">14,300 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>42,300 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -3943,22 +3797,20 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Water level sensing Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Arduino IDE</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name">Arduino IDE</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
-
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -3969,14 +3821,13 @@
               </div>
             </div>
 
-            <!-- ── Panel: Piezo Energy Harvesting System ── -->
+            <!-- ── Panel: Piezo Energy Harvesting ── -->
             <div class="sys-tab-panel hidden" id="tab-panel-piezo">
               <div class="sys-overview" id="piezoOverview" data-active="idle">
-                <!-- Circuit diagram image -->
                 <div class="sys-diagram-img-wrap">
                   <img
                     src="IMG/Piezo Energy Harvesting System.png"
-                    alt="Piezo E Harvesting System Circuit Diagram"
+                    alt="Piezo Energy Harvesting System Circuit Diagram"
                     class="sys-diagram-img"
                     onclick="
                       openLightbox(
@@ -3987,7 +3838,6 @@
                   />
                   <div class="sys-diagram-img-hint">Click to enlarge</div>
                 </div>
-
                 <div class="sys-header">
                   <div class="sys-header-text">
                     <div class="sys-eyebrow">
@@ -4012,17 +3862,13 @@
                     <span class="sys-toggle-label">Car drives over</span>
                   </button>
                 </div>
-
                 <div class="sys-stage" id="piezoStage" data-state="idle">
                   <div class="sys-sky piezo-sky"></div>
-
                   <div
                     class="piezo-flow-wrap"
                     style="position: relative; z-index: 1"
                   >
-                    <!-- Row 1: main chain -->
                     <div class="piezo-row piezo-row-main">
-                      <!-- Node 1: Piezo Disc Array -->
                       <div class="sys-node" data-node="piezo-disc">
                         <div class="sys-node-badge">01</div>
                         <div class="sys-node-icon">
@@ -4091,7 +3937,6 @@
                         </div>
                         <div class="sys-node-sub">AC output</div>
                       </div>
-
                       <div class="piezo-wire" data-wire="piezo-0">
                         <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                           <path
@@ -4103,8 +3948,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 2: Bridge Rectifier -->
                       <div class="sys-node" data-node="piezo-rect">
                         <div class="sys-node-badge">02</div>
                         <div class="sys-node-icon">
@@ -4170,7 +4013,6 @@
                         </div>
                         <div class="sys-node-sub">4× IN4007 diodes</div>
                       </div>
-
                       <div class="piezo-wire" data-wire="piezo-1">
                         <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                           <path
@@ -4182,8 +4024,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 3: Supercapacitor -->
                       <div class="sys-node" data-node="piezo-cap">
                         <div class="sys-node-badge">03</div>
                         <div class="sys-node-icon">
@@ -4265,7 +4105,6 @@
                         </div>
                         <div class="sys-node-sub">Energy storage</div>
                       </div>
-
                       <div class="piezo-wire" data-wire="piezo-2">
                         <svg viewBox="0 0 100 24" preserveAspectRatio="none">
                           <path
@@ -4277,8 +4116,6 @@
                           <circle class="sys-pulse" cx="0" cy="12" r="3.5" />
                         </svg>
                       </div>
-
-                      <!-- Node 4: Voltage Regulator -->
                       <div class="sys-node" data-node="piezo-vreg">
                         <div class="sys-node-badge">04</div>
                         <div class="sys-node-icon piezo-vreg-icon">
@@ -4350,9 +4187,6 @@
                         <div class="sys-node-sub">Regulated 5V out</div>
                       </div>
                     </div>
-                    <!-- end piezo-row-main -->
-
-                    <!-- Capacitor voltage gauge bar -->
                     <div class="piezo-voltage-bar-wrap">
                       <span
                         style="
@@ -4373,15 +4207,10 @@
                         >0 V</span
                       >
                     </div>
-
-                    <!-- Branch connector line -->
                     <div class="piezo-branch-connector">
                       <div class="piezo-branch-line"></div>
                     </div>
-
-                    <!-- Row 2: output nodes -->
                     <div class="piezo-row piezo-row-outputs">
-                      <!-- Output A: LED Green (Power OK) -->
                       <div class="sys-node" data-node="piezo-led-green">
                         <div class="sys-node-badge">05a</div>
                         <div class="sys-node-icon">
@@ -4438,8 +4267,6 @@
                         </div>
                         <div class="sys-node-sub">Power OK</div>
                       </div>
-
-                      <!-- Output B: Wireless Charging Coil -->
                       <div class="sys-node" data-node="piezo-coil">
                         <div class="sys-node-badge">06</div>
                         <div class="sys-node-icon">
@@ -4500,8 +4327,6 @@
                         </div>
                         <div class="sys-node-sub">Transmitter (5V)</div>
                       </div>
-
-                      <!-- Output C: LED Blue (Charging) -->
                       <div class="sys-node" data-node="piezo-led-blue">
                         <div class="sys-node-badge">05b</div>
                         <div class="sys-node-icon">
@@ -4559,12 +4384,8 @@
                         <div class="sys-node-sub">Charging active</div>
                       </div>
                     </div>
-                    <!-- end piezo-row-outputs -->
                   </div>
-                  <!-- end piezo-flow-wrap -->
                 </div>
-                <!-- end sys-stage -->
-
                 <div class="sys-legend">
                   <div class="sys-legend-item">
                     <span class="sys-dot" style="background: #c8a000"></span>AC
@@ -4587,8 +4408,6 @@
                     >Wireless TX (blue)
                   </div>
                 </div>
-
-                <!-- Hardware & Software -->
                 <div class="sys-hw-sw">
                   <div class="sys-hw-block">
                     <div class="sys-hw-label">
@@ -4603,72 +4422,67 @@
                         stroke-linejoin="round"
                       >
                         <rect x="2" y="3" width="20" height="14" rx="2" />
-                        <path d="M8 21h8M12 17v4" />
-                      </svg>
-                      Hardware
+                        <path d="M8 21h8M12 17v4" /></svg
+                      >Hardware
                     </div>
-                    <!-- Piezo Energy Harvesting Hardware -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name"
-                          >Piezoelectric Disc (27mm)</span
-                        >
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">22,000 MMK</span>
+                        <span class="hw-cost-name">Piezoelectric Disc 27mm</span
+                        ><span class="hw-cost-qty">× 4</span
+                        ><span class="hw-cost-price">12,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Bridge Rectifier (IN4007 ×4)</span
-                        >
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">3,500 MMK</span>
+                          >IN4007 Rectifier Diode (bridge ×4)</span
+                        ><span class="hw-cost-qty">× 4</span
+                        ><span class="hw-cost-price">2,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Supercapacitor (4700µF / 16V)</span
-                        >
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">8,000 MMK</span>
-                      </div>
-                      <div class="hw-cost-row">
-                        <span class="hw-cost-name">Voltage Regulator (5V)</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                          >Electrolytic Capacitor 4700µF/16V</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
                         <span class="hw-cost-name"
-                          >Wireless Charging Module (5V)</span
-                        >
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                          >Voltage Regulator LM7805 (5V)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">2,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED Green (Power OK)</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name"
+                          >Wireless Charging Module (5V TX)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">12,000 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">LED Blue (Charging)</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">LED Green (Power OK)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Resistor 220Ω</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">LED Blue (Charging)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Breadboard</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">Resistor 220Ω pack</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">1,500 MMK</span>
                       </div>
                       <div class="hw-cost-row">
-                        <span class="hw-cost-name">Jumper Wire</span>
-                        <span class="hw-cost-qty">× 20</span>
-                        <span class="hw-cost-price">2,000 MMK</span>
+                        <span class="hw-cost-name">Breadboard (400-point)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
+                      </div>
+                      <div class="hw-cost-row">
+                        <span class="hw-cost-name"
+                          >Jumper Wire (M-M, 40pcs)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">3,900 MMK</span>
                       </div>
                       <div class="hw-cost-total">
-                        Hardware subtotal: <span>45,000 MMK</span>
+                        Hardware subtotal: <span>42,300 MMK</span>
                       </div>
                     </div>
                   </div>
@@ -4685,16 +4499,15 @@
                         stroke-linejoin="round"
                       >
                         <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                      </svg>
-                      Software
+                        <polyline points="8 6 2 12 8 18" /></svg
+                      >Software
                     </div>
-                    <!-- Piezo Energy Harvesting Software -->
                     <div class="sys-hw-chips hw-cost-grid">
                       <div class="hw-cost-row sw-cost-row">
-                        <span class="hw-cost-name">Circuit Designer</span>
-                        <span class="hw-cost-qty">× 1</span>
-                        <span class="hw-cost-price">Free</span>
+                        <span class="hw-cost-name"
+                          >Circuit Designer (Tinkercad)</span
+                        ><span class="hw-cost-qty">× 1</span
+                        ><span class="hw-cost-price">Free</span>
                       </div>
                       <div class="hw-cost-total">
                         Software subtotal: <span>Free</span>
@@ -4703,11 +4516,8 @@
                   </div>
                 </div>
               </div>
-              <!-- end piezoOverview -->
             </div>
-            <!-- end tab-panel-piezo -->
           </div>
-
           <!-- end sys-overview-card -->
         </div>
       </div>
@@ -4826,7 +4636,6 @@
         }
       }
 
-      /* ── Shared system overview vars ── */
       .sys-overview {
         --sys-wire-off: var(--border-mid);
         --sys-wire-power: #d94f2b;
@@ -4952,7 +4761,6 @@
         background: linear-gradient(180deg, #eaf6ea 0%, #f0f7ee 100%);
       }
 
-      /* Raindrops animation */
       .sys-raindrops {
         position: absolute;
         inset: 0;
@@ -5081,16 +4889,11 @@
         letter-spacing: 0.05em;
       }
 
-      /* LDR active */
-      .sys-node[data-node="ldr-battery"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="ldr-battery"].is-active .sys-node-icon,
       .sys-node[data-node="ldr-battery"].is-active .sys-node-reading {
         color: var(--accent);
       }
-      .sys-node[data-node="ldr"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="ldr"].is-active .sys-node-icon,
       .sys-node[data-node="ldr"].is-active .sys-node-reading {
         color: var(--accent);
       }
@@ -5098,9 +4901,7 @@
         fill: var(--border-mid);
         transition: fill 0.3s;
       }
-      .sys-node[data-node="ldr-relay"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="ldr-relay"].is-active .sys-node-icon,
       .sys-node[data-node="ldr-relay"].is-active .sys-node-reading {
         color: var(--green);
       }
@@ -5137,10 +4938,7 @@
         color: #c8841a;
       }
 
-      /* IR active */
-      .sys-node[data-node="ir-battery"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="ir-battery"].is-active .sys-node-icon,
       .sys-node[data-node="ir-battery"].is-active .sys-node-reading {
         color: var(--accent);
       }
@@ -5148,9 +4946,7 @@
         fill: var(--border-mid);
         transition: fill 0.3s;
       }
-      .sys-node[data-node="ir-sensor"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="ir-sensor"].is-active .sys-node-icon,
       .sys-node[data-node="ir-sensor"].is-active .sys-node-reading {
         color: var(--green);
       }
@@ -5161,9 +4957,7 @@
         fill: var(--border-mid);
         transition: fill 0.3s;
       }
-      .sys-node[data-node="ir-relay"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="ir-relay"].is-active .sys-node-icon,
       .sys-node[data-node="ir-relay"].is-active .sys-node-reading {
         color: var(--green);
       }
@@ -5200,16 +4994,11 @@
         color: #c8841a;
       }
 
-      /* Rain active */
-      .sys-node[data-node="rain-power"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="rain-power"].is-active .sys-node-icon,
       .sys-node[data-node="rain-power"].is-active .sys-node-reading {
         color: var(--accent);
       }
-      .sys-node[data-node="rain-arduino"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="rain-arduino"].is-active .sys-node-icon,
       .sys-node[data-node="rain-arduino"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
@@ -5217,9 +5006,7 @@
       .rain-drop-b {
         transition: opacity 0.4s;
       }
-      .sys-node[data-node="rain-sensor"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="rain-sensor"].is-active .sys-node-icon,
       .sys-node[data-node="rain-sensor"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
@@ -5260,14 +5047,11 @@
       .sys-node[data-node="rain-servo"].is-active .rain-servo-glow {
         opacity: 1;
       }
-      .sys-node[data-node="rain-servo"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="rain-servo"].is-active .sys-node-icon,
       .sys-node[data-node="rain-servo"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
 
-      /* Wires */
       .sys-wire {
         position: relative;
         height: 24px;
@@ -5306,7 +5090,6 @@
         opacity: 1;
         animation: sysFlow 1.6s linear infinite;
       }
-
       .sys-wire[data-wire="ir-0"] path,
       .sys-wire[data-wire="ir-1"] path,
       .sys-wire[data-wire="ir-2"] path {
@@ -5335,7 +5118,6 @@
         opacity: 1;
         animation: sysFlow 1.6s linear infinite;
       }
-
       .sys-wire[data-wire="rain-0"] path,
       .sys-wire[data-wire="rain-1"] path,
       .sys-wire[data-wire="rain-2"] path {
@@ -5365,7 +5147,6 @@
         opacity: 1;
         animation: sysFlow 1.4s linear infinite;
       }
-
       @keyframes sysFlow {
         0% {
           transform: translateX(0);
@@ -5403,7 +5184,6 @@
         display: inline-block;
       }
 
-      /* ── Hardware / Software strips ── */
       .sys-hw-sw {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -5411,8 +5191,6 @@
         margin-top: 20px;
         padding-top: 18px;
         border-top: 1px solid var(--border);
-      }
-      .sys-hw-block {
       }
       .sys-hw-label {
         display: flex;
@@ -5433,24 +5211,7 @@
         flex-wrap: wrap;
         gap: 6px;
       }
-      .hw-chip {
-        display: inline-flex;
-        align-items: center;
-        border-radius: 99px;
-        padding: 4px 11px;
-        font-size: 11.5px;
-        font-weight: 500;
-        background: var(--surface-alt);
-        color: var(--text-sub);
-        border: 1px solid var(--border-mid);
-      }
-      .sw-chip {
-        background: rgba(46, 125, 82, 0.07);
-        color: var(--green);
-        border-color: rgba(46, 125, 82, 0.18);
-      }
 
-      /* ── WCS layout ── */
       .wcs-flow-wrap {
         display: flex;
         flex-direction: column;
@@ -5481,12 +5242,9 @@
         height: 100%;
         overflow: visible;
       }
-
-      /* branch connector — vertical line from IR node down to output row */
       .wcs-branch-connector {
         display: flex;
         justify-content: flex-end;
-        padding-right: calc(0% + 0px);
         pointer-events: none;
       }
       .wcs-branch-line {
@@ -5499,8 +5257,6 @@
       #wcsOverview[data-active="car"] .wcs-branch-line {
         background: #2e7d52;
       }
-
-      /* WCS sky */
       .wcs-sky {
         background: linear-gradient(180deg, #e8f4fd 0%, #f0f7ff 100%);
       }
@@ -5520,15 +5276,11 @@
       #wcsOverview[data-active="car"] .sys-node-sub {
         color: rgba(255, 255, 255, 0.3);
       }
-
-      /* toggle active */
       #wcsOverview[data-active="car"] .sys-toggle {
         background: #1a2f1e;
         border-color: #1a2f1e;
         color: #e8f8ea;
       }
-
-      /* WCS wire colours */
       .wcs-wire[data-wire="wcs-0"] path,
       .wcs-wire[data-wire="wcs-1"] path {
         stroke: var(--sys-wire-off);
@@ -5549,17 +5301,11 @@
         opacity: 1;
         animation: sysFlow 1.4s linear infinite;
       }
-
-      /* WCS node active states */
-      .sys-node[data-node="wcs-battery"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="wcs-battery"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-battery"].is-active .sys-node-reading {
         color: var(--accent);
       }
-      .sys-node[data-node="wcs-esp32"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="wcs-esp32"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-esp32"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
@@ -5567,17 +5313,13 @@
         fill: var(--border-mid);
         transition: fill 0.3s;
       }
-      .sys-node[data-node="wcs-ir"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="wcs-ir"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-ir"].is-active .sys-node-reading {
         color: var(--green);
       }
       .sys-node[data-node="wcs-ir"].is-active .wcs-ir-dot {
         fill: #d94f2b;
       }
-
-      /* Servo arm */
       .wcs-servo-icon {
         position: relative;
       }
@@ -5609,23 +5351,17 @@
       .sys-node[data-node="wcs-servo"].is-active .wcs-servo-glow {
         opacity: 1;
       }
-      .sys-node[data-node="wcs-servo"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="wcs-servo"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-servo"].is-active .sys-node-reading {
         color: var(--green);
       }
-
-      /* Wireless coil waves */
       .wcs-wave-a,
       .wcs-wave-b {
         transition:
           opacity 0.4s,
           stroke 0.4s;
       }
-      .sys-node[data-node="wcs-coil"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="wcs-coil"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-coil"].is-active .sys-node-reading {
         color: #c8a000;
       }
@@ -5645,16 +5381,12 @@
           opacity: 1;
         }
       }
-
-      /* Telegram node */
       .wcs-tg-dot {
         transition:
           fill 0.3s,
           opacity 0.3s;
       }
-      .sys-node[data-node="wcs-telegram"].is-active .sys-node-icon {
-        color: #229ed9;
-      }
+      .sys-node[data-node="wcs-telegram"].is-active .sys-node-icon,
       .sys-node[data-node="wcs-telegram"].is-active .sys-node-reading {
         color: #229ed9;
       }
@@ -5671,8 +5403,6 @@
           opacity: 1;
         }
       }
-
-      /* Telegram toast notification */
       .wcs-tg-toast {
         display: none;
         border: 1px solid rgba(34, 158, 217, 0.25);
@@ -5718,7 +5448,6 @@
         display: block;
       }
 
-      /* ── Solar Tracking System CSS ── */
       .solar-sky {
         background: linear-gradient(
           180deg,
@@ -5743,8 +5472,6 @@
           #ffd700 100%
         ) !important;
       }
-
-      /* Animated sun */
       .solar-sun-wrap {
         position: absolute;
         top: 12px;
@@ -5775,8 +5502,6 @@
           transform: rotate(360deg);
         }
       }
-
-      /* ── Responsive: LDR / IR / Rain sys-flow ── */
       @media (max-width: 640px) {
         .sys-flow {
           grid-template-columns: 1fr !important;
@@ -5792,8 +5517,6 @@
           padding: 13px 12px 11px;
         }
       }
-
-      /* Layout */
       .solar-top-row {
         position: relative;
         z-index: 1;
@@ -5830,8 +5553,6 @@
         gap: 10px;
         margin-top: 4px;
       }
-
-      /* Solar panel node */
       .solar-panel-icon {
         position: relative;
       }
@@ -5861,58 +5582,40 @@
       .sys-node[data-node="solar-servo"].is-active .solar-panel-glow {
         opacity: 1;
       }
-      .sys-node[data-node="solar-servo"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="solar-servo"].is-active .sys-node-icon,
       .sys-node[data-node="solar-servo"].is-active .sys-node-reading {
         color: #c8a000;
       }
-
-      /* LED nodes */
       .solar-led-l-glow,
       .solar-led-r-glow {
         transition: opacity 0.4s;
       }
-      .sys-node[data-node="solar-led-l"].is-active .sys-node-icon {
+      .sys-node[data-node="solar-led-l"].is-active .sys-node-icon,
+      .sys-node[data-node="solar-led-l"].is-active .sys-node-reading {
         color: #2e7d52;
       }
       .sys-node[data-node="solar-led-l"].is-active .solar-led-l-glow {
         opacity: 0.7;
       }
-      .sys-node[data-node="solar-led-l"].is-active .sys-node-reading {
-        color: #2e7d52;
-      }
-      .sys-node[data-node="solar-led-r"].is-active .sys-node-icon {
+      .sys-node[data-node="solar-led-r"].is-active .sys-node-icon,
+      .sys-node[data-node="solar-led-r"].is-active .sys-node-reading {
         color: #d94f2b;
       }
       .sys-node[data-node="solar-led-r"].is-active .solar-led-r-glow {
         opacity: 0.7;
       }
-      .sys-node[data-node="solar-led-r"].is-active .sys-node-reading {
-        color: #d94f2b;
-      }
-
-      /* LDR nodes */
-      .sys-node[data-node="solar-ldr-l"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="solar-ldr-l"].is-active .sys-node-icon,
       .sys-node[data-node="solar-ldr-l"].is-active .sys-node-reading {
         color: #c8a000;
       }
-      .sys-node[data-node="solar-ldr-r"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="solar-ldr-r"].is-active .sys-node-icon,
       .sys-node[data-node="solar-ldr-r"].is-active .sys-node-reading {
         color: #c8a000;
       }
-      .sys-node[data-node="solar-arduino"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="solar-arduino"].is-active .sys-node-icon,
       .sys-node[data-node="solar-arduino"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
-
-      /* Solar wires */
       .sys-wire[data-wire="solar-0"] path,
       .sys-wire[data-wire="solar-1"] path {
         stroke: var(--sys-wire-off);
@@ -5934,8 +5637,6 @@
         opacity: 1;
         animation: sysFlow 1.5s linear infinite;
       }
-
-      /* Direction indicator bar */
       .solar-direction-bar {
         display: flex;
         align-items: center;
@@ -5985,7 +5686,6 @@
         border-color: rgba(217, 79, 43, 0.2);
       }
 
-      /* Diagram image under eyebrow */
       .sys-diagram-img-wrap {
         margin: 10px auto 14px;
         position: relative;
@@ -6015,7 +5715,6 @@
         margin-top: 4px;
       }
 
-      /* ── Auto-Watering System CSS ── */
       .watering-flow-wrap {
         display: flex;
         flex-direction: column;
@@ -6046,8 +5745,6 @@
         height: 100%;
         overflow: visible;
       }
-
-      /* branch connector — vertical line from sensor node down to output row */
       .watering-branch-connector {
         display: flex;
         justify-content: flex-end;
@@ -6063,8 +5760,6 @@
       #wateringOverview[data-active="dry"] .watering-branch-line {
         background: #c8a000;
       }
-
-      /* Watering sky */
       .watering-sky {
         background: linear-gradient(180deg, #fdf6e8 0%, #f7f6f3 100%);
       }
@@ -6084,15 +5779,11 @@
       #wateringOverview[data-active="dry"] .sys-node-sub {
         color: rgba(255, 255, 255, 0.3);
       }
-
-      /* toggle active */
       #wateringOverview[data-active="dry"] .sys-toggle {
         background: #2e2412;
         border-color: #2e2412;
         color: #faf2e2;
       }
-
-      /* Watering wire colours */
       .watering-wire[data-wire="watering-0"] path,
       .watering-wire[data-wire="watering-1"] path {
         stroke: var(--sys-wire-off);
@@ -6113,30 +5804,20 @@
         opacity: 1;
         animation: sysFlow 1.4s linear infinite;
       }
-
-      /* Watering node active states */
-      .sys-node[data-node="watering-adapter"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="watering-adapter"].is-active .sys-node-icon,
       .sys-node[data-node="watering-adapter"].is-active .sys-node-reading {
         color: var(--accent);
       }
-      .sys-node[data-node="watering-esp32"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="watering-esp32"].is-active .sys-node-icon,
       .sys-node[data-node="watering-esp32"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
-
-      /* Moisture sensor droplet */
       .watering-drop {
         transition:
           opacity 0.4s,
           fill 0.4s;
       }
-      .sys-node[data-node="watering-moisture"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="watering-moisture"].is-active .sys-node-icon,
       .sys-node[data-node="watering-moisture"].is-active .sys-node-reading {
         color: #c8a000;
       }
@@ -6144,8 +5825,6 @@
         opacity: 0.85;
         fill: #c8a000;
       }
-
-      /* Relay module */
       .watering-relay-icon {
         position: relative;
       }
@@ -6178,23 +5857,17 @@
         fill: #2e7d52;
         opacity: 1;
       }
-      .sys-node[data-node="watering-relay"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="watering-relay"].is-active .sys-node-icon,
       .sys-node[data-node="watering-relay"].is-active .sys-node-reading {
         color: var(--green);
       }
-
-      /* Water pump stream */
       .watering-pump-stream {
         transition:
           opacity 0.3s,
           fill 0.3s;
         opacity: 0;
       }
-      .sys-node[data-node="watering-pump"].is-active .sys-node-icon {
-        color: #2e86c8;
-      }
+      .sys-node[data-node="watering-pump"].is-active .sys-node-icon,
       .sys-node[data-node="watering-pump"].is-active .sys-node-reading {
         color: #2e86c8;
       }
@@ -6213,16 +5886,12 @@
           opacity: 0.9;
         }
       }
-
-      /* Telegram node */
       .watering-tg-dot {
         transition:
           fill 0.3s,
           opacity 0.3s;
       }
-      .sys-node[data-node="watering-telegram"].is-active .sys-node-icon {
-        color: #229ed9;
-      }
+      .sys-node[data-node="watering-telegram"].is-active .sys-node-icon,
       .sys-node[data-node="watering-telegram"].is-active .sys-node-reading {
         color: #229ed9;
       }
@@ -6239,8 +5908,6 @@
           opacity: 1;
         }
       }
-
-      /* Telegram toast notification */
       .watering-tg-toast {
         display: none;
         border: 1px solid rgba(34, 158, 217, 0.25);
@@ -6286,7 +5953,6 @@
         display: block;
       }
 
-      /* ── Water Level Sensing System CSS ── */
       .wls-sky {
         background: linear-gradient(180deg, #eaf5fb 0%, #f5fbfe 100%);
       }
@@ -6311,8 +5977,6 @@
         border-color: #0f2a3a;
         color: #e7f6ff;
       }
-
-      /* Water level wire colours */
       .wls-flow .sys-wire[data-wire="wls-0"] path,
       .wls-flow .sys-wire[data-wire="wls-1"] path {
         stroke: var(--sys-wire-off);
@@ -6334,8 +5998,6 @@
         opacity: 1;
         animation: sysFlow 1.4s linear infinite;
       }
-
-      /* Tank fill gauge inside the sensor node icon */
       .wls-tank-icon {
         position: relative;
       }
@@ -6345,32 +6007,23 @@
           y 1.6s ease;
         color: var(--border-mid);
       }
-      .sys-node[data-node="wls-sensor"].is-active .sys-node-icon {
-        color: #2e86c8;
-      }
+      .sys-node[data-node="wls-sensor"].is-active .sys-node-icon,
       .sys-node[data-node="wls-sensor"].is-active .sys-node-reading {
         color: #2e86c8;
       }
       .sys-node[data-node="wls-sensor"].is-active .wls-tank-fill {
         color: #2e86c8;
       }
-
-      .sys-node[data-node="wls-arduino"].is-active .sys-node-icon {
-        color: #3a7cc8;
-      }
+      .sys-node[data-node="wls-arduino"].is-active .sys-node-icon,
       .sys-node[data-node="wls-arduino"].is-active .sys-node-reading {
         color: #3a7cc8;
       }
-
-      /* LCD node */
       .wls-lcd-screen {
         transition:
           opacity 0.4s,
           fill 0.4s;
       }
-      .sys-node[data-node="wls-lcd"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="wls-lcd"].is-active .sys-node-icon,
       .sys-node[data-node="wls-lcd"].is-active .sys-node-reading {
         color: var(--green);
       }
@@ -6378,8 +6031,6 @@
         fill: var(--green);
         opacity: 0.28;
       }
-
-      /* LCD message preview panel */
       .wls-lcd-preview {
         position: relative;
         z-index: 1;
@@ -6408,21 +6059,6 @@
       .wls-lcd-preview-line {
         white-space: pre;
         line-height: 1.5;
-      }
-
-      @media (max-width: 640px) {
-        .sys-flow {
-          grid-template-columns: 1fr !important;
-          gap: 8px;
-        }
-        .sys-flow .sys-wire {
-          display: none !important;
-        }
-        #sysStage,
-        #irStage,
-        #rainStage {
-          padding: 20px 14px 18px;
-        }
       }
 
       @media (max-width: 760px) {
@@ -6454,7 +6090,7 @@
           display: none;
         }
       }
-      /* ── Piezo Energy Harvesting System ── */
+
       .piezo-sky {
         background: linear-gradient(180deg, #f8f4ee 0%, #f2ede6 100%);
       }
@@ -6483,7 +6119,6 @@
         border-color: #232010;
         color: #faf2e2;
       }
-
       .piezo-flow-wrap {
         display: flex;
         flex-direction: column;
@@ -6504,7 +6139,6 @@
         gap: 10px;
         margin-top: 4px;
       }
-
       .piezo-wire {
         position: relative;
         height: 24px;
@@ -6514,7 +6148,6 @@
         height: 100%;
         overflow: visible;
       }
-
       .piezo-branch-connector {
         display: flex;
         justify-content: flex-end;
@@ -6530,8 +6163,6 @@
       #piezoOverview[data-active="rolling"] .piezo-branch-line {
         background: #c8a000;
       }
-
-      /* Wire colours */
       .piezo-wire[data-wire="piezo-0"] path,
       .piezo-wire[data-wire="piezo-1"] path,
       .piezo-wire[data-wire="piezo-2"] path {
@@ -6562,18 +6193,11 @@
         opacity: 1;
         animation: sysFlow 1.4s linear infinite;
       }
-
-      /* Node active states */
-      .sys-node[data-node="piezo-disc"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="piezo-disc"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-disc"].is-active .sys-node-reading {
         color: #c8a000;
       }
-
-      .sys-node[data-node="piezo-rect"].is-active .sys-node-icon {
-        color: var(--accent);
-      }
+      .sys-node[data-node="piezo-rect"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-rect"].is-active .sys-node-reading {
         color: var(--accent);
       }
@@ -6586,10 +6210,7 @@
         fill: #d94f2b;
         opacity: 1;
       }
-
-      .sys-node[data-node="piezo-cap"].is-active .sys-node-icon {
-        color: #2e86c8;
-      }
+      .sys-node[data-node="piezo-cap"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-cap"].is-active .sys-node-reading {
         color: #2e86c8;
       }
@@ -6602,7 +6223,6 @@
         fill: #2e86c8;
         opacity: 0.7;
       }
-
       .piezo-vreg-icon {
         position: relative;
       }
@@ -6626,32 +6246,23 @@
       .sys-node[data-node="piezo-vreg"].is-active .piezo-vreg-glow {
         opacity: 1;
       }
-      .sys-node[data-node="piezo-vreg"].is-active .sys-node-icon {
-        color: var(--green);
-      }
+      .sys-node[data-node="piezo-vreg"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-vreg"].is-active .sys-node-reading {
         color: var(--green);
       }
-
       .piezo-led-green-glow,
       .piezo-led-blue-glow {
         opacity: 0;
         transition: opacity 0.4s;
       }
-
-      .sys-node[data-node="piezo-led-green"].is-active .sys-node-icon {
-        color: #2e7d52;
-      }
+      .sys-node[data-node="piezo-led-green"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-led-green"].is-active .sys-node-reading {
         color: #2e7d52;
       }
       .sys-node[data-node="piezo-led-green"].is-active .piezo-led-green-glow {
         opacity: 0.7;
       }
-
-      .sys-node[data-node="piezo-coil"].is-active .sys-node-icon {
-        color: #c8a000;
-      }
+      .sys-node[data-node="piezo-coil"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-coil"].is-active .sys-node-reading {
         color: #c8a000;
       }
@@ -6677,18 +6288,13 @@
           opacity: 1;
         }
       }
-
-      .sys-node[data-node="piezo-led-blue"].is-active .sys-node-icon {
-        color: #2e86c8;
-      }
+      .sys-node[data-node="piezo-led-blue"].is-active .sys-node-icon,
       .sys-node[data-node="piezo-led-blue"].is-active .sys-node-reading {
         color: #2e86c8;
       }
       .sys-node[data-node="piezo-led-blue"].is-active .piezo-led-blue-glow {
         opacity: 0.7;
       }
-
-      /* Voltage gauge bar */
       .piezo-voltage-bar-wrap {
         position: relative;
         z-index: 1;
@@ -6723,7 +6329,6 @@
       #piezoOverview[data-active="rolling"] .piezo-voltage-label {
         color: #c8a000;
       }
-
       @media (max-width: 760px) {
         .piezo-row-main {
           grid-template-columns: 1fr;
@@ -6739,7 +6344,6 @@
         }
       }
       @media (max-width: 640px) {
-        /* Fix LDR, IR, Rain sys-flow 7-col → single column */
         .sys-flow {
           grid-template-columns: 1fr !important;
           gap: 8px;
@@ -6747,7 +6351,6 @@
         .sys-flow .sys-wire {
           display: none !important;
         }
-        /* Rain stage flow also uses sys-flow */
         #rainStage .sys-flow,
         #sysStage .sys-flow,
         #irStage .sys-flow {
@@ -6755,7 +6358,6 @@
         }
       }
 
-      /* ── Cost item rows (Hardware & Software) ── */
       .hw-cost-grid {
         display: flex;
         flex-direction: column;
@@ -6801,8 +6403,6 @@
       .sw-cost-row .hw-cost-price {
         color: var(--green);
       }
-
-      /* Section total row */
       .hw-cost-total {
         display: flex;
         justify-content: flex-end;
@@ -6819,6 +6419,67 @@
         color: var(--text);
         font-size: 13px;
       }
+
+      @media (max-width: 760px) {
+        .sys-hw-sw {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .hw-cost-row {
+          flex-wrap: wrap;
+          gap: 4px 8px;
+          padding: 9px 12px;
+        }
+
+        .hw-cost-name {
+          flex-basis: 100%; /* name takes its own line */
+          font-size: 12.5px;
+        }
+
+        .hw-cost-qty {
+          font-size: 11.5px;
+          color: var(--text-muted);
+        }
+
+        .hw-cost-price {
+          margin-left: auto; /* push price to the right on the same line as qty */
+          font-size: 12px;
+          min-width: unset;
+        }
+
+        .hw-cost-total {
+          flex-wrap: wrap;
+          gap: 4px;
+          font-size: 11.5px;
+          padding: 8px 12px 2px;
+        }
+
+        .hw-cost-total span {
+          font-size: 12.5px;
+        }
+      }
+
+      /* ── Very small screens: further tighten ────────────────────────── */
+      @media (max-width: 400px) {
+        .hw-cost-row {
+          padding: 8px 10px;
+        }
+
+        .hw-cost-name {
+          font-size: 12px;
+        }
+
+        .hw-cost-price {
+          font-size: 11.5px;
+        }
+
+        .sys-hw-label {
+          font-size: 10.5px;
+        }
+      }
     </style>
 
     <script>
@@ -6832,19 +6493,17 @@
           .forEach((p) => p.classList.add("hidden"));
         document.getElementById("tab-btn-" + tab).classList.add("active");
         document.getElementById("tab-panel-" + tab).classList.remove("hidden");
-
-        // Persist so a refresh/reload keeps the same system tab open
         sessionStorage.setItem("lastSysTab", tab);
       }
 
       (function () {
-        /* ══ AUTO STREET LIGHT — LDR ══ */
-        var ldrRoot = document.getElementById("sysOverview");
-        var ldrToggle = document.getElementById("sysToggle");
-        var ldrBattR = document.getElementById("ldrBattReading");
-        var ldrR = document.getElementById("ldrReading");
-        var relayR = document.getElementById("relayReading");
-        var lightR = document.getElementById("lightReading");
+        /* AUTO STREET LIGHT — LDR */
+        var ldrRoot = document.getElementById("sysOverview"),
+          ldrToggle = document.getElementById("sysToggle"),
+          ldrBattR = document.getElementById("ldrBattReading"),
+          ldrR = document.getElementById("ldrReading"),
+          relayR = document.getElementById("relayReading"),
+          lightR = document.getElementById("lightReading");
         var ldrNodes = {
           battery: ldrRoot.querySelector('[data-node="ldr-battery"]'),
           ldr: ldrRoot.querySelector('[data-node="ldr"]'),
@@ -6919,13 +6578,13 @@
         }, 4000);
         setNight(false, { skipDelay: true });
 
-        /* ══ TRAFFIC SENSING — IR ══ */
-        var irRoot = document.getElementById("irOverview");
-        var irToggle = document.getElementById("irToggle");
-        var irBattR = document.getElementById("irBattReading");
-        var irSensR = document.getElementById("irSensorReading");
-        var irRelayR = document.getElementById("irRelayReading");
-        var irLightR = document.getElementById("irLightReading");
+        /* TRAFFIC SENSING — IR */
+        var irRoot = document.getElementById("irOverview"),
+          irToggle = document.getElementById("irToggle"),
+          irBattR = document.getElementById("irBattReading"),
+          irSensR = document.getElementById("irSensorReading"),
+          irRelayR = document.getElementById("irRelayReading"),
+          irLightR = document.getElementById("irLightReading");
         var irNodes = {
           battery: irRoot.querySelector('[data-node="ir-battery"]'),
           sensor: irRoot.querySelector('[data-node="ir-sensor"]'),
@@ -6993,13 +6652,13 @@
         irToggle.addEventListener("click", () => setTraffic(!irIsTraffic));
         setTraffic(false, { skipDelay: true });
 
-        /* ══ RAIN DETECTION SYSTEM ══ */
-        var rainRoot = document.getElementById("rainOverview");
-        var rainToggle = document.getElementById("rainToggle");
-        var rainPowerR = document.getElementById("rainPowerReading");
-        var rainArduinoR = document.getElementById("rainArduinoReading");
-        var rainSensorR = document.getElementById("rainSensorReading");
-        var rainServoR = document.getElementById("rainServoReading");
+        /* RAIN DETECTION */
+        var rainRoot = document.getElementById("rainOverview"),
+          rainToggle = document.getElementById("rainToggle"),
+          rainPowerR = document.getElementById("rainPowerReading"),
+          rainArduinoR = document.getElementById("rainArduinoReading"),
+          rainSensorR = document.getElementById("rainSensorReading"),
+          rainServoR = document.getElementById("rainServoReading");
         var rainNodes = {
           power: rainRoot.querySelector('[data-node="rain-power"]'),
           arduino: rainRoot.querySelector('[data-node="rain-arduino"]'),
@@ -7014,8 +6673,6 @@
         var rainIsRaining = false,
           rainTimers = [],
           rainDropEls = [];
-
-        // Spawn animated raindrops in the stage
         function spawnRaindrops() {
           var container = rainRoot.querySelector(".sys-raindrops");
           for (var i = 0; i < 22; i++) {
@@ -7032,7 +6689,6 @@
           }
         }
         spawnRaindrops();
-
         function setRain(on, opts) {
           opts = opts || {};
           rainIsRaining = on;
@@ -7089,18 +6745,17 @@
         rainToggle.addEventListener("click", () => setRain(!rainIsRaining));
         setRain(false, { skipDelay: true });
 
-        /* ══ WIRELESS CAR CHARGING STATION ══ */
-        var wcsRoot = document.getElementById("wcsOverview");
-        var wcsToggle = document.getElementById("wcsToggle");
-        var wcsBattR = document.getElementById("wcsBattReading");
-        var wcsEspR = document.getElementById("wcsEspReading");
-        var wcsIrR = document.getElementById("wcsIrReading");
-        var wcsServoR = document.getElementById("wcsServoReading");
-        var wcsCoilR = document.getElementById("wcsCoilReading");
-        var wcsTgR = document.getElementById("wcsTgReading");
-        var wcsTgToast = document.getElementById("wcsTgToast");
-        var wcsTgTime = document.getElementById("wcsTgTime");
-
+        /* WIRELESS CAR CHARGING */
+        var wcsRoot = document.getElementById("wcsOverview"),
+          wcsToggle = document.getElementById("wcsToggle"),
+          wcsBattR = document.getElementById("wcsBattReading"),
+          wcsEspR = document.getElementById("wcsEspReading"),
+          wcsIrR = document.getElementById("wcsIrReading"),
+          wcsServoR = document.getElementById("wcsServoReading"),
+          wcsCoilR = document.getElementById("wcsCoilReading"),
+          wcsTgR = document.getElementById("wcsTgReading"),
+          wcsTgToast = document.getElementById("wcsTgToast"),
+          wcsTgTime = document.getElementById("wcsTgTime");
         var wcsNodes = {
           battery: wcsRoot.querySelector('[data-node="wcs-battery"]'),
           esp32: wcsRoot.querySelector('[data-node="wcs-esp32"]'),
@@ -7115,16 +6770,14 @@
         };
         var wcsIsActive = false,
           wcsTimers = [];
-
         function fmtTime() {
-          var d = new Date();
-          var h = d.getHours(),
-            m = d.getMinutes();
-          var ampm = h >= 12 ? "PM" : "AM";
+          var d = new Date(),
+            h = d.getHours(),
+            m = d.getMinutes(),
+            ampm = h >= 12 ? "PM" : "AM";
           h = h % 12 || 12;
           return "Time: " + h + ":" + String(m).padStart(2, "0") + " " + ampm;
         }
-
         function setWCS(on, opts) {
           opts = opts || {};
           wcsIsActive = on;
@@ -7136,7 +6789,6 @@
           wcsToggle.querySelector(".sys-toggle-icon").textContent = on
             ? "🏁"
             : "🚗";
-
           wcsTimers.forEach(clearTimeout);
           wcsTimers = [];
           Object.values(wcsNodes).forEach((n) =>
@@ -7144,7 +6796,6 @@
           );
           Object.values(wcsWires).forEach((w) => w.classList.remove("is-live"));
           wcsTgToast.classList.remove("visible");
-
           if (!on) {
             wcsBattR.textContent = "Standby";
             wcsEspR.textContent = "Idle";
@@ -7154,7 +6805,6 @@
             wcsTgR.textContent = "Waiting";
             return;
           }
-
           var s = opts.skipDelay ? 0 : 450;
           wcsNodes.battery.classList.add("is-active");
           wcsBattR.textContent = "Active (9V)";
@@ -7174,7 +6824,6 @@
               wcsNodes.ir.classList.add("is-active");
             }, s * 2),
           );
-          // outputs branch in parallel
           wcsTimers.push(
             setTimeout(() => {
               wcsServoR.textContent = "Gate open";
@@ -7206,16 +6855,15 @@
         wcsToggle.addEventListener("click", () => setWCS(!wcsIsActive));
         setWCS(false, { skipDelay: true });
 
-        /* ══ SOLAR TRACKING SYSTEM ══ */
-        var solarRoot = document.getElementById("solarOverview");
-        var solarToggle = document.getElementById("solarToggle");
-        var solarLdrLR = document.getElementById("solarLdrLReading");
-        var solarLdrRR = document.getElementById("solarLdrRReading");
-        var solarArduinoR = document.getElementById("solarArduinoReading");
-        var solarServoR = document.getElementById("solarServoReading");
-        var solarLedLR = document.getElementById("solarLedLReading");
-        var solarLedRR = document.getElementById("solarLedRReading");
-
+        /* SOLAR TRACKING */
+        var solarRoot = document.getElementById("solarOverview"),
+          solarToggle = document.getElementById("solarToggle"),
+          solarLdrLR = document.getElementById("solarLdrLReading"),
+          solarLdrRR = document.getElementById("solarLdrRReading"),
+          solarArduinoR = document.getElementById("solarArduinoReading"),
+          solarServoR = document.getElementById("solarServoReading"),
+          solarLedLR = document.getElementById("solarLedLReading"),
+          solarLedRR = document.getElementById("solarLedRReading");
         var solarNodes = {
           ldrL: solarRoot.querySelector('[data-node="solar-ldr-l"]'),
           arduino: solarRoot.querySelector('[data-node="solar-arduino"]'),
@@ -7228,9 +6876,8 @@
           w0: solarRoot.querySelector('[data-wire="solar-0"]'),
           w1: solarRoot.querySelector('[data-wire="solar-1"]'),
         };
-        var solarDir = "balanced"; // 'balanced' | 'left' | 'right'
-        var solarTimers = [];
-
+        var solarDir = "balanced",
+          solarTimers = [];
         function luxSim(side, dir) {
           if (dir === "balanced") return Math.floor(480 + Math.random() * 40);
           if (side === "left")
@@ -7241,7 +6888,6 @@
             ? Math.floor(720 + Math.random() * 80)
             : Math.floor(220 + Math.random() * 60);
         }
-
         function setSolar(dir, opts) {
           opts = opts || {};
           solarDir = dir;
@@ -7258,12 +6904,10 @@
           Object.values(solarWires).forEach((w) =>
             w.classList.remove("is-live"),
           );
-
           var lL = luxSim("left", dir),
             lR = luxSim("right", dir);
           solarLdrLR.textContent = lL + " lux";
           solarLdrRR.textContent = lR + " lux";
-
           if (dir === "balanced") {
             solarArduinoR.textContent = "Balanced";
             solarServoR.textContent = "Centred";
@@ -7274,10 +6918,8 @@
             solarToggle.querySelector(".sys-toggle-icon").textContent = "☀️";
             return;
           }
-
-          var s = opts.skipDelay ? 0 : 420;
-          var isLeft = dir === "left";
-
+          var s = opts.skipDelay ? 0 : 420,
+            isLeft = dir === "left";
           if (isLeft) {
             solarToggle.querySelector(".sys-toggle-label").textContent =
               "Shift sun right";
@@ -7287,8 +6929,6 @@
               "Reset to centre";
             solarToggle.querySelector(".sys-toggle-icon").textContent = "↩️";
           }
-
-          // LDR-L fires (brighter side)
           solarTimers.push(
             setTimeout(() => {
               solarNodes.ldrL.classList.add("is-active");
@@ -7323,39 +6963,32 @@
             }, s * 2),
           );
         }
-
         solarToggle.addEventListener("click", () => {
           if (solarDir === "balanced") setSolar("left");
           else if (solarDir === "left") setSolar("right");
           else setSolar("balanced");
         });
-
-        // Live lux flicker
         setInterval(() => {
           if (solarDir !== "balanced") {
             solarLdrLR.textContent = luxSim("left", solarDir) + " lux";
             solarLdrRR.textContent = luxSim("right", solarDir) + " lux";
           }
         }, 3000);
-
         setSolar("balanced", { skipDelay: true });
 
-        /* ══ AUTO-WATERING SYSTEM ══ */
-        var wateringRoot = document.getElementById("wateringOverview");
-        var wateringToggle = document.getElementById("wateringToggle");
-        var wateringAdapterR = document.getElementById(
-          "wateringAdapterReading",
-        );
-        var wateringEspR = document.getElementById("wateringEspReading");
-        var wateringMoistureR = document.getElementById(
-          "wateringMoistureReading",
-        );
-        var wateringRelayR = document.getElementById("wateringRelayReading");
-        var wateringPumpR = document.getElementById("wateringPumpReading");
-        var wateringTgR = document.getElementById("wateringTgReading");
-        var wateringTgToast = document.getElementById("wateringTgToast");
-        var wateringTgTime = document.getElementById("wateringTgTime");
-
+        /* AUTO-WATERING */
+        var wateringRoot = document.getElementById("wateringOverview"),
+          wateringToggle = document.getElementById("wateringToggle"),
+          wateringAdapterR = document.getElementById("wateringAdapterReading"),
+          wateringEspR = document.getElementById("wateringEspReading"),
+          wateringMoistureR = document.getElementById(
+            "wateringMoistureReading",
+          ),
+          wateringRelayR = document.getElementById("wateringRelayReading"),
+          wateringPumpR = document.getElementById("wateringPumpReading"),
+          wateringTgR = document.getElementById("wateringTgReading"),
+          wateringTgToast = document.getElementById("wateringTgToast"),
+          wateringTgTime = document.getElementById("wateringTgTime");
         var wateringNodes = {
           adapter: wateringRoot.querySelector('[data-node="watering-adapter"]'),
           esp32: wateringRoot.querySelector('[data-node="watering-esp32"]'),
@@ -7374,16 +7007,14 @@
         };
         var wateringIsActive = false,
           wateringTimers = [];
-
         function fmtTimeWatering() {
-          var d = new Date();
-          var h = d.getHours(),
-            m = d.getMinutes();
-          var ampm = h >= 12 ? "PM" : "AM";
+          var d = new Date(),
+            h = d.getHours(),
+            m = d.getMinutes(),
+            ampm = h >= 12 ? "PM" : "AM";
           h = h % 12 || 12;
           return "Time: " + h + ":" + String(m).padStart(2, "0") + " " + ampm;
         }
-
         function setWatering(on, opts) {
           opts = opts || {};
           wateringIsActive = on;
@@ -7395,7 +7026,6 @@
           wateringToggle.querySelector(".sys-toggle-icon").textContent = on
             ? "💧"
             : "🌱";
-
           wateringTimers.forEach(clearTimeout);
           wateringTimers = [];
           Object.values(wateringNodes).forEach((n) =>
@@ -7405,7 +7035,6 @@
             w.classList.remove("is-live"),
           );
           wateringTgToast.classList.remove("visible");
-
           if (!on) {
             wateringAdapterR.textContent = "Standby";
             wateringEspR.textContent = "Idle";
@@ -7415,7 +7044,6 @@
             wateringTgR.textContent = "Waiting";
             return;
           }
-
           var s = opts.skipDelay ? 0 : 450;
           wateringNodes.adapter.classList.add("is-active");
           wateringAdapterR.textContent = "Active (12V)";
@@ -7435,7 +7063,6 @@
               wateringNodes.moisture.classList.add("is-active");
             }, s * 2),
           );
-          // outputs branch in parallel
           wateringTimers.push(
             setTimeout(() => {
               wateringRelayR.textContent = "ON";
@@ -7469,16 +7096,15 @@
         );
         setWatering(false, { skipDelay: true });
 
-        /* ══ WATER LEVEL SENSING SYSTEM ══ */
-        var wlsRoot = document.getElementById("wlsOverview");
-        var wlsToggle = document.getElementById("wlsToggle");
-        var wlsSensorR = document.getElementById("wlsSensorReading");
-        var wlsArduinoR = document.getElementById("wlsArduinoReading");
-        var wlsLcdR = document.getElementById("wlsLcdReading");
-        var wlsLcdLine1 = document.getElementById("wlsLcdLine1");
-        var wlsLcdLine2 = document.getElementById("wlsLcdLine2");
-        var wlsTankFill = wlsRoot.querySelector(".wls-tank-fill");
-
+        /* WATER LEVEL SENSING */
+        var wlsRoot = document.getElementById("wlsOverview"),
+          wlsToggle = document.getElementById("wlsToggle"),
+          wlsSensorR = document.getElementById("wlsSensorReading"),
+          wlsArduinoR = document.getElementById("wlsArduinoReading"),
+          wlsLcdR = document.getElementById("wlsLcdReading"),
+          wlsLcdLine1 = document.getElementById("wlsLcdLine1"),
+          wlsLcdLine2 = document.getElementById("wlsLcdLine2"),
+          wlsTankFill = wlsRoot.querySelector(".wls-tank-fill");
         var wlsNodes = {
           sensor: wlsRoot.querySelector('[data-node="wls-sensor"]'),
           arduino: wlsRoot.querySelector('[data-node="wls-arduino"]'),
@@ -7490,27 +7116,22 @@
         };
         var wlsIsFilling = false,
           wlsTimers = [];
-
-        // tank rect: y=6, height=36 inside the 48x48 viewBox (bottom at y=42)
         function setTankLevel(pct) {
-          var maxH = 36;
-          var h = (maxH * pct) / 100;
+          var maxH = 36,
+            h = (maxH * pct) / 100;
           wlsTankFill.setAttribute("height", h);
           wlsTankFill.setAttribute("y", 42 - h);
         }
-
         function wlsLevelLabel(pct) {
           if (pct === 0) return "0% (Empty)";
           if (pct >= 100) return "100% (Full)";
           return pct + "%";
         }
-
         function wlsLcdMessage(pct) {
           if (pct >= 100) return ["WATER LEVEL: 100%", "TANK FULL!"];
           if (pct === 0) return ["WATER LEVEL: 0%", "TANK EMPTY"];
           return ["WATER LEVEL: " + pct + "%", "SAVE WATER"];
         }
-
         function setWLS(on, opts) {
           opts = opts || {};
           wlsIsFilling = on;
@@ -7522,14 +7143,12 @@
           wlsToggle.querySelector(".sys-toggle-icon").textContent = on
             ? "🌊"
             : "🚰";
-
           wlsTimers.forEach(clearTimeout);
           wlsTimers = [];
           Object.values(wlsNodes).forEach((n) =>
             n.classList.remove("is-active"),
           );
           Object.values(wlsWires).forEach((w) => w.classList.remove("is-live"));
-
           if (!on) {
             setTankLevel(0);
             wlsSensorR.textContent = wlsLevelLabel(0);
@@ -7539,7 +7158,6 @@
             wlsLcdLine2.innerHTML = "&nbsp;";
             return;
           }
-
           var s = opts.skipDelay ? 0 : 450;
           wlsNodes.sensor.classList.add("is-active");
           wlsTimers.push(
@@ -7558,8 +7176,6 @@
               wlsNodes.lcd.classList.add("is-active");
             }, s * 2),
           );
-
-          // Animate the tank rising through 0 → 25 → 50 → 75 → 100%
           var steps = [0, 25, 50, 75, 100];
           steps.forEach(function (pct, i) {
             wlsTimers.push(
@@ -7579,20 +7195,19 @@
         wlsToggle.addEventListener("click", () => setWLS(!wlsIsFilling));
         setWLS(false, { skipDelay: true });
 
-        /* ══ PIEZO ENERGY HARVESTING SYSTEM ══ */
-        var piezoRoot = document.getElementById("piezoOverview");
-        var piezoToggle = document.getElementById("piezoToggle");
-        var piezoDiscR = document.getElementById("piezoDiscReading");
-        var piezoRectR = document.getElementById("piezoRectReading");
-        var piezoCapR = document.getElementById("piezoCapReading");
-        var piezoVregR = document.getElementById("piezoVregReading");
-        var piezoLedGR = document.getElementById("piezoLedGreenReading");
-        var piezoCoilR = document.getElementById("piezoCoilReading");
-        var piezoLedBR = document.getElementById("piezoLedBlueReading");
-        var piezoVFill = document.getElementById("piezoVoltageFill");
-        var piezoVLabel = document.getElementById("piezoVoltageLabel");
-        var piezoCapFill = piezoRoot.querySelector(".piezo-cap-fill");
-
+        /* PIEZO ENERGY HARVESTING */
+        var piezoRoot = document.getElementById("piezoOverview"),
+          piezoToggle = document.getElementById("piezoToggle"),
+          piezoDiscR = document.getElementById("piezoDiscReading"),
+          piezoRectR = document.getElementById("piezoRectReading"),
+          piezoCapR = document.getElementById("piezoCapReading"),
+          piezoVregR = document.getElementById("piezoVregReading"),
+          piezoLedGR = document.getElementById("piezoLedGreenReading"),
+          piezoCoilR = document.getElementById("piezoCoilReading"),
+          piezoLedBR = document.getElementById("piezoLedBlueReading"),
+          piezoVFill = document.getElementById("piezoVoltageFill"),
+          piezoVLabel = document.getElementById("piezoVoltageLabel"),
+          piezoCapFill = piezoRoot.querySelector(".piezo-cap-fill");
         var piezoNodes = {
           disc: piezoRoot.querySelector('[data-node="piezo-disc"]'),
           rect: piezoRoot.querySelector('[data-node="piezo-rect"]'),
@@ -7610,10 +7225,9 @@
         var piezoIsActive = false,
           piezoTimers = [],
           piezoVoltAnim = null;
-
         function setPiezoCapLevel(pct) {
-          var maxH = 36;
-          var h = (maxH * pct) / 100;
+          var maxH = 36,
+            h = (maxH * pct) / 100;
           piezoCapFill.setAttribute("height", h);
           piezoCapFill.setAttribute("y", 42 - h);
           piezoVFill.style.width = pct + "%";
@@ -7621,12 +7235,11 @@
           piezoVLabel.textContent = v + " V";
           piezoCapR.textContent = v + " V";
         }
-
         function animatePiezoVoltage(from, to, duration, cb) {
           clearInterval(piezoVoltAnim);
-          var steps = 40;
-          var interval = duration / steps;
-          var step = 0;
+          var steps = 40,
+            interval = duration / steps,
+            step = 0;
           piezoVoltAnim = setInterval(function () {
             step++;
             var pct = from + (to - from) * (step / steps);
@@ -7638,7 +7251,6 @@
             }
           }, interval);
         }
-
         function setPiezo(on, opts) {
           opts = opts || {};
           piezoIsActive = on;
@@ -7650,7 +7262,6 @@
           piezoToggle.querySelector(".sys-toggle-icon").textContent = on
             ? "🏁"
             : "🚗";
-
           piezoTimers.forEach(clearTimeout);
           piezoTimers = [];
           clearInterval(piezoVoltAnim);
@@ -7660,7 +7271,6 @@
           Object.values(piezoWires).forEach(function (w) {
             w.classList.remove("is-live");
           });
-
           if (!on) {
             piezoDiscR.textContent = "Idle";
             piezoRectR.textContent = "Standby";
@@ -7675,10 +7285,7 @@
             );
             return;
           }
-
           var s = opts.skipDelay ? 0 : 450;
-
-          // Step 1 – Piezo discs generate AC
           piezoNodes.disc.classList.add("is-active");
           piezoDiscR.textContent = "AC ~3 V";
           piezoTimers.push(
@@ -7686,8 +7293,6 @@
               piezoWires.w0.classList.add("is-live");
             }, s * 0),
           );
-
-          // Step 2 – Bridge rectifier converts AC → DC
           piezoTimers.push(
             setTimeout(function () {
               piezoRectR.textContent = "Converting";
@@ -7695,8 +7300,6 @@
               piezoWires.w1.classList.add("is-live");
             }, s * 1),
           );
-
-          // Step 3 – Supercapacitor charges up
           piezoTimers.push(
             setTimeout(function () {
               piezoNodes.cap.classList.add("is-active");
@@ -7706,16 +7309,12 @@
               });
             }, s * 2),
           );
-
-          // Step 4 – Voltage regulator outputs stable 5V
           piezoTimers.push(
             setTimeout(function () {
               piezoVregR.textContent = "5 V stable";
               piezoNodes.vreg.classList.add("is-active");
             }, s * 3),
           );
-
-          // Step 5 – Outputs: both LEDs and wireless coil
           piezoTimers.push(
             setTimeout(function () {
               piezoLedGR.textContent = "ON — Power OK";
@@ -7727,7 +7326,6 @@
             }, s * 4),
           );
         }
-
         piezoToggle.addEventListener("click", function () {
           setPiezo(!piezoIsActive);
         });
